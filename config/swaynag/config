@@ -1,0 +1,21 @@
+font=Fantasque Sans Mono Nerd Font 12
+
+[customn]
+edge=top
+background=#1a1b26
+border-bottom=#c0caf5
+border=#c0caf5
+button-background=#1a1b26
+text=#c0caf5
+button-gap=100
+button-border-size=1
+
+[customw]
+edge=top
+background=#1a1b26
+border-bottom=#ff2a2a
+border=#ff2a2a
+button-background=#1a1b26
+text=#ff2a2a
+button-gap=2
+button-border-size=1

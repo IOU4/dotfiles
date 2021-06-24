@@ -1,2 +1,2 @@
-my personal config for i3, picom, polybar, alacritty
+my personal config for i3, picom, polybar, alacritty, sway.
 

@@ -1,0 +1,6 @@
+2021/12/08-17:02:30.137 74ab Creating DB /home/emadou/.config/microsoft-edge-beta/Default/IndexedDB/https_trello.com_0.indexeddb.leveldb since it was missing.
+2021/12/08-17:02:30.140 74ab Reusing MANIFEST /home/emadou/.config/microsoft-edge-beta/Default/IndexedDB/https_trello.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/12/08-21:02:11.757 7ddb Level-0 table #5: started
+2021/12/08-21:02:11.772 7ddb Level-0 table #5: 1167258 bytes OK
+2021/12/08-21:02:11.774 7ddb Delete type=0 #3
+2021/12/08-21:02:11.775 7ddb Manual compaction at level-0 from (begin) .. (end); will stop at (end)

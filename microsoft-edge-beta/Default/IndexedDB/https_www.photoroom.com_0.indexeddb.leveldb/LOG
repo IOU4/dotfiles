@@ -1,0 +1,6 @@
+2021/12/12-18:58:56.711 2cc4 Creating DB /home/emadou/.config/microsoft-edge-beta/Default/IndexedDB/https_www.photoroom.com_0.indexeddb.leveldb since it was missing.
+2021/12/12-18:58:56.719 2cc4 Reusing MANIFEST /home/emadou/.config/microsoft-edge-beta/Default/IndexedDB/https_www.photoroom.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/12/12-19:47:49.851 30c0 Level-0 table #5: started
+2021/12/12-19:47:49.854 30c0 Level-0 table #5: 6947 bytes OK
+2021/12/12-19:47:49.855 30c0 Delete type=0 #3
+2021/12/12-19:47:49.856 30c0 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

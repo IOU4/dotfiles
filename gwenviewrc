@@ -1,0 +1,28 @@
+[$Version]
+update_info=gwenview.upd:SideBar_StatusBar_Rename,gwenview.upd:ImageView_AlphaBackgroundMode_Update,gwenview.upd:DeleteThumbnailSetting_Rename
+
+[General]
+LastUsedVersion=210800
+SideBarPage=operations
+
+[MainWindow]
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAApEAAAQRAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+eDP-1 Window-Maximized 1920x1080=true
+
+[Recent Files]
+File1[$e]=$HOME/Downloads/healthy/healthy & tasety-logos.jpeg
+File2[$e]=$HOME/Downloads/healthy/healthy & tasety-logos_black.png
+File3[$e]=$HOME/Downloads/healthy/healthy & tasety-logos_transparent.png
+File4[$e]=$HOME/Downloads/healthy/healthy & tasety-logos_white.png
+File5[$e]=$HOME/.config/microsoft-edge-beta/Default/Edge Profile Picture.png
+Name1[$e]=healthy & tasety-logos.jpeg
+Name2[$e]=healthy & tasety-logos_black.png
+Name3[$e]=healthy & tasety-logos_transparent.png
+Name4[$e]=healthy & tasety-logos_white.png
+Name5[$e]=Edge Profile Picture.png
+
+[SideBar]
+IsVisible ViewMode=true
+SideBarSplitterSizes=183,470

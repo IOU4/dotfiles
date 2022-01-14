@@ -1,0 +1,9 @@
+2021/12/02-19:46:55.126 361 Reusing MANIFEST /home/emadou/.config/chromium/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/12/02-19:46:55.127 361 Recovering log #7
+2021/12/02-19:46:55.129 361 Reusing old log /home/emadou/.config/chromium/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000007.log 
+2021/12/02-19:46:57.571 363 Compacting 1@1 + 1@2 files
+2021/12/02-19:46:57.577 363 Generated table #10@1: 164 keys, 196515 bytes
+2021/12/02-19:46:57.577 363 Compacted 1@1 + 1@2 files => 196515 bytes
+2021/12/02-19:46:57.578 363 compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/12/02-19:46:57.578 363 Delete type=2 #8
+2021/12/02-19:46:57.578 363 Delete type=2 #5

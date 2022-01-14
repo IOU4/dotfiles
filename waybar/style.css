@@ -1,0 +1,67 @@
+* {
+    font-family: "JetBrains Mono","Symbols Nerd Font", "Font Awesome 5 Free";
+    color: white;
+}
+
+window#waybar {
+    background: rgba(26, 27, 38, 0);
+    color: #1a1b26;
+    opacity: 1;
+    transition-property: background-color;
+    transition-duration: .3s;
+}
+
+/* Workspaces */
+#workspaces button {
+    font-size: 20px;
+    border: none;
+    border-radius: 0px;
+    margin: 0 0 10px;
+}
+#workspaces button.urgent {
+    border-left : 4px solid red;
+    color : red;
+}
+
+#workspaces button:hover {
+    color: #1a1b26 ;
+    background-color: #c0caf5;
+}
+
+#workspaces button.focused {
+    border-left : 4px solid white;
+    border-radius: 5px;
+}
+
+#battery,
+#cpu,
+#memory,
+#disk,
+#tray,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#mode,
+#idle_inhibitor,
+#mpd {
+    margin: 10px 0;;
+    font-size: 15px;
+}
+.modules-center {
+   font-size: 25px;
+}
+
+#network {
+    margin: 10px 0 0;
+    font-size: 12px;
+}
+
+#network.disconnected {
+    padding: 0px;
+}
+
+#tray menu, tooltip * {
+  font-size: 12px;
+}

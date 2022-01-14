@@ -1,0 +1,86 @@
+// vim:ft=jsonc
+{
+   "position": "left",
+   "height": 2,
+   "width": 6, 
+   "modules-left": ["sway/workspaces", "sway/mode", "custom/media"],
+   "modules-center": ["clock"],
+   "modules-right": ["pulseaudio", "backlight", "battery", "tray", "network"],
+
+   "sway/workspaces": {
+      "disable-scroll": true,
+      "all-outputs": true,
+      "format": "{icon}",
+      "format-icons": {
+         "1terminal": "",
+         "2browser": "",
+         "3music": "",
+         "4extra": "",
+         "urgent": "",
+         "focused": "",
+         "default": ""
+      }
+   },
+   "sway/mode": {
+      "format": "<span style=\"italic\"><small>{}</small></span>"
+   },
+   "tray": {
+      "icon-size": 20,
+      "spacing": 10
+   },
+   "clock": {
+      "format": "{:%H\n%M}",
+      "timezone": "Africa/Casablanca",
+      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+      "format-alt": "{:%H\n%M\n--\n%d\n%m}"
+   },
+   "cpu": {
+      "format": "{usage}\n",
+      "tooltip": false
+   },
+   "backlight": {
+      "device": "acpi_video1",
+      "format": "{icon} {percent}",
+      "format-icons": ["", "", ""]
+   },
+   "battery": {
+      "format": "{icon} {capacity}",
+      "format-charging": " {capacity}",
+      "format-plugged": " {capacity}",
+      "format-alt": "{time}",
+      "format-time": "{H}:{M}",
+      "format-full": " ",
+      "format-icons": ["", "", "", "", "", ""]
+   },
+   "network": {
+      "interface": "wlo1", // (Optional) To force the use of this interface
+      "format-wifi": "{essid}",
+      "format-ethernet": "  {ipaddr}",
+      "format-linked": "{ifname}",
+      "format-disconnected": "睊  -- ",
+      "format-alt": "{ifname}: {ipaddr}/{cidr}",
+      "max-length": 1,
+      "format-icons": ["ﰐ", "ﰑ", "ﰒ"],
+      "tooltip": true,
+      "tooltip-format-wifi": "{essid}",
+      "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr} "
+   },
+   "pulseaudio": {
+      "scroll-step": 1, // %, can be a float
+      "format": "{icon} {volume}",
+      "format-bluetooth": "﫽 {volume}",
+      "format-bluetooth-muted": "﫾 --",
+      "format-muted": "  --",
+      "format-source-muted": "",
+      "format-icons": {
+         "headphone": "",
+         "hands-free": "",
+         "headset": "",
+         "phone": "",
+         "portable": "",
+         "car": "",
+         "default": ["", "", ""]
+      },
+      "on-click": "pavucontrol"
+   }
+}

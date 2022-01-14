@@ -1,0 +1,7 @@
+2021/12/03-17:08:07.012 791a Reusing MANIFEST /home/emadou/.config/chromium/Default/IndexedDB/https_docs.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/12/03-17:08:07.012 791a Recovering log #3
+2021/12/03-17:08:07.014 791a Reusing old log /home/emadou/.config/chromium/Default/IndexedDB/https_docs.google.com_0.indexeddb.leveldb/000003.log 
+2021/12/03-17:08:13.189 791a Level-0 table #5: started
+2021/12/03-17:08:13.193 791a Level-0 table #5: 797788 bytes OK
+2021/12/03-17:08:13.194 791a Delete type=0 #3
+2021/12/03-17:08:13.194 791a Manual compaction at level-0 from (begin) .. (end); will stop at (end)

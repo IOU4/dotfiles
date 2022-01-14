@@ -1,0 +1,8 @@
+# GIMP action-history
+
+(history-item "image-new" 1)
+(history-item "file-quit" 1)
+(history-item "view-zoom-in" 0)
+(history-item "select-all" 1)
+
+# end of action-history

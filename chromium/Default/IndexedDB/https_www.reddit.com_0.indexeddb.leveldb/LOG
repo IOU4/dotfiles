@@ -1,0 +1,6 @@
+2021/12/01-01:18:08.899 44a9 Creating DB /home/emadou/.config/chromium/Default/IndexedDB/https_www.reddit.com_0.indexeddb.leveldb since it was missing.
+2021/12/01-01:18:08.906 44a9 Reusing MANIFEST /home/emadou/.config/chromium/Default/IndexedDB/https_www.reddit.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/12/01-01:19:13.101 44a9 Level-0 table #5: started
+2021/12/01-01:19:13.103 44a9 Level-0 table #5: 1876 bytes OK
+2021/12/01-01:19:13.105 44a9 Delete type=0 #3
+2021/12/01-01:19:13.105 44a9 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

@@ -1,0 +1,55 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="ChooseRunConfiguration">
+      <i c="1" l="1641561510443" />
+    </e>
+    <e n="EditorBackSpace">
+      <i c="129" l="1641561453697" />
+    </e>
+    <e n="EditorChooseLookupItem">
+      <i c="1" l="1641561426965" />
+    </e>
+    <e n="EditorEnter">
+      <i c="3" l="1641561419955" />
+    </e>
+    <e n="EditorRight">
+      <i c="7" l="1641561464095" />
+    </e>
+    <e n="EditorTab">
+      <i c="2" l="1641561420842" />
+    </e>
+    <e n="EditorUp">
+      <i c="2" l="1641561463368" />
+    </e>
+    <e n="FileChooser.NewFolder">
+      <i c="1" l="1641560942086" />
+    </e>
+    <e n="FindUsagesInFile">
+      <i c="1" l="1641561484026" />
+    </e>
+    <e n="GotoClass">
+      <i c="1" l="1641560975501" />
+    </e>
+    <e n="NewElement">
+      <i c="1" l="1641561349884" />
+    </e>
+    <e n="NewFile">
+      <i c="1" l="1641561351741" />
+    </e>
+    <e n="PhpListenDebugAction">
+      <i c="2" l="1641561506338" />
+    </e>
+    <e n="RunAnything">
+      <i c="2" l="1641560974836" />
+    </e>
+    <e n="SettingsEntryPoint">
+      <i c="1" l="1641561467165" />
+    </e>
+    <e n="com.intellij.ide.browsers.actions.BaseOpenInBrowserAction">
+      <i c="3" l="1641561491853" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.welcomeScreen.ActionGroupPanelWrapper$5">
+      <i c="1" l="1641560892853" />
+    </e>
+  </component>
+</application>

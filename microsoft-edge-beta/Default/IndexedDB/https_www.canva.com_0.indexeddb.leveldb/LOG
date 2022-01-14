@@ -1,0 +1,15 @@
+2021/12/21-22:08:42.962 4736 Reusing MANIFEST /home/emadou/.config/microsoft-edge-beta/Default/IndexedDB/https_www.canva.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/12/21-22:08:42.962 4736 Recovering log #7
+2021/12/21-22:08:42.963 4736 Reusing old log /home/emadou/.config/microsoft-edge-beta/Default/IndexedDB/https_www.canva.com_0.indexeddb.leveldb/000007.log 
+2021/12/21-22:10:32.043 41bf Level-0 table #12: started
+2021/12/21-22:10:32.044 41bf Level-0 table #12: 1051 bytes OK
+2021/12/21-22:10:32.046 41bf Delete type=0 #7
+2021/12/21-22:10:32.046 41bf Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2021/12/21-22:10:32.046 41bf Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x02\x01\x02\x03\x00\x00\x00\x00\x00\x00\xf0?' @ 376 : 1
+2021/12/21-22:10:32.046 41bf Compacting 1@1 + 1@2 files
+2021/12/21-22:10:32.047 41bf Generated table #13@1: 69 keys, 1364 bytes
+2021/12/21-22:10:32.047 41bf Compacted 1@1 + 1@2 files => 1364 bytes
+2021/12/21-22:10:32.048 41bf compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/12/21-22:10:32.049 41bf Delete type=2 #12
+2021/12/21-22:10:32.049 41bf Delete type=2 #9
+2021/12/21-22:10:32.049 41bf Manual compaction at level-1 from '\x00\x02\x01\x02\x03\x00\x00\x00\x00\x00\x00\xf0?' @ 376 : 1 .. (end); will stop at (end)

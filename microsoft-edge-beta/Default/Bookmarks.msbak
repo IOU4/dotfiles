@@ -1,0 +1,109 @@
+{
+   "checksum": "2553c0f57eb36dd87af6a782a1031791",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13251373247541952",
+            "guid": "549e68a2-3712-4056-aeba-bb218271931b",
+            "id": "5",
+            "name": "Gmail",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://mail.google.com/mail/u/0/"
+         }, {
+            "date_added": "13251373159156821",
+            "guid": "02996782-a07e-4ac5-8fdc-d37b7bfe455f",
+            "id": "6",
+            "name": "GitHub",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://github.com/"
+         }, {
+            "date_added": "13251373226453207",
+            "guid": "b898590f-fa22-424d-9538-28d7eeac1b10",
+            "id": "7",
+            "name": "freeCodeCamp",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.freecodecamp.org/learn/?messages=success%5B0%5D%3DSuccess%2521%2520You%2520have%2520signed%2520in%2520to%2520your%2520account.%2520Happy%2520Coding%2521"
+         }, {
+            "date_added": "13251373256733233",
+            "guid": "89d038af-7b3e-41c0-94ba-d504a044f249",
+            "id": "8",
+            "name": "YouTube",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.youtube.com/"
+         }, {
+            "date_added": "13251373051827909",
+            "guid": "04eddea8-840b-441c-a383-92bd97122385",
+            "id": "9",
+            "name": "LeetCode",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://leetcode.com/"
+         }, {
+            "date_added": "13283337991832211",
+            "guid": "d7b7bb05-6668-4edb-8c32-edb6f6ffd353",
+            "id": "11",
+            "name": "1.-Environment setup",
+            "show_icon": false,
+            "source": "user_add",
+            "type": "url",
+            "url": "http://www.jamesmolloy.co.uk/tutorial_html/1.-Environment%20setup.html"
+         }, {
+            "date_added": "13284159322878947",
+            "guid": "9eb646b5-8d4d-49ec-b200-4e1a6207fbf8",
+            "id": "13",
+            "name": "Icons | Font Awesome v6 Beta",
+            "show_icon": false,
+            "source": "user_add",
+            "type": "url",
+            "url": "https://fontawesome.com/v6.0/icons?m=free"
+         }, {
+            "date_added": "13284689069350389",
+            "guid": "a20fddce-c139-4a15-8e75-2c01379f4638",
+            "id": "15",
+            "name": "Browse Icons • Iconify",
+            "show_icon": false,
+            "source": "user_add",
+            "type": "url",
+            "url": "https://icon-sets.iconify.design/la/instagram/"
+         } ],
+         "date_added": "13283112096401847",
+         "date_modified": "13284689069350389",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Favorites bar",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13283112096401850",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other favorites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13283112096401855",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile favorites",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "Ci4KDgiIgQISCEZaasd9AQAAEgAgASoYZ3p2ZnBDSzF1SjVrUW80RVFyenFNUT09EqwBCA8SpwEKHFc4anM1c0o5YVJvM0gvRVJxMkZwYUxWMFN2RT0SJGEyMGZkZGNlLWMxMzktNGExNS04ZTc1LTJjMDEzNzlmNDYzOBgAIAIoADD///////////8BOKy616PeL0C4utej3i9KHHBGalRwNlpUYnpLVWQ1ZlhwT2tTOW9HKzFEUT1aHyId/kJXV2ZSc1J1Z0lxUFZYRlNadFduS2hlR2NaYz1lOpwaLhKnAQgFEqIBChx2MmEzVTJ3VEZpdDFrdXp2NmZMK25IYVJ1elk9EiRlZjMyNGFmNy0xNTJkLTQ5YWEtYTFlYS1hODY3YzZlNGVhOTEYACACKAIw6cfjs9gvOLeIu5XiLkDvxOOz2C9KHFRBalVTWURkc01sTXB0cCtxaXVLVjVzZTVIaz1aHiIcUTM1d05Edk9tMGFyUnFGUUI0QXpCZ1lQR3cwPWWLoIzREokBCAEShAEKHHl4Si82ZnZrZWNyN2twNUVRekI0dFdMcGRiRT0SJDZjNGI0MWQwLTVkYTYtNTYyNC05OTVjLWQzYmQzYjVlMTA5MRgAIAAoADDTpY21vy44h6SNtb8uQIekjbW/LkocYVJDV0xnaEY5YjVJbnFLSUR2dUovanZRa0ZjPVoAZQAAAAASqAEIDRKjAQocSnNWc2M1TWZsaDlDcGhsbHREU2xSWnpVK1hRPRIkOWViNjQ2YjUtOGQ0ZC00OWVjLWIyMDAtNGUxYTYyMDdmYmY4GAAgAigCMMWoiqfcLziCpoqn3C9AiqaKp9wvShw5aU92dXdZbUVMNWh4MmFRakUxQkVaNllITUk9Wh8iHf1jQ2tWTWV6NlYvcTF3UjZBOTVwNXFMZUtyRlU9ZTNnR3oSqAEIBxKjAQocbS9QSWoyUjdtWVMxVEorSm81QjBGenVKQjFRPRIkYWE4ODM2MzUtYzUzNy00Zjg0LWI0NzAtMTFjYWUwMjkxZjFlGAAgAygDMMeotPvaLzjV47mV4i5AoKG0+9ovShxEL0d2eWJSaWE4M2pPdnAzd2FWNTBIUzBLM0E9Wh8iHbVVNzdZc0NKdlcvUENzK1h0elJHbXVmR2ZiNTQ9ZXeJIu0SiQEIAxKEAQocbmpnRHU4OGVDcnZYcDg2cEQ3ZkhHY3FGcDg4PRIkMTQ5N2FmMDEtYTdkOC01ZDBhLTg2MTUtMzlkZjk4N2YzMjBmGAAgACgAMNiljbW/LjiHpI21vy5Ah6SNtb8uShx5ek5CMDFjbjU0QTdjUlUwdVQrL1BnbVR0VW89WgBlAAAAABKJAQgCEoQBChxZY1NUb252RVNQd3FDczRMMmNyVmh2NjhMOTg9EiQzOWE3ZjBlMS0yNzFlLTVmY2ItYmY4Zi1hMDdjMjBlYjJmZDIYACAAKAAw1KWNtb8uOIekjbW/LkCHpI21vy5KHG9QVmtod0JSYlY2NUtDV1IyK0lPTkhXb091OD1aAGUAAAAAEqgBCAsSowEKHEpBTkkxODdpblJwMG5YNkFXZGhPZVR4czhSOD0SJGQ3YjdiYjA1LTY2NjgtNGVkYi04YzMyLWVkYjZmNmZmZDM1MxgAIAEoATCCpbif2S84mp24n9kvQJqduJ/ZL0ocUUhWcXpLK09SOFZ6MGhnUkU1SEk5UkRtaGFRPVofIh37eCtpSVkwc2tnemk5TDZ6dGtVcVN3YVhkUnAwPWUAAAAAEqcBCAYSogEKHDFpQkl6czgrbWxLMmVXcVRpVDNsYTVudG4wbz0SJGQxZWQ4NGEyLTc5NzUtNGI4Ni1iYzI2LWVkNzMxM2NkMzQ2ZhgAIAIoAjDpx+Oz2C849dW1leIuQPDE47PYL0ocSUpIUmpZZ1p3S0lCOWRQNHpLSHZDelpZa25NPVoeIhxqUnFtRTZpSU5QUkMzeTYzSklyVU0rOEUzdzg9ZQgMSi4SqAEICBKjAQocdWZOVDBwS1NmVFlZZFFKYmg2d3NnRWJBR08wPRIkZDY5NmY1ZDgtZDI1MC00MDFjLWFhMTctN2Y0ZDI4Mzc0MTAzGAAgAigCMOnH47PYLzid0LuV4i5A8MTjs9gvShxDOWsrRzFHWTZVd29vRGZ5bmN6SWNkSTc5b2s9Wh8iHe1IUVEvNDFQWk9CNElpYlR4eEk0ZStEZXBSS1U9ZTj5OTMSqAEICRKjAQocUjd1K091eDcvUEc0Z1NnREJTdC9IRlBWRWNZPRIkNmFlZWIyNmMtNGMzNS00YWJhLTk5OWMtYzQyMzA4ZjZhZDJmGAAgAigCMOnH47PYLzi0j6+V4i5A8cTjs9gvShxFTnVoVkFnMUdvQ3BKNmtZbDYwbmZ4cTNZeDQ9Wh8iHfZlWnJrSHJEVTFscE1YcVRMSlp5K3RxYTVTSEU9ZdDl94kgv82pu9wvMAA=",
+   "version": 1
+}

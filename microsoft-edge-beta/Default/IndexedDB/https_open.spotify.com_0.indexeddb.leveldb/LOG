@@ -1,0 +1,6 @@
+2021/12/19-15:41:49.795 45a4 Creating DB /home/emadou/.config/microsoft-edge-beta/Default/IndexedDB/https_open.spotify.com_0.indexeddb.leveldb since it was missing.
+2021/12/19-15:41:49.802 45a4 Reusing MANIFEST /home/emadou/.config/microsoft-edge-beta/Default/IndexedDB/https_open.spotify.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/12/19-15:42:00.289 4454 Level-0 table #5: started
+2021/12/19-15:42:00.294 4454 Level-0 table #5: 66102 bytes OK
+2021/12/19-15:42:00.296 4454 Delete type=0 #3
+2021/12/19-15:42:00.297 4454 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

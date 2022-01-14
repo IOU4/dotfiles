@@ -1,0 +1,18 @@
+00:00:00.313895 VirtualBox GUI VM Selector Window 6.1.30 r148432 linux.amd64 (Dec 10 2021 19:46:42) release log
+00:00:00.313897 Log opened 2022-01-07T14:28:49.774876000Z
+00:00:00.313897 Build Type: release
+00:00:00.313899 OS Product: Linux
+00:00:00.313900 OS Release: 5.15.13-arch1-1
+00:00:00.313900 OS Version: #1 SMP PREEMPT Wed, 05 Jan 2022 16:20:59 +0000
+00:00:00.313917 DMI Product Name: Latitude 5410
+00:00:00.313922 DMI Product Version: 
+00:00:00.313925 Firmware type: UEFI
+00:00:00.314091 Secure Boot: Disabled
+00:00:00.314115 Host RAM: 7547MB (7.3GB) total, 5041MB (4.9GB) available
+00:00:00.314117 Executable: /usr/lib/virtualbox/VirtualBox
+00:00:00.314117 Process ID: 6863
+00:00:00.314118 Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.314676 Qt version: 5.15.2
+00:00:00.331462 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:00.331480 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:00.675021 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 54x1 x 932x1078

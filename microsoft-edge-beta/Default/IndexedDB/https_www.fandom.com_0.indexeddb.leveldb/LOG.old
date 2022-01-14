@@ -1,0 +1,6 @@
+2021/12/09-14:39:50.828 34be Creating DB /home/emadou/.config/microsoft-edge-beta/Default/IndexedDB/https_www.fandom.com_0.indexeddb.leveldb since it was missing.
+2021/12/09-14:39:50.835 34be Reusing MANIFEST /home/emadou/.config/microsoft-edge-beta/Default/IndexedDB/https_www.fandom.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/12/09-14:40:03.004 34bf Level-0 table #5: started
+2021/12/09-14:40:03.006 34bf Level-0 table #5: 2418 bytes OK
+2021/12/09-14:40:03.008 34bf Delete type=0 #3
+2021/12/09-14:40:03.008 34bf Manual compaction at level-0 from (begin) .. (end); will stop at (end)

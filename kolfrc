@@ -1,0 +1,16 @@
+[MainWindow]
+State=AAAA/wAAAAD9AAAAAAAAB0IAAAPlAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+eDP-1 Window-Maximized 1920x1080=true
+
+[New Game Dialog Mode]
+0Player 1=#0000ff
+competition=false
+course=/usr/share/kolf/courses/Classic.kolf
+extra=
+
+[Settings]
+showGuideLine=true
+showInfo=true
+sound=true
+useMouse=true

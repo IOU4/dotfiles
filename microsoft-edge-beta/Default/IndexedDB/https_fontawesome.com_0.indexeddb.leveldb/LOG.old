@@ -1,0 +1,15 @@
+2021/12/22-09:31:46.092 5a29 Reusing MANIFEST /home/emadou/.config/microsoft-edge-beta/Default/IndexedDB/https_fontawesome.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/12/22-09:31:46.092 5a29 Recovering log #7
+2021/12/22-09:31:46.093 5a29 Reusing old log /home/emadou/.config/microsoft-edge-beta/Default/IndexedDB/https_fontawesome.com_0.indexeddb.leveldb/000007.log 
+2021/12/22-09:45:40.412 550b Level-0 table #12: started
+2021/12/22-09:45:40.416 550b Level-0 table #12: 12833 bytes OK
+2021/12/22-09:45:40.417 550b Delete type=0 #7
+2021/12/22-09:45:40.418 550b Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2021/12/22-09:45:40.418 550b Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x02\x01\x05\x00s\x00t\x00a\x00t\x00e' @ 1067 : 1
+2021/12/22-09:45:40.418 550b Compacting 1@1 + 1@2 files
+2021/12/22-09:45:40.420 550b Generated table #13@1: 56 keys, 1246 bytes
+2021/12/22-09:45:40.421 550b Compacted 1@1 + 1@2 files => 1246 bytes
+2021/12/22-09:45:40.422 550b compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/12/22-09:45:40.423 550b Delete type=2 #12
+2021/12/22-09:45:40.423 550b Delete type=2 #9
+2021/12/22-09:45:40.423 550b Manual compaction at level-1 from '\x00\x01\x01\x02\x01\x05\x00s\x00t\x00a\x00t\x00e' @ 1067 : 1 .. (end); will stop at (end)

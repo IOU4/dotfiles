@@ -1,0 +1,14 @@
+[2022-01-03 17:59:46.394] [exthost] [info] Extension host with pid 79804 started
+[2022-01-03 17:59:46.484] [exthost] [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
+[2022-01-03 17:59:46.501] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage:css'
+[2022-01-03 17:59:46.510] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-01-03 17:59:46.513] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-01-03 17:59:46.531] [exthost] [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: true, activationEvent: '*'
+[2022-01-03 17:59:46.823] [exthost] [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: true, activationEvent: '*'
+[2022-01-03 17:59:46.963] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-01-03 17:59:46.982] [exthost] [info] Eager extensions activated
+[2022-01-03 17:59:46.988] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-03 17:59:46.990] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-03 17:59:48.576] [exthost] [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
+[2022-01-03 18:00:15.425] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-01-03 18:00:16.436] [exthost] [info] Extension host with pid 79804 exiting with code 0

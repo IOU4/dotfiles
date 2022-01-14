@@ -1,0 +1,6 @@
+2021/12/15-13:40:51.880 20ed Creating DB /home/emadou/.config/microsoft-edge-beta/Default/IndexedDB/https_hackernoon.com_0.indexeddb.leveldb since it was missing.
+2021/12/15-13:40:51.896 20ed Reusing MANIFEST /home/emadou/.config/microsoft-edge-beta/Default/IndexedDB/https_hackernoon.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/12/15-13:57:18.142 2495 Level-0 table #5: started
+2021/12/15-13:57:18.144 2495 Level-0 table #5: 1149 bytes OK
+2021/12/15-13:57:18.147 2495 Delete type=0 #3
+2021/12/15-13:57:18.147 2495 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

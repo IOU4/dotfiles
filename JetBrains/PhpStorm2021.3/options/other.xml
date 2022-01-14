@@ -1,0 +1,39 @@
+<application>
+  <component name="DynamicPluginEnabler">
+    <trackers>
+      <map>
+        <entry key="23N3w34eeCMqfYEbVB2vBkAlyph">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+      </map>
+    </trackers>
+  </component>
+  <component name="NodeJsLocalInterpreters">
+    <local-interpreter path="/bin/node" />
+    <local-interpreter path="/sbin/node" />
+    <local-interpreter path="/usr/bin/node" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="CWM_LOGGING_VERSION" value="1" />
+    <property name="ExpandBeforeRunStepsPanel" value="true" />
+    <property name="NonModalCommitCustomization.IsApplied" value="true" />
+    <property name="PhpStorm.InitialConfiguration" value="true" />
+    <property name="appcds.runOnSecondStart" value="PS-213.6461.83-af3d2bb557626f52905da24794b99c36bf7b49c3f90198502fb78d9a7f819cb0" />
+    <property name="ask.about.ctrl.y.shortcut.v2" value="true" />
+    <property name="bundled.plugins.list.saved.version" value="PS-213.6461.83" />
+    <property name="evlsprt3.213" value="6" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/Work/php" />
+    <property name="file.gist.reindex.count" value="4" />
+    <property name="fileTypeChangedCounter" value="1" />
+    <property name="fileTypeDetectors" value="com.intellij.database.vfs.DbStorageFileType$Detector:com.intellij.docker.dockerFile.DockerFileTypeDetector:com.intellij.ide.scratch.ScratchFileServiceImpl$Detector:com.intellij.javascript.debugger.sourcemap.SourceMapFileType$MyFileTypeDetector:com.jetbrains.nodejs.util.NodeFileTypeDetector$JavaScriptFileTypeDetector:com.jetbrains.nodejs.util.NodeFileTypeDetector$TypeScriptFileTypeDetector:org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector" />
+    <property name="got.it.tooltip.cwm.invitation.notification" value="1" />
+    <property name="gotit.previous.run" value="PS-213.6461.83" />
+    <property name="ide.memory.adjusted" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Work/php" />
+    <property name="registry.to.advanced.settings.migration.build" value="PS-213.6461.83" />
+    <property name="tasks.pass.word.conversion.enforced" value="true" />
+    <property name="ts.lib.d.ts.version" value="4.4.4" />
+  </component>
+</application>

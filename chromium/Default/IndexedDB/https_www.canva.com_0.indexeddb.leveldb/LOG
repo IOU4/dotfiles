@@ -1,0 +1,7 @@
+2021/12/03-10:42:43.263 25de Reusing MANIFEST /home/emadou/.config/chromium/Default/IndexedDB/https_www.canva.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/12/03-10:42:43.263 25de Recovering log #3
+2021/12/03-10:42:43.263 25de Reusing old log /home/emadou/.config/chromium/Default/IndexedDB/https_www.canva.com_0.indexeddb.leveldb/000003.log 
+2021/12/03-12:25:06.952 3eda Level-0 table #5: started
+2021/12/03-12:25:06.953 3eda Level-0 table #5: 6015 bytes OK
+2021/12/03-12:25:06.955 3eda Delete type=0 #3
+2021/12/03-12:25:06.955 3eda Manual compaction at level-0 from (begin) .. (end); will stop at (end)

@@ -1,0 +1,6 @@
+2022/01/02-21:11:17.949 8a36 Reusing MANIFEST /home/emadou/.config/microsoft-edge-beta/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/01/02-21:11:17.949 8a36 Recovering log #7
+2022/01/02-21:11:17.957 8a36 Reusing old log /home/emadou/.config/microsoft-edge-beta/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000007.log 
+2022/01/02-21:11:34.111 8298 Level-0 table #12: started
+2022/01/02-21:11:34.123 8298 Level-0 table #12: 1813793 bytes OK
+2022/01/02-21:11:34.126 8298 Delete type=0 #7

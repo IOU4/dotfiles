@@ -1,0 +1,6 @@
+[DELL09A0:00 0488:121F Touchpad]
+naturalScroll=true
+pointerAcceleration=0.2
+scrollEdge=false
+scrollTwoFinger=true
+tapToClick=true

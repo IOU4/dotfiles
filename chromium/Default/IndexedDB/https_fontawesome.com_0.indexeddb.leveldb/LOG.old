@@ -1,0 +1,7 @@
+2021/12/02-17:01:54.929 bff Reusing MANIFEST /home/emadou/.config/chromium/Default/IndexedDB/https_fontawesome.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/12/02-17:01:54.929 bff Recovering log #3
+2021/12/02-17:01:54.930 bff Reusing old log /home/emadou/.config/chromium/Default/IndexedDB/https_fontawesome.com_0.indexeddb.leveldb/000003.log 
+2021/12/02-17:03:19.965 c15 Level-0 table #5: started
+2021/12/02-17:03:19.968 c15 Level-0 table #5: 14496 bytes OK
+2021/12/02-17:03:19.970 c15 Delete type=0 #3
+2021/12/02-17:03:19.971 c15 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

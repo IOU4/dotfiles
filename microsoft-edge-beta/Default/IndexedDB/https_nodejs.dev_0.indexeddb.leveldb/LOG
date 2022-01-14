@@ -1,0 +1,6 @@
+2022/01/03-11:41:25.401 ca48 Creating DB /home/emadou/.config/microsoft-edge-beta/Default/IndexedDB/https_nodejs.dev_0.indexeddb.leveldb since it was missing.
+2022/01/03-11:41:25.417 ca48 Reusing MANIFEST /home/emadou/.config/microsoft-edge-beta/Default/IndexedDB/https_nodejs.dev_0.indexeddb.leveldb/MANIFEST-000001
+2022/01/03-11:42:27.089 cdac Level-0 table #5: started
+2022/01/03-11:42:27.091 cdac Level-0 table #5: 13322 bytes OK
+2022/01/03-11:42:27.093 cdac Delete type=0 #3
+2022/01/03-11:42:27.094 cdac Manual compaction at level-0 from (begin) .. (end); will stop at (end)

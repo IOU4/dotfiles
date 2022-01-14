@@ -1,0 +1,30 @@
+[2021-12-29 20:37:20.210] [exthost] [info] Extension host with pid 5165 started
+[2021-12-29 20:37:20.318] [exthost] [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
+[2021-12-29 20:37:20.336] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage:css'
+[2021-12-29 20:37:20.342] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2021-12-29 20:37:20.345] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*', root cause: vscode.github
+[2021-12-29 20:37:20.365] [exthost] [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: true, activationEvent: '*'
+[2021-12-29 20:37:20.566] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2021-12-29 20:37:20.611] [exthost] [info] Eager extensions activated
+[2021-12-29 20:37:20.638] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2021-12-29 20:37:20.641] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+[2021-12-29 20:37:53.308] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:javascript'
+[2021-12-29 21:07:41.699] [exthost] [warning] TextEditor is closed/disposed
+[2021-12-29 21:07:41.699] [exthost] [warning] TextEditor is closed/disposed
+[2021-12-29 21:07:41.712] [exthost] [warning] {"name":"DISPOSED","message":"TextEditor(vs.editor.ICodeEditor:1,$model2) has been disposed"}
+[2021-12-29 21:07:46.335] [exthost] [warning] TextEditor is closed/disposed
+[2021-12-29 21:07:46.335] [exthost] [warning] TextEditor is closed/disposed
+[2021-12-29 21:07:46.344] [exthost] [warning] {"name":"DISPOSED","message":"TextEditor(vs.editor.ICodeEditor:1,$model1) has been disposed"}
+[2021-12-29 21:07:48.514] [exthost] [info] extension host terminating: renderer closed the socket
+[2021-12-29 21:07:48.797] [exthost] [error] TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 't'
+    |     property '_readableState' -> object with constructor 'C'
+    |     property 'pipes' -> object with constructor 'Array'
+    |     index 0 -> object with constructor 't.ConsoleForElectron'
+    --- property 'parent' closes the circle
+    at JSON.stringify (<anonymous>)
+    at async (/home/emadou/.vscode-oss/extensions/vscodevim.vim-1.21.10/src/register/register.ts:357:16)
+    at Object.e.deactivate (/home/emadou/.vscode-oss/extensions/vscodevim.vim-1.21.10/extension.ts:36:8)
+    at async Promise.all (index 8)
+    at w.deactivateAll (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:99:10023)
+[2021-12-29 21:07:49.529] [exthost] [info] Extension host with pid 5165 exiting with code 0

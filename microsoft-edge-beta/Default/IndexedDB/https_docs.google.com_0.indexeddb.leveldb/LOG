@@ -1,0 +1,15 @@
+2022/01/02-21:10:07.304 8807 Reusing MANIFEST /home/emadou/.config/microsoft-edge-beta/Default/IndexedDB/https_docs.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/01/02-21:10:07.304 8807 Recovering log #4
+2022/01/02-21:10:07.305 8807 Reusing old log /home/emadou/.config/microsoft-edge-beta/Default/IndexedDB/https_docs.google.com_0.indexeddb.leveldb/000004.log 
+2022/01/03-08:58:42.100 8be0 Level-0 table #8: started
+2022/01/03-08:58:42.105 8be0 Level-0 table #8: 333896 bytes OK
+2022/01/03-08:58:42.108 8be0 Delete type=0 #4
+2022/01/03-08:58:42.109 8be0 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2022/01/03-08:58:42.109 8be0 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x03\x02\x01%\x008\x00e\x00f\x008\x004\x008\x004\x006\x001\x009\x005\x00f\x000\x000\x00c\x00d\x005\x004\x009\x001\x007\x00d\x003\x00d\x000\x009\x00d\x00c\x00f\x006\x009\x00c\x00_\x006\x00:\x000\x000' @ 1604 : 1
+2022/01/03-08:58:42.109 8be0 Compacting 1@1 + 1@2 files
+2022/01/03-08:58:42.115 8be0 Generated table #9@1: 270 keys, 83941 bytes
+2022/01/03-08:58:42.115 8be0 Compacted 1@1 + 1@2 files => 83941 bytes
+2022/01/03-08:58:42.117 8be0 compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/01/03-08:58:42.117 8be0 Delete type=2 #8
+2022/01/03-08:58:42.117 8be0 Delete type=2 #5
+2022/01/03-08:58:42.117 8be0 Manual compaction at level-1 from '\x00\x01\x03\x02\x01%\x008\x00e\x00f\x008\x004\x008\x004\x006\x001\x009\x005\x00f\x000\x000\x00c\x00d\x005\x004\x009\x001\x007\x00d\x003\x00d\x000\x009\x00d\x00c\x00f\x006\x009\x00c\x00_\x006\x00:\x000\x000' @ 1604 : 1 .. (end); will stop at (end)

@@ -1,0 +1,18 @@
+2022/01/13-19:19:01.680 1a58 Reusing MANIFEST /home/emadou/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2022/01/13-19:19:01.680 1a58 Recovering log #66
+2022/01/13-19:19:01.680 1a58 Reusing old log /home/emadou/.config/discord/Local Storage/leveldb/000066.log 
+2022/01/13-19:51:03.652 1a79 Level-0 table #70: started
+2022/01/13-19:51:03.666 1a79 Level-0 table #70: 15824 bytes OK
+2022/01/13-19:51:03.669 1a79 Delete type=0 #66
+2022/01/13-19:51:03.669 1a79 Compacting 4@0 + 1@1 files
+2022/01/13-19:51:03.675 1a79 Generated table #71@0: 113 keys, 163658 bytes
+2022/01/13-19:51:03.675 1a79 Compacted 4@0 + 1@1 files => 163658 bytes
+2022/01/13-19:51:03.676 1a79 compacted to: files[ 0 1 1 0 0 0 0 ]
+2022/01/13-19:51:03.677 1a79 Delete type=2 #65
+2022/01/13-19:51:03.677 1a79 Delete type=2 #59
+2022/01/13-19:51:03.677 1a79 Delete type=2 #67
+2022/01/13-19:51:03.677 1a79 Delete type=2 #70
+2022/01/13-19:51:03.677 1a79 Delete type=2 #62
+2022/01/13-21:13:10.883 1a79 Level-0 table #73: started
+2022/01/13-21:13:10.897 1a79 Level-0 table #73: 12522 bytes OK
+2022/01/13-21:13:10.899 1a79 Delete type=0 #69

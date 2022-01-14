@@ -1,0 +1,8 @@
+{
+    "workbench.colorTheme": "Tokyo Night",
+    "editor.fontFamily": "'JetBrains Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.tabSize": 2,
+    "keyboard.dispatch": "keyCode",
+    "editor.lineNumbers": "relative",
+    "window.menuBarVisibility": "toggle"
+}

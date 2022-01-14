@@ -1,0 +1,6 @@
+2021/12/02-19:27:04.820 186b Reusing MANIFEST /home/emadou/.config/chromium/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/12/02-19:27:04.820 186b Recovering log #4
+2021/12/02-19:27:04.833 186b Reusing old log /home/emadou/.config/chromium/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000004.log 
+2021/12/02-19:27:28.411 186b Level-0 table #8: started
+2021/12/02-19:27:28.426 186b Level-0 table #8: 1857755 bytes OK
+2021/12/02-19:27:28.429 186b Delete type=0 #4

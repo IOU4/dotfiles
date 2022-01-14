@@ -1,0 +1,9 @@
+2022/01/13-08:51:45.840 31a Reusing MANIFEST /home/emadou/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2022/01/13-08:51:45.840 31a Recovering log #61
+2022/01/13-08:51:45.840 31a Reusing old log /home/emadou/.config/discord/Local Storage/leveldb/000061.log 
+2022/01/13-08:52:48.247 31a Level-0 table #65: started
+2022/01/13-08:52:48.255 31a Level-0 table #65: 147500 bytes OK
+2022/01/13-08:52:48.257 31a Delete type=0 #61
+2022/01/13-15:04:57.656 345 Level-0 table #67: started
+2022/01/13-15:04:57.665 345 Level-0 table #67: 19305 bytes OK
+2022/01/13-15:04:57.667 345 Delete type=0 #64

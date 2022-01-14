@@ -1,0 +1,6 @@
+2021/12/06-18:27:58.495 5bcc Creating DB /home/emadou/.config/microsoft-edge-beta/Default/IndexedDB/https_www.elegantthemes.com_0.indexeddb.leveldb since it was missing.
+2021/12/06-18:27:58.503 5bcc Reusing MANIFEST /home/emadou/.config/microsoft-edge-beta/Default/IndexedDB/https_www.elegantthemes.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/12/06-18:28:11.842 5e1c Level-0 table #5: started
+2021/12/06-18:28:11.845 5e1c Level-0 table #5: 6052 bytes OK
+2021/12/06-18:28:11.847 5e1c Delete type=0 #3
+2021/12/06-18:28:11.847 5e1c Manual compaction at level-0 from (begin) .. (end); will stop at (end)

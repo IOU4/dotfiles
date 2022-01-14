@@ -1,0 +1,6 @@
+2021/12/15-11:36:28.353 1923 Creating DB /home/emadou/.config/microsoft-edge-beta/Default/IndexedDB/https_donotpay.com_0.indexeddb.leveldb since it was missing.
+2021/12/15-11:36:28.360 1923 Reusing MANIFEST /home/emadou/.config/microsoft-edge-beta/Default/IndexedDB/https_donotpay.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/12/15-11:37:04.171 1529 Level-0 table #5: started
+2021/12/15-11:37:04.173 1529 Level-0 table #5: 1643 bytes OK
+2021/12/15-11:37:04.176 1529 Delete type=0 #3
+2021/12/15-11:37:04.176 1529 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

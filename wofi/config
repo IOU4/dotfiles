@@ -1,0 +1,15 @@
+# vim:ft=conf
+mode=drun
+width=15%
+height=40%
+prompt=run...
+location=center
+no_actions=false
+columns=2
+hide_search=false
+allow_images=true
+hide_scroll=true
+image_size=20
+insensitive=true
+term=alacritty
+normal_window=false

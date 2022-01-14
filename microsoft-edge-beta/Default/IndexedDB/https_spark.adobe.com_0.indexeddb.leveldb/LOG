@@ -1,0 +1,7 @@
+2021/12/12-21:40:47.690 4a9e Reusing MANIFEST /home/emadou/.config/microsoft-edge-beta/Default/IndexedDB/https_spark.adobe.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/12/12-21:40:47.690 4a9e Recovering log #3
+2021/12/12-21:40:47.690 4a9e Reusing old log /home/emadou/.config/microsoft-edge-beta/Default/IndexedDB/https_spark.adobe.com_0.indexeddb.leveldb/000003.log 
+2021/12/13-09:07:18.479 5555 Level-0 table #5: started
+2021/12/13-09:07:18.480 5555 Level-0 table #5: 6918 bytes OK
+2021/12/13-09:07:18.482 5555 Delete type=0 #3
+2021/12/13-09:07:18.482 5555 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

@@ -1,0 +1,100 @@
+{
+   "checksum": "03ac6237babfaa4f576e84029aa09cba",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13251373247541952",
+            "guid": "549e68a2-3712-4056-aeba-bb218271931b",
+            "id": "5",
+            "name": "Gmail",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://mail.google.com/mail/u/0/"
+         }, {
+            "date_added": "13251373159156821",
+            "guid": "02996782-a07e-4ac5-8fdc-d37b7bfe455f",
+            "id": "6",
+            "name": "GitHub",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://github.com/"
+         }, {
+            "date_added": "13251373226453207",
+            "guid": "b898590f-fa22-424d-9538-28d7eeac1b10",
+            "id": "7",
+            "name": "freeCodeCamp",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.freecodecamp.org/learn/?messages=success%5B0%5D%3DSuccess%2521%2520You%2520have%2520signed%2520in%2520to%2520your%2520account.%2520Happy%2520Coding%2521"
+         }, {
+            "date_added": "13251373256733233",
+            "guid": "89d038af-7b3e-41c0-94ba-d504a044f249",
+            "id": "8",
+            "name": "YouTube",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.youtube.com/"
+         }, {
+            "date_added": "13251373051827909",
+            "guid": "04eddea8-840b-441c-a383-92bd97122385",
+            "id": "9",
+            "name": "LeetCode",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://leetcode.com/"
+         }, {
+            "date_added": "13283337991832211",
+            "guid": "d7b7bb05-6668-4edb-8c32-edb6f6ffd353",
+            "id": "11",
+            "name": "1.-Environment setup",
+            "show_icon": false,
+            "source": "user_add",
+            "type": "url",
+            "url": "http://www.jamesmolloy.co.uk/tutorial_html/1.-Environment%20setup.html"
+         }, {
+            "date_added": "13284159322878947",
+            "guid": "9eb646b5-8d4d-49ec-b200-4e1a6207fbf8",
+            "id": "13",
+            "name": "Icons | Font Awesome v6 Beta",
+            "show_icon": false,
+            "source": "user_add",
+            "type": "url",
+            "url": "https://fontawesome.com/v6.0/icons?m=free"
+         } ],
+         "date_added": "13283112096401847",
+         "date_modified": "13284159322878947",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Favorites bar",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13283112096401850",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other favorites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13283112096401855",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile favorites",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "Ci4KDgiIgQISCEZaasd9AQAAEgAgASoYZ3p2ZnBDSzF1SjVrUW80RVFyenFNUT09EqgBCAkSowEKHFI3dStPdXg3L1BHNGdTZ0RCU3QvSEZQVkVjWT0SJDZhZWViMjZjLTRjMzUtNGFiYS05OTljLWM0MjMwOGY2YWQyZhgAIAIoAjDpx+Oz2C84tI+vleIuQPHE47PYL0ocRU51aFZBZzFHb0NwSjZrWWw2MG5meHEzWXg0PVofIh32ZVpya0hyRFUxbHBNWHFUTEpaeSt0cWE1U0hFPWXQ5feJEqgBCAgSowEKHHVmTlQwcEtTZlRZWWRRSmJoNndzZ0ViQUdPMD0SJGQ2OTZmNWQ4LWQyNTAtNDAxYy1hYTE3LTdmNGQyODM3NDEwMxgAIAIoAjDpx+Oz2C84ndC7leIuQPDE47PYL0ocQzlrK0cxR1k2VXdvb0RmeW5jekljZEk3OW9rPVofIh3tSFFRLzQxUFpPQjRJaWJUeHhJNGUrRGVwUktVPWU4+TkzEqcBCAYSogEKHDFpQkl6czgrbWxLMmVXcVRpVDNsYTVudG4wbz0SJGQxZWQ4NGEyLTc5NzUtNGI4Ni1iYzI2LWVkNzMxM2NkMzQ2ZhgAIAIoAjDpx+Oz2C849dW1leIuQPDE47PYL0ocSUpIUmpZZ1p3S0lCOWRQNHpLSHZDelpZa25NPVoeIhxqUnFtRTZpSU5QUkMzeTYzSklyVU0rOEUzdzg9ZQgMSi4SqAEICxKjAQocSkFOSTE4N2luUnAwblg2QVdkaE9lVHhzOFI4PRIkZDdiN2JiMDUtNjY2OC00ZWRiLThjMzItZWRiNmY2ZmZkMzUzGAAgASgBMIKluJ/ZLzianbif2S9Amp24n9kvShxRSFZxeksrT1I4VnowaGdSRTVISTlSRG1oYVE9Wh8iHft4K2lJWTBza2d6aTlMNnp0a1VxU3dhWGRScDA9ZQAAAAASiQEIAhKEAQocWWNTVG9udkVTUHdxQ3M0TDJjclZodjY4TDk4PRIkMzlhN2YwZTEtMjcxZS01ZmNiLWJmOGYtYTA3YzIwZWIyZmQyGAAgACgAMNSljbW/LjiHpI21vy5Ah6SNtb8uShxvUFZraHdCUmJWNjVLQ1dSMitJT05IV29PdTg9WgBlAAAAABKJAQgDEoQBChxuamdEdTg4ZUNydlhwODZwRDdmSEdjcUZwODg9EiQxNDk3YWYwMS1hN2Q4LTVkMGEtODYxNS0zOWRmOTg3ZjMyMGYYACAAKAAw2KWNtb8uOIekjbW/LkCHpI21vy5KHHl6TkIwMWNuNTRBN2NSVTB1VCsvUGdtVHRVbz1aAGUAAAAAEqgBCAcSowEKHG0vUElqMlI3bVlTMVRKK0pvNUIwRnp1SkIxUT0SJGFhODgzNjM1LWM1MzctNGY4NC1iNDcwLTExY2FlMDI5MWYxZRgAIAMoAzDHqLT72i841eO5leIuQKChtPvaL0ocRC9HdnliUmlhODNqT3ZwM3dhVjUwSFMwSzNBPVofIh21VTc3WXNDSnZXL1BDcytYdHpSR211ZkdmYjU0PWV3iSLtEqgBCA0SowEKHEpzVnNjNU1mbGg5Q3BobGx0RFNsUlp6VStYUT0SJDllYjY0NmI1LThkNGQtNDllYy1iMjAwLTRlMWE2MjA3ZmJmOBgAIAIoAjDFqIqn3C84gqaKp9wvQIqmiqfcL0ocOWlPdnV3WW1FTDVoeDJhUWpFMUJFWjZZSE1JPVofIh39Y0NrVk1lejZWL3Exd1I2QTk1cDVxTGVLckZVPWUzZ0d6EokBCAEShAEKHHl4Si82ZnZrZWNyN2twNUVRekI0dFdMcGRiRT0SJDZjNGI0MWQwLTVkYTYtNTYyNC05OTVjLWQzYmQzYjVlMTA5MRgAIAAoADDTpY21vy44h6SNtb8uQIekjbW/LkocYVJDV0xnaEY5YjVJbnFLSUR2dUovanZRa0ZjPVoAZQAAAAASpwEIBRKiAQocdjJhM1Uyd1RGaXQxa3V6djZmTCtuSGFSdXpZPRIkZWYzMjRhZjctMTUyZC00OWFhLWExZWEtYTg2N2M2ZTRlYTkxGAAgAigCMOnH47PYLzi3iLuV4i5A78Tjs9gvShxUQWpVU1lEZHNNbE1wdHArcWl1S1Y1c2U1SGs9Wh4iHFEzNXdORHZPbTBhclJxRlFCNEF6QmdZUEd3MD1li6CM0SC/zam73C8wAA==",
+   "version": 1
+}

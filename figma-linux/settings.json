@@ -1,0 +1,48 @@
+{
+  "clientId": "f006c7d3-3d84-4e18-9d5b-1505d46a1826",
+  "userId": "1047450968261646162",
+  "authedUserIDs": [
+    "1047450968261646162"
+  ],
+  "app": {
+    "logLevel": 1,
+    "enableColorSpaceSrgb": false,
+    "visibleNewProjectBtn": true,
+    "useZenity": false,
+    "panelHeight": 40,
+    "saveLastOpenedTabs": true,
+    "exportDir": "/home/emadou/Pictures/Figma",
+    "fontDirs": [
+      "/usr/share/fonts",
+      "/usr/local/share/fonts",
+      "/run/host/fonts",
+      "/run/host/user-fonts",
+      "/home/emadou/.local/share/fonts"
+    ],
+    "lastOpenedTabs": [
+      {
+        "title": "framewiring + mockup",
+        "url": "https://www.figma.com/file/YtqfG1iyTjLHCiNSN2l0sd/framewiring-%2B-mockup"
+      },
+      {
+        "title": "booking page",
+        "url": "https://www.figma.com/file/DwgjXJfAU1I4TYLlznwl3y/booking-page?node-id=0%3A1"
+      },
+      {
+        "title": "Recent Files",
+        "url": "https://www.figma.com/files/recent"
+      }
+    ],
+    "featureFlags": {
+      "paste_to_replace": true,
+      "voice_captions_enabled": true,
+      "comments_on_the_canvas": true
+    },
+    "savedExtensions": []
+  },
+  "theme": {},
+  "ui": {
+    "scalePanel": 1,
+    "scaleFigmaUI": 1
+  }
+}

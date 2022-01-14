@@ -1,0 +1,10 @@
+[2022-01-13 14:05:45.154] [exthost] [info] Extension host with pid 19330 started
+[2022-01-13 14:05:45.198] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-01-13 14:05:45.200] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-01-13 14:05:45.215] [exthost] [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: true, activationEvent: '*'
+[2022-01-13 14:05:45.316] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-01-13 14:05:45.333] [exthost] [info] Eager extensions activated
+[2022-01-13 14:05:45.334] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-13 14:05:45.336] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-13 14:05:46.183] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-01-13 14:05:47.189] [exthost] [info] Extension host with pid 19330 exiting with code 0

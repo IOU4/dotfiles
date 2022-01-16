@@ -1,0 +1,10 @@
+[2022-01-16 11:03:59.329] [exthost] [info] Extension host with pid 984 started
+[2022-01-16 11:03:59.369] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-01-16 11:03:59.372] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-01-16 11:03:59.388] [exthost] [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: true, activationEvent: '*'
+[2022-01-16 11:03:59.530] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-01-16 11:03:59.554] [exthost] [info] Eager extensions activated
+[2022-01-16 11:03:59.559] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-16 11:03:59.563] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-16 11:55:14.616] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-01-16 11:55:15.626] [exthost] [info] Extension host with pid 984 exiting with code 0

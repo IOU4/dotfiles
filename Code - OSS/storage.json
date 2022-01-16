@@ -9,6 +9,12 @@
                 "folderUri": "file:///home/emadou/gits/HTML5"
             },
             {
+                "fileUri": "file:///tmp/mozilla_emadou0/alacritty-1.yml"
+            },
+            {
+                "fileUri": "file:///tmp/mozilla_emadou0/alacritty.yml"
+            },
+            {
                 "fileUri": "file:///home/emadou/.config/swaylock/config"
             },
             {
@@ -95,6 +101,28 @@
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///tmp/mozilla_emadou0/alacritty-1.yml",
+                                        "path": "/tmp/mozilla_emadou0/alacritty-1.yml",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/tmp/mozilla_emadou0/alacritty-1.yml"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///tmp/mozilla_emadou0/alacritty.yml",
+                                        "path": "/tmp/mozilla_emadou0/alacritty.yml",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/tmp/mozilla_emadou0/alacritty.yml"
                                 },
                                 {
                                     "id": "openRecentFile",

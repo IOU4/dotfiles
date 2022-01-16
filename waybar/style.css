@@ -1,26 +1,19 @@
 * {
     font-family: "JetBrains Mono","Symbols Nerd Font", "Font Awesome 5 Free";
-    color: white;
 }
 
 window#waybar {
-    background: rgba(26, 27, 38, 0);
-    color: #1a1b26;
-    opacity: 1;
-    transition-property: background-color;
-    transition-duration: .3s;
+    background: transparent;
 }
 
-/* Workspaces */
 #workspaces button {
     font-size: 20px;
-    border: none;
-    border-radius: 0px;
-    margin: 0 0 10px;
+    border-radius: 5px;
 }
+
 #workspaces button.urgent {
     border-left : 4px solid red;
-    color : red;
+    color: red;
 }
 
 #workspaces button:hover {
@@ -30,7 +23,6 @@ window#waybar {
 
 #workspaces button.focused {
     border-left : 4px solid white;
-    border-radius: 5px;
 }
 
 #battery,

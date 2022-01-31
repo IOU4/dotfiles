@@ -1,0 +1,7 @@
+[Info  - 8:38:56 PM] Jan 26, 2022 08:38:56 org.eclipse.lemminx.XMLLanguageServer initialize()
+Message: Initializing XML Language server
+LemMinX Server info:
+ - Version : 0.18.2
+ - Java : /usr/lib/jvm/java-11-openjdk
+ - VM Version : 11.0.13
+ - Git 7d0b2f7 - [maven-release-plugin] prepare release 0.18.2

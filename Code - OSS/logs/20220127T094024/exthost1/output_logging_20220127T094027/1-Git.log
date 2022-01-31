@@ -1,0 +1,28 @@
+Validating found git in: git
+Using git 2.34.1 from git
+> git rev-parse --git-dir
+Open repository: /home/emadou/Work/CabinetRahbani
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :web_site/src/components/home/home.php
+> git ls-files --stage -- /home/emadou/Work/CabinetRahbani/web_site/src/components/home/home.php
+> git cat-file -s e73bfd820850f62335b1c0d41df4fa9b576d29cb
+> git check-ignore -v -z --stdin
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- /home/emadou/Work/CabinetRahbani/web_site/src/components/home/home.php
+> git show --textconv :web_site/dashboard.php
+> git ls-files --stage -- /home/emadou/Work/CabinetRahbani/web_site/dashboard.php
+> git cat-file -s 06bf7308d455b23bc9f9b40fac00c19ac953b108
+> git show --textconv :web_site/index.php
+> git ls-files --stage -- /home/emadou/Work/CabinetRahbani/web_site/index.php
+> git cat-file -s cf20b75ee96cbcc6c59a40ecb4bc3a61ac937754
+> git show --textconv :web_site/dashboard.php
+> git ls-files --stage -- /home/emadou/Work/CabinetRahbani/web_site/dashboard.php
+> git cat-file -s 06bf7308d455b23bc9f9b40fac00c19ac953b108
+> git check-ignore -v -z --stdin
+> git show --textconv :web_site/database/conn.php
+> git ls-files --stage -- /home/emadou/Work/CabinetRahbani/web_site/database/conn.php
+> git cat-file -s b4bab735c0826981aa06f76c1594f96dda7a8212

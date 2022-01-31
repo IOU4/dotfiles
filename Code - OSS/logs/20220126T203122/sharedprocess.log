@@ -1,0 +1,12 @@
+[2022-01-26 20:31:36.691] [sharedprocess] [info] Installing extension: ritwickdey.liveserver
+[2022-01-26 20:32:23.251] [sharedprocess] [info] Downloaded extension: ritwickdey.liveserver /home/emadou/.config/Code - OSS/CachedExtensionVSIXs/ritwickdey.liveserver-5.7.4
+[2022-01-26 20:32:24.046] [sharedprocess] [info] Extracted extension to /home/emadou/.vscode-oss/extensions/.a96a61b1-5b27-4721-9f73-aaeb95a33aa4: ritwickdey.liveserver
+[2022-01-26 20:32:24.056] [sharedprocess] [info] Renamed to /home/emadou/.vscode-oss/extensions/ritwickdey.liveserver-5.7.4
+[2022-01-26 20:32:24.057] [sharedprocess] [info] Extracting completed. ritwickdey.liveserver
+[2022-01-26 20:32:24.060] [sharedprocess] [info] Extension installed successfully: ritwickdey.liveserver
+[2022-01-26 20:37:25.162] [sharedprocess] [info] Installing extension: redhat.vscode-xml
+[2022-01-26 20:38:55.283] [sharedprocess] [info] Downloaded extension: redhat.vscode-xml /home/emadou/.config/Code - OSS/CachedExtensionVSIXs/redhat.vscode-xml-0.18.2
+[2022-01-26 20:38:55.498] [sharedprocess] [info] Extracted extension to /home/emadou/.vscode-oss/extensions/.a2950f93-4cef-429e-9201-e6cb76bd93a8: redhat.vscode-xml
+[2022-01-26 20:38:55.504] [sharedprocess] [info] Renamed to /home/emadou/.vscode-oss/extensions/redhat.vscode-xml-0.18.2
+[2022-01-26 20:38:55.505] [sharedprocess] [info] Extracting completed. redhat.vscode-xml
+[2022-01-26 20:38:55.506] [sharedprocess] [info] Extension installed successfully: redhat.vscode-xml

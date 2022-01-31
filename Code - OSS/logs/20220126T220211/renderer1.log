@@ -1,0 +1,22 @@
+[2022-01-26 22:02:12.980] [renderer1] [info] Starting extension host with pid 68391.
+[2022-01-26 22:02:12.981] [renderer1] [info] [LocalProcessExtensionHost]: IExtensionHostStarter.start() took 21 ms.
+[2022-01-26 22:02:13.332] [renderer1] [error] [Extension Host] (node:68391) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `electron --trace-deprecation ...` to show where the warning was created)
+[2022-01-26 22:02:18.256] [renderer1] [error] Unable to read file '/home/emadou/Work/CabinetRahbani/webapp/index.php' (Error: Unable to resolve nonexistent file '/home/emadou/Work/CabinetRahbani/webapp/index.php'): Error: Unable to read file '/home/emadou/Work/CabinetRahbani/webapp/index.php' (Error: Unable to resolve nonexistent file '/home/emadou/Work/CabinetRahbani/webapp/index.php')
+    at yi.doReadFileStream (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:602:27791)
+    at async f.doRead (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2388:42320)
+    at async f.readStream (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2388:42041)
+    at async tn.resolveFromFile (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2377:98223)
+[2022-01-26 22:02:23.007] [renderer1] [error] Unable to read file '/home/emadou/Work/CabinetRahbani/webapp/database/action.php' (Error: Unable to resolve nonexistent file '/home/emadou/Work/CabinetRahbani/webapp/database/action.php'): Error: Unable to read file '/home/emadou/Work/CabinetRahbani/webapp/database/action.php' (Error: Unable to resolve nonexistent file '/home/emadou/Work/CabinetRahbani/webapp/database/action.php')
+    at yi.doReadFileStream (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:602:27791)
+    at async f.doRead (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2388:42320)
+    at async f.readStream (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2388:42041)
+    at async tn.resolveFromFile (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2377:98223)
+[2022-01-26 22:02:41.626] [renderer1] [error] [Extension Host] Loaded config default.
+
+[2022-01-26 22:02:46.471] [renderer1] [error] [Extension Host] Loaded config default.
+
+[2022-01-26 22:04:19.234] [renderer1] [error] [Extension Host] Loaded config default.
+
+[2022-01-26 22:04:59.428] [renderer1] [error] [Extension Host] Loaded config default.
+

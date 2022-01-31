@@ -17,7 +17,9 @@ set $primary #11121d
 set $secondary #c0caf5
 set $urgent #ff2a2a
 
-output * bg ~/Pictures/pexels-taryn-elliott-3889761.jpg fill
+# output * bg ~/Pictures/pexels-taryn-elliott-3889761.jpg fill
+set $wallpapers_path $HOME/Pictures/wallpapers
+output * bg `find $wallpapers_path -type f | shuf -n 1` fill
 
 set $laptop eDP-1
 
@@ -54,7 +56,7 @@ floating_modifier $mod normal
 bindsym $mod+Shift+c reload
 
 # Exit sway (logs you out of your Wayland session)
-# bindsym $mod+Shift+e exec swaynag -t customn -m 'power menu' -b '   log out' 'swaymsg exit' -b '⏻   shut down' 'shutdown now' -b '     reboot' 'reboot' -b '       suspend' 'systemctl suspend' -b '     hibernate' 'systemctl hibernate' -b '      lock' 'swaylock -f'
+# (switch to wofi) bindsym $mod+Shift+e exec swaynag -t customn -m 'power menu' -b '   log out' 'swaymsg exit' -b '⏻   shut down' 'shutdown now' -b '     reboot' 'reboot' -b '       suspend' 'systemctl suspend' -b '     hibernate' 'systemctl hibernate' -b '      lock' 'swaylock -f'
 bindsym $mod+Shift+e exec ~/.config/sway/powerctrl.sh
 
 # Move your focus around
@@ -156,6 +158,9 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 bar {
     swaybar_command waybar
+    mode hide
+    hidden_state hide
+    modifier $mod+Shift
     #position top
     #font pango:Fantasque Sans Mono Nerd Font 12
     ## height 24
@@ -186,10 +191,10 @@ client.focused $secondary $secondary $primary
 client.unfocused $primary $primary $secondary 
 client.focused_inactive $primary $primary $secondary  
 # audio-keys
-bindsym XF86AudioRaiseVolume exec amixer set Master 5%+
-bindsym XF86AudioLowerVolume exec amixer set Master 5%-
-bindsym XF86AudioMute exec amixer set Master 1+ toggle
-bindsym XF86AudioMicMute exec amixer set Capture toggle
+bindsym XF86AudioRaiseVolume exec pamixer -i 5 # increase
+bindsym XF86AudioLowerVolume exec pamixer -d 5 # decrease
+bindsym XF86AudioMute exec pamixer -t # toggle mute
+bindsym XF86AudioMicMute exec pamixer --source 219 -t # toggle mic
 
 # brightness-keys
 bindsym XF86MonBrightnessUp exec light -A 5
@@ -198,18 +203,18 @@ bindsym XF86MonBrightnessDown exec light -U 5
 # apps-shortcuts
 bindsym $mod+c exec $browser
 bindsym $mod+Return exec $term
-bindsym $mod+d exec $menu
+bindsym $mod+Shift+Return exec $menu
 bindsym $mod+n exec $term -e $files
 
 # gaps
 # gaps inner 4
 # gaps outer 4
+smart_borders no_gaps
 
 # titles
-font pango:Iosevka
-for_window [title="."] title_format "%title | %app_id | %class"
+font pango:FantasqueSansMono 13
+for_window [title="."] title_format "title=%title | app_id=%app_id | class=%class"
 title_align center
-titlebar_padding 120 1
 
 # sorkspace-assignments
 assign [class = "(Chromium)|(Microsoft-edge-beta)"] $ws2
@@ -218,10 +223,12 @@ assign [class = "Rhytmbox"] $ws3
 for_window [class = "Spotify|discord"] move to workspace number $ws3
 for_window [class = "scrcpy|XEyes"] floating enabled
 for_window [app_id = "qemu"] floating enabled
-for_window [title = "DevTools*|Developer Tools*|Picture-in-Picture|Firefox/ -/ Sharing/ Indicator*"] floating enabled
+for_window [title = "DevTools*|Developer Tools*|Picture-in-Picture|Sharing Indicator.*"] floating enabled
 focus_follows_mouse yes
 
 
 # auto-exectution
 exec nm-applet --indicator
 exec mako
+# pipewire
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway

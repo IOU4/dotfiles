@@ -3,13 +3,22 @@
     "openedPathsList": {
         "entries": [
             {
+                "folderUri": "file:///home/emadou/Work/CabinetRahbani"
+            },
+            {
+                "folderUri": "file:///home/emadou/Work/CabinetRahbani/front-end"
+            },
+            {
                 "folderUri": "file:///home/emadou/Downloads/brief2/BriefRestaurant"
             },
             {
                 "folderUri": "file:///home/emadou/gits/HTML5"
             },
             {
-                "fileUri": "file:///tmp/mozilla_emadou0/alacritty-1.yml"
+                "fileUri": "file:///home/emadou/Downloads/instagram.svg"
+            },
+            {
+                "fileUri": "file:///home/emadou/Work/CabinetRahbani/index.html"
             },
             {
                 "fileUri": "file:///tmp/mozilla_emadou0/alacritty.yml"
@@ -81,6 +90,29 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
+                                        "fsPath": "/home/emadou/Work/CabinetRahbani",
+                                        "external": "file:///home/emadou/Work/CabinetRahbani",
+                                        "path": "/home/emadou/Work/CabinetRahbani",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Work/CabinetRahbani"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/emadou/Work/CabinetRahbani/front-end",
+                                        "path": "/home/emadou/Work/CabinetRahbani/front-end",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Work/CabinetRahbani/front-end"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///home/emadou/Downloads/brief2/BriefRestaurant",
                                         "path": "/home/emadou/Downloads/brief2/BriefRestaurant",
                                         "scheme": "file"
@@ -106,12 +138,23 @@
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///tmp/mozilla_emadou0/alacritty-1.yml",
-                                        "path": "/tmp/mozilla_emadou0/alacritty-1.yml",
+                                        "external": "file:///home/emadou/Downloads/instagram.svg",
+                                        "path": "/home/emadou/Downloads/instagram.svg",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "/tmp/mozilla_emadou0/alacritty-1.yml"
+                                    "label": "~/Downloads/instagram.svg"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/emadou/Work/CabinetRahbani/index.html",
+                                        "path": "/home/emadou/Work/CabinetRahbani/index.html",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Work/CabinetRahbani/index.html"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -246,7 +289,8 @@
                     },
                     {
                         "id": "saveAll",
-                        "label": "Save A&&ll"
+                        "label": "Save A&&ll",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -322,6 +366,10 @@
                     {
                         "id": "workbench.action.closeActiveEditor",
                         "label": "&&Close Editor"
+                    },
+                    {
+                        "id": "workbench.action.closeFolder",
+                        "label": "Close &&Folder"
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -543,7 +591,7 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarPosition",
-                                    "label": "&&Move Side Bar Right"
+                                    "label": "&&Move Side Bar Left"
                                 },
                                 {
                                     "id": "workbench.action.positionPanelLeft",
@@ -1222,6 +1270,11 @@
                 "label": "Ctrl+W",
                 "userSettingsLabel": "ctrl+w"
             },
+            "workbench.action.closeFolder": {
+                "label": "Ctrl+K F",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+k f"
+            },
             "workbench.action.closeWindow": {
                 "label": "Alt+F4",
                 "userSettingsLabel": "alt+f4"
@@ -1604,7 +1657,7 @@
             "windowBorder": "#0d0f17"
         },
         "layoutInfo": {
-            "sideBarSide": "left",
+            "sideBarSide": "right",
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
             "activityBarWidth": 48,
@@ -1615,7 +1668,8 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "backupPath": "/home/emadou/.config/Code - OSS/Backups/1641389278937",
+            "folder": "file:///home/emadou/Work/CabinetRahbani",
+            "backupPath": "/home/emadou/.config/Code - OSS/Backups/358ffae352a400ff31bb873b47fb1852",
             "uiState": {
                 "mode": 0,
                 "x": 448,
@@ -1626,5 +1680,5 @@
         },
         "openedWindows": []
     },
-    "pickerWorkingDir": "/home/emadou/Downloads/brief2"
+    "pickerWorkingDir": "/home/emadou/Downloads"
 }

@@ -1,8 +1,0 @@
-[2022-01-16 11:01:08.129] [exthost] [info] Extension host with pid 114300 started
-[2022-01-16 11:01:08.179] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
-[2022-01-16 11:01:08.186] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*', root cause: vscode.github
-[2022-01-16 11:01:08.256] [exthost] [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: true, activationEvent: '*'
-[2022-01-16 11:01:08.427] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
-[2022-01-16 11:01:08.447] [exthost] [info] Eager extensions activated
-[2022-01-16 11:01:08.450] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
-[2022-01-16 11:01:08.456] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'

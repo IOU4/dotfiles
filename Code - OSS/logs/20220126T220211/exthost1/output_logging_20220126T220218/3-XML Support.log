@@ -1,0 +1,9 @@
+[Info  - 10:02:18 PM] Jan 26, 2022 10:02:18 org.eclipse.lemminx.XMLLanguageServer initialize()
+Message: Initializing XML Language server
+LemMinX Server info:
+ - Version : 0.18.2
+ - Java : /usr/lib/jvm/java-11-openjdk
+ - VM Version : 11.0.13
+ - Git 7d0b2f7 - [maven-release-plugin] prepare release 0.18.2
+[Warn  - 10:02:20 PM] Jan 26, 2022 10:02:20 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation()
+Message: Unmatched cancel notification for request id 6

@@ -1,0 +1,14 @@
+[2022-01-22 11:36:27.338] [exthost] [info] Extension host with pid 144321 started
+[2022-01-22 11:36:27.338] [exthost] [info] Skipping acquiring lock for /home/emadou/.config/Code - OSS/User/workspaceStorage/97732c9df7cc1f68d9ae1c63e69d286c.
+[2022-01-22 11:36:27.396] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage:php'
+[2022-01-22 11:36:27.404] [exthost] [info] ExtensionService#_doActivateExtension vscode.php-language-features, startup: false, activationEvent: 'onLanguage:php'
+[2022-01-22 11:36:27.412] [exthost] [info] ExtensionService#_doActivateExtension junstyle.php-cs-fixer, startup: false, activationEvent: 'onLanguage:php'
+[2022-01-22 11:36:27.539] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-01-22 11:36:27.541] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-01-22 11:36:27.558] [exthost] [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: true, activationEvent: '*'
+[2022-01-22 11:36:27.717] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-01-22 11:36:27.780] [exthost] [info] Eager extensions activated
+[2022-01-22 11:36:27.786] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-22 11:36:27.788] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-22 11:38:12.925] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-01-22 11:38:13.936] [exthost] [info] Extension host with pid 144321 exiting with code 0

@@ -1,3 +1,5 @@
 {
-  "key": "b8b3c74b7765cb02d9f71a0b4304dad4cdc1789252097a23b23065f18baf540c"
+  "key": "b8b3c74b7765cb02d9f71a0b4304dad4cdc1789252097a23b23065f18baf540c",
+  "mediaPermissions": true,
+  "mediaCameraPermissions": true
 }

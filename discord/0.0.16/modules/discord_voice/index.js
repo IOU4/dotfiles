@@ -1,7 +1,9 @@
 const VoiceEngine = require('./discord_voice.node');
 const ChildProcess = require('child_process');
 const fs = require('fs');
+const os = require('os');
 const path = require('path');
+const semver = require('semver');
 const yargs = require('yargs');
 
 const isElectronRenderer =
@@ -32,8 +34,16 @@ const argv = yargs(mainArgv.slice(1))
   .default('log-level', -1)
   .help('h')
   .alias('h', 'help')
+  .describe('use-fake-video-capture', 'Use fake video capture device.')
+  .describe('use-file-for-fake-video-capture', 'Use local file for fake video capture.')
+  .describe('use-fake-audio-capture', 'Use fake audio capture device.')
+  .describe('use-file-for-fake-audio-capture', 'Use local file for fake audio capture.')
   .exitProcess(false).argv;
 const logLevel = argv['log-level'] == -1 ? (debugLogging ? 2 : -1) : argv['log-level'];
+const useFakeVideoCapture = argv['use-fake-video-capture']
+const useFileForFakeVideoCapture = argv['use-file-for-fake-video-capture']
+const useFakeAudioCapture = argv['use-fake-audio-capture']
+const useFileForFakeAudioCapture = argv['use-file-for-fake-audio-capture']
 
 if (dataDirectory != null) {
   try {
@@ -85,6 +95,9 @@ features.declareSupported('fixed_keyframe_interval');
 
 if (process.platform === 'win32' || process.platform === 'darwin') {
   features.declareSupported('soundshare');
+}
+
+if (process.platform === 'win32' || (process.platform === 'darwin' && semver.gte(os.release(), '16.0.0'))) {
   features.declareSupported('mediapipe');
 }
 
@@ -381,6 +394,6 @@ VoiceEngine.getNextVideoOutputFrame = function (streamId) {
 
 console.log(`Initializing voice engine with audio subsystem: ${audioSubsystem}`);
 VoiceEngine.platform = process.platform;
-VoiceEngine.initialize({audioSubsystem, logLevel, dataDirectory});
+VoiceEngine.initialize({audioSubsystem, logLevel, dataDirectory, useFakeVideoCapture, useFileForFakeVideoCapture, useFakeAudioCapture, useFileForFakeAudioCapture});
 
 module.exports = VoiceEngine;

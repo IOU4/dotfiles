@@ -1,0 +1,94 @@
+[2022-01-19 22:42:14.234] [exthost] [info] Extension host with pid 47678 started
+[2022-01-19 22:42:14.333] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-01-19 22:42:14.338] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-01-19 22:42:14.361] [exthost] [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: true, activationEvent: '*'
+[2022-01-19 22:42:14.470] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-01-19 22:42:14.482] [exthost] [info] Eager extensions activated
+[2022-01-19 22:42:14.483] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-19 22:42:14.488] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-19 22:42:17.996] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-01-19 22:42:18.012] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-01-19 22:42:18.080] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-01-19 22:42:36.152] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-01-19 22:42:37.159] [exthost] [info] Extension host with pid 47678 exiting with code 0
+[2022-01-19 22:42:38.458] [exthost] [info] Extension host with pid 47785 started
+[2022-01-19 22:42:38.458] [exthost] [info] Skipping acquiring lock for /home/emadou/.config/Code - OSS/User/workspaceStorage/4e9f03aa777ca1f5526ed0752dff7d82.
+[2022-01-19 22:42:38.508] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-01-19 22:42:38.512] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-01-19 22:42:38.525] [exthost] [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: true, activationEvent: '*'
+[2022-01-19 22:42:38.620] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-01-19 22:42:38.645] [exthost] [info] Eager extensions activated
+[2022-01-19 22:42:38.676] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-19 22:42:38.680] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-19 22:42:42.938] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage:php'
+[2022-01-19 22:42:42.967] [exthost] [info] ExtensionService#_doActivateExtension vscode.php-language-features, startup: false, activationEvent: 'onLanguage:php'
+[2022-01-20 11:07:45.437] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:json'
+[2022-01-20 11:07:45.442] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+[2022-01-20 11:07:45.461] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'
+[2022-01-20 11:07:45.477] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onLanguage:json'
+[2022-01-20 11:07:52.030] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:javascript'
+[2022-01-20 11:11:00.977] [exthost] [info] ExtensionService#_doActivateExtension junstyle.php-cs-fixer, startup: false, activationEvent: 'onLanguage:php'
+[2022-01-20 11:11:30.532] [exthost] [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
+[2022-01-20 11:11:30.602] [exthost] [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: false, activationEvent: 'onLanguage:html'
+[2022-01-20 11:11:55.875] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-01-20 11:11:56.886] [exthost] [info] Extension host with pid 47785 exiting with code 0
+[2022-01-20 11:11:57.685] [exthost] [info] Extension host with pid 60758 started
+[2022-01-20 11:11:57.685] [exthost] [info] Skipping acquiring lock for /home/emadou/.config/Code - OSS/User/workspaceStorage/97732c9df7cc1f68d9ae1c63e69d286c.
+[2022-01-20 11:11:57.734] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-01-20 11:11:57.737] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-01-20 11:11:57.753] [exthost] [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: true, activationEvent: '*'
+[2022-01-20 11:11:57.840] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-01-20 11:11:57.860] [exthost] [info] Eager extensions activated
+[2022-01-20 11:11:57.885] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-20 11:11:57.888] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-20 11:12:08.681] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage:php'
+[2022-01-20 11:12:08.689] [exthost] [info] ExtensionService#_doActivateExtension vscode.php-language-features, startup: false, activationEvent: 'onLanguage:php'
+[2022-01-20 11:12:08.702] [exthost] [info] ExtensionService#_doActivateExtension junstyle.php-cs-fixer, startup: false, activationEvent: 'onLanguage:php'
+[2022-01-20 11:12:58.817] [exthost] [error] [junstyle.php-cs-fixer] provider FAILED
+[2022-01-20 11:12:58.817] [exthost] [error] undefined
+[2022-01-20 11:12:58.860] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-01-20 11:12:58.862] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-01-20 11:12:58.876] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-01-20 11:16:32.437] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-01-20 11:16:32.845] [exthost] [error] TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 't'
+    |     property '_readableState' -> object with constructor 'C'
+    |     property 'pipes' -> object with constructor 'Array'
+    |     index 0 -> object with constructor 't.ConsoleForElectron'
+    --- property 'parent' closes the circle
+    at JSON.stringify (<anonymous>)
+    at /home/emadou/.vscode-oss/extensions/vscodevim.vim-1.21.10/src/register/register.ts:357:16
+    at process.async (internal/process/task_queues.js:93:5)
+    at Object.e.deactivate (/home/emadou/.vscode-oss/extensions/vscodevim.vim-1.21.10/extension.ts:36:8)
+    at async Promise.all (index 11)
+    at w.deactivateAll (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:99:10023)
+[2022-01-20 11:16:33.450] [exthost] [info] Extension host with pid 60758 exiting with code 0
+[2022-01-20 11:16:35.325] [exthost] [info] Extension host with pid 61341 started
+[2022-01-20 11:16:35.325] [exthost] [info] Skipping acquiring lock for /home/emadou/.config/Code - OSS/User/workspaceStorage/97732c9df7cc1f68d9ae1c63e69d286c.
+[2022-01-20 11:16:35.406] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage:php'
+[2022-01-20 11:16:35.411] [exthost] [info] ExtensionService#_doActivateExtension vscode.php-language-features, startup: false, activationEvent: 'onLanguage:php'
+[2022-01-20 11:16:35.417] [exthost] [info] ExtensionService#_doActivateExtension junstyle.php-cs-fixer, startup: false, activationEvent: 'onLanguage:php'
+[2022-01-20 11:16:35.486] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-01-20 11:16:35.488] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-01-20 11:16:35.501] [exthost] [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: true, activationEvent: '*'
+[2022-01-20 11:16:35.615] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-01-20 11:16:35.635] [exthost] [info] Eager extensions activated
+[2022-01-20 11:16:35.662] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-20 11:16:35.666] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-20 11:17:13.634] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-01-20 11:17:13.636] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-01-20 11:17:13.649] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-01-20 11:22:47.128] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-01-20 11:22:47.526] [exthost] [error] TypeError: r.some is not a function
+    at Function.saveToDisk (/home/emadou/.vscode-oss/extensions/vscodevim.vim-1.21.10/src/register/register.ts:350:30)
+    at Object.e.deactivate (/home/emadou/.vscode-oss/extensions/vscodevim.vim-1.21.10/extension.ts:37:18)
+    at w._deactivate (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:99:11449)
+    at /usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:99:9997
+    at Array.map (<anonymous>)
+    at w.deactivateAll (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:99:9985)
+    at b.terminate (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:103:735)
+    at o (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:113:32681)
+    at Socket.<anonymous> (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:113:30296)
+    at Socket.emit (events.js:327:22)
+    at Pipe.<anonymous> (net.js:673:12)
+[2022-01-20 11:22:48.151] [exthost] [info] Extension host with pid 61341 exiting with code 0

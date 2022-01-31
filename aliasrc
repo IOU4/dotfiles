@@ -1,7 +1,9 @@
+#vim: ft=sh
 alias luamake=/home/imadou/gits/lua_ls/3rd/luamake/luamake
 alias v=$EDITOR
 alias e=exit
 alias c=clear
-alias la="ls -la"
+alias la="ls -lah"
 alias qemu=qemu-system-x86_64
 alias farge="farge --notify --no-preview"
+alias grim='grim -t jpeg -g "$(slurp)" ~/Pictures/screenshots'

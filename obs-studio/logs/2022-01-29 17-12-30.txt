@@ -1,0 +1,140 @@
+05:12:30 PM.620: Platform: Wayland
+05:12:30 PM.635: CPU Name: Intel(R) Core(TM) i7-10610U CPU @ 1.80GHz
+05:12:30 PM.635: CPU Speed: 4103.957MHz
+05:12:30 PM.635: Physical Cores: 4, Logical Cores: 8
+05:12:30 PM.635: Physical Memory: 7547MB Total, 6749MB Free
+05:12:30 PM.635: Kernel Version: Linux 5.16.3-arch1-1
+05:12:30 PM.635: Distribution: "Arch Linux" Unknown
+05:12:30 PM.635: Session Type: wayland
+05:12:30 PM.635: Portable mode: false
+05:12:30 PM.679: OBS 27.1.3-3 (linux)
+05:12:30 PM.679: ---------------------------------
+05:12:30 PM.709: ---------------------------------
+05:12:30 PM.709: audio settings reset:
+05:12:30 PM.709: 	samples per sec: 48000
+05:12:30 PM.709: 	speakers:        2
+05:12:30 PM.712: ---------------------------------
+05:12:30 PM.712: Initializing OpenGL...
+05:12:30 PM.712: Using EGL/Wayland
+05:12:30 PM.712: Initialized EGL 1.5
+05:12:30 PM.727: Loading up OpenGL on adapter Intel Mesa Intel(R) UHD Graphics (CML GT2)
+05:12:30 PM.727: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 21.3.5, shading language 4.60
+05:12:30 PM.740: ---------------------------------
+05:12:30 PM.740: video settings reset:
+05:12:30 PM.740: 	base resolution:   1920x1080
+05:12:30 PM.740: 	output resolution: 1280x720
+05:12:30 PM.740: 	downscale filter:  Bicubic
+05:12:30 PM.740: 	fps:               60/1
+05:12:30 PM.740: 	format:            NV12
+05:12:30 PM.740: 	YUV mode:          709/Partial
+05:12:30 PM.740: NV12 texture support not available
+05:12:30 PM.743: Audio monitoring device:
+05:12:30 PM.743: 	name: Default
+05:12:30 PM.743: 	id: default
+05:12:30 PM.743: ---------------------------------
+05:12:30 PM.745: Failed to load 'en-US' text for module: 'decklink-captions.so'
+05:12:30 PM.746: Failed to load 'en-US' text for module: 'decklink-ouput-ui.so'
+05:12:53 PM.106: [pipewire] No captures available
+05:12:53 PM.114: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+05:12:53 PM.114: No blackmagic support
+05:12:53 PM.154: os_dlopen(libnvidia-encode.so.1->libnvidia-encode.so.1): libnvidia-encode.so.1: cannot open shared object file: No such file or directory
+05:12:53 PM.154: 
+05:12:53 PM.154: FFMPEG VAAPI supported
+05:12:53 PM.171: ---------------------------------
+05:12:53 PM.171:   Loaded Modules:
+05:12:53 PM.171:     wlrobs.so
+05:12:53 PM.172:     text-freetype2.so
+05:12:53 PM.172:     sndio.so
+05:12:53 PM.172:     rtmp-services.so
+05:12:53 PM.172:     obs-x264.so
+05:12:53 PM.172:     obs-transitions.so
+05:12:53 PM.172:     obs-outputs.so
+05:12:53 PM.172:     obs-libfdk.so
+05:12:53 PM.172:     obs-filters.so
+05:12:53 PM.172:     obs-ffmpeg.so
+05:12:53 PM.172:     linux-v4l2.so
+05:12:53 PM.172:     linux-pulseaudio.so
+05:12:53 PM.172:     linux-jack.so
+05:12:53 PM.172:     linux-decklink.so
+05:12:53 PM.172:     linux-capture.so
+05:12:53 PM.172:     linux-alsa.so
+05:12:53 PM.172:     image-source.so
+05:12:53 PM.172:     frontend-tools.so
+05:12:53 PM.172:     decklink-ouput-ui.so
+05:12:53 PM.172:     decklink-captions.so
+05:12:53 PM.172: ---------------------------------
+05:12:53 PM.172: ==== Startup complete ===============================================
+05:12:53 PM.176: All scene data cleared
+05:12:53 PM.176: ------------------------------------------------
+05:12:53 PM.183: pulse-input: Server name: 'pulseaudio 15.0'
+05:12:53 PM.183: pulse-input: Audio format: s16le, 44100 Hz, 2 channels
+05:12:53 PM.183: pulse-input: Started recording from 'alsa_output.pci-0000_00_1f.3.analog-stereo.monitor'
+05:12:53 PM.183: [Loaded global audio device]: 'Desktop Audio'
+05:12:53 PM.273: pulse-input: Server name: 'pulseaudio 15.0'
+05:12:53 PM.273: pulse-input: Audio format: s16le, 44100 Hz, 2 channels
+05:12:53 PM.274: pulse-input: Started recording from 'alsa_input.pci-0000_00_1f.3.analog-stereo'
+05:12:53 PM.274: [Loaded global audio device]: 'Mic/Aux'
+05:12:53 PM.276: v4l2-input: Start capture from /dev/video0
+05:12:53 PM.531: v4l2-input: Input: 0
+05:12:53 PM.537: v4l2-input: Resolution: 640x480
+05:12:53 PM.537: v4l2-input: Pixelformat: YUYV
+05:12:53 PM.537: v4l2-input: Linesize: 1280 Bytes
+05:12:53 PM.537: v4l2-input: Framerate: 30.00 fps
+05:12:53 PM.538: v4l2-input: /dev/video0: select timeout set to 166666us (5x frame periods)
+05:12:53 PM.539: Switched to scene 'Scene'
+05:12:53 PM.539: ------------------------------------------------
+05:12:53 PM.539: Loaded scenes:
+05:12:53 PM.539: - scene 'Scene':
+05:12:53 PM.582:     - source: 'Wayland output(scpy)' (wlrobs-scpy)
+05:12:53 PM.582:     - source: 'Video Capture Device (V4L2)' (v4l2_input)
+05:12:53 PM.582: ------------------------------------------------
+05:12:53 PM.827: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Mic/Aux)
+05:12:53 PM.827: 
+05:21:18 PM.884: ---------------------------------
+05:21:18 PM.884: [x264 encoder: 'simple_h264_recording'] preset: veryfast
+05:21:18 PM.884: [x264 encoder: 'simple_h264_recording'] profile: high
+05:21:18 PM.889: [x264 encoder: 'simple_h264_recording'] settings:
+05:21:18 PM.889: 	rate_control: CRF
+05:21:18 PM.889: 	bitrate:      0
+05:21:18 PM.889: 	buffer size:  0
+05:21:18 PM.889: 	crf:          21
+05:21:18 PM.889: 	fps_num:      60
+05:21:18 PM.889: 	fps_den:      1
+05:21:18 PM.889: 	width:        1280
+05:21:18 PM.889: 	height:       720
+05:21:18 PM.889: 	keyint:       250
+05:21:18 PM.889: 
+05:21:18 PM.896: libfdk_aac encoder created
+05:21:18 PM.896: libfdk_aac bitrate: 192, channels: 2
+05:21:18 PM.897: ==== Recording Start ===============================================
+05:21:18 PM.897: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/emadou/2022-01-29 17-21-18.mkv'...
+05:21:52 PM.957: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/emadou/2022-01-29 17-21-18.mkv' stopped
+05:21:52 PM.957: Output 'simple_file_output': stopping
+05:21:52 PM.957: Output 'simple_file_output': Total frames output: 2014
+05:21:52 PM.957: Output 'simple_file_output': Total drawn frames: 1035 (2045 attempted)
+05:21:52 PM.957: Output 'simple_file_output': Number of lagged frames due to rendering lag/stalls: 1010 (49.4%)
+05:21:52 PM.958: ==== Recording Stop ================================================
+05:21:52 PM.969: libfdk_aac encoder destroyed
+05:22:00 PM.184: Switched to Preview/Program mode
+05:22:00 PM.184: ------------------------------------------------
+05:22:01 PM.582: Switched to scene 'Scene'
+05:22:01 PM.647: Switched to regular Preview mode
+05:22:01 PM.647: ------------------------------------------------
+05:23:16 PM.370: User Removed source 'Video Capture Device (V4L2)' (v4l2_input) from scene 'Scene'
+05:23:16 PM.393: v4l2-input: /dev/video0: Stopped capture after 18681 frames
+05:23:58 PM.480: Settings changed (general)
+05:23:58 PM.480: ------------------------------------------------
+05:24:04 PM.043: User Removed source 'Wayland output(scpy)' (wlrobs-scpy) from scene 'Scene'
+05:24:09 PM.165: User added source 'Wayland output(dmabuf)' (wlrobs-dmabuf) to scene 'Scene'
+05:24:18 PM.748: User Removed source 'Wayland output(dmabuf)' (wlrobs-dmabuf) from scene 'Scene'
+05:24:22 PM.626: User added source 'Wayland output(scpy)' (wlrobs-scpy) to scene 'Scene'
+05:25:05 PM.353: User Removed source 'Wayland output(scpy)' (wlrobs-scpy) from scene 'Scene'
+05:25:47 PM.041: Settings changed (outputs)
+05:25:47 PM.041: ------------------------------------------------
+05:25:55 PM.040: ==== Shutting down ==================================================
+05:25:55 PM.050: pulse-input: Stopped recording from 'alsa_output.pci-0000_00_1f.3.analog-stereo.monitor'
+05:25:55 PM.050: pulse-input: Got 161270 packets with 34389389 frames
+05:25:55 PM.051: pulse-input: Stopped recording from 'alsa_input.pci-0000_00_1f.3.analog-stereo'
+05:25:55 PM.051: pulse-input: Got 79727 packets with 34476592 frames
+05:25:55 PM.052: All scene data cleared
+05:25:55 PM.052: ------------------------------------------------

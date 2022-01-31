@@ -1,0 +1,20 @@
+[2022-01-19 22:42:18.321] [sharedprocess] [info] Installing extension: ritwickdey.liveserver
+[2022-01-19 22:42:27.817] [sharedprocess] [info] Downloaded extension: ritwickdey.liveserver /home/emadou/.config/Code - OSS/CachedExtensionVSIXs/ritwickdey.liveserver-5.7.1
+[2022-01-19 22:42:28.815] [sharedprocess] [info] Extracted extension to /home/emadou/.vscode-oss/extensions/.f51f1ca0-774f-447f-8253-235cec7db5ba: ritwickdey.liveserver
+[2022-01-19 22:42:28.820] [sharedprocess] [info] Renamed to /home/emadou/.vscode-oss/extensions/ritwickdey.liveserver-5.7.1
+[2022-01-19 22:42:28.822] [sharedprocess] [info] Extracting completed. ritwickdey.liveserver
+[2022-01-19 22:42:28.825] [sharedprocess] [info] Extension installed successfully: ritwickdey.liveserver
+[2022-01-19 22:59:00.720] [sharedprocess] [warning] No ptyHost heartbeat after 6 seconds
+[2022-01-20 09:02:55.289] [sharedprocess] [warning] No ptyHost heartbeat after 6 seconds
+[2022-01-20 11:09:24.609] [sharedprocess] [info] Installing extension: ritwickdey.liveserver
+[2022-01-20 11:09:27.148] [sharedprocess] [info] Downloaded extension: ritwickdey.liveserver /home/emadou/.config/Code - OSS/CachedExtensionVSIXs/ritwickdey.liveserver-5.7.2
+[2022-01-20 11:09:27.891] [sharedprocess] [info] Extracted extension to /home/emadou/.vscode-oss/extensions/.70a88533-e6e1-474d-b370-65aec9b03cac: ritwickdey.liveserver
+[2022-01-20 11:09:27.897] [sharedprocess] [info] Renamed to /home/emadou/.vscode-oss/extensions/ritwickdey.liveserver-5.7.2
+[2022-01-20 11:09:27.898] [sharedprocess] [info] Extracting completed. ritwickdey.liveserver
+[2022-01-20 11:09:27.900] [sharedprocess] [info] Extension installed successfully: ritwickdey.liveserver
+[2022-01-20 11:10:46.947] [sharedprocess] [info] Installing extension: junstyle.php-cs-fixer
+[2022-01-20 11:11:00.658] [sharedprocess] [info] Downloaded extension: junstyle.php-cs-fixer /home/emadou/.config/Code - OSS/CachedExtensionVSIXs/junstyle.php-cs-fixer-0.2.10
+[2022-01-20 11:11:00.879] [sharedprocess] [info] Extracted extension to /home/emadou/.vscode-oss/extensions/.bd2892a2-0786-48e7-8e53-4d5d1adcaa60: junstyle.php-cs-fixer
+[2022-01-20 11:11:00.886] [sharedprocess] [info] Renamed to /home/emadou/.vscode-oss/extensions/junstyle.php-cs-fixer-0.2.10
+[2022-01-20 11:11:00.886] [sharedprocess] [info] Extracting completed. junstyle.php-cs-fixer
+[2022-01-20 11:11:00.887] [sharedprocess] [info] Extension installed successfully: junstyle.php-cs-fixer

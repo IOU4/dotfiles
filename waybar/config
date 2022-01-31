@@ -2,10 +2,10 @@
 {
    "position": "left",
    "height": 2,
+   "ipc": true,
    "modules-left": ["sway/workspaces", "sway/mode", "custom/media"],
    "modules-center": ["clock"],
    "modules-right": ["pulseaudio", "backlight", "battery", "tray", "network"],
-
    "sway/workspaces": {
       "disable-scroll": true,
       "all-outputs": true,

@@ -1,7 +1,7 @@
 ignore-empty-password
 show-failed-attempts
 color=11121d
-image=~/.config/swaylock/lock-screen.jpg
+image=~/.config/swaylock/lock-screen.png
 
 font=Iosevka Nerd Font Mono
 font-size=19

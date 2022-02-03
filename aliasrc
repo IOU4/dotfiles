@@ -7,3 +7,4 @@ alias la="ls -lah"
 alias qemu=qemu-system-x86_64
 alias farge="farge --notify --no-preview"
 alias grim='grim -t jpeg -g "$(slurp)" ~/Pictures/screenshots'
+alias docker='sudo docker'

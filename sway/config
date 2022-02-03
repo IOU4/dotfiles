@@ -191,14 +191,15 @@ client.focused $secondary $secondary $primary
 client.unfocused $primary $primary $secondary 
 client.focused_inactive $primary $primary $secondary  
 # audio-keys
-bindsym XF86AudioRaiseVolume exec pamixer -i 5 # increase
-bindsym XF86AudioLowerVolume exec pamixer -d 5 # decrease
-bindsym XF86AudioMute exec pamixer -t # toggle mute
+bindsym XF86AudioRaiseVolume exec pamixer -i 5 && notify-send -h int:value:$(pamixer --get-volume)  "墳 $(pamixer --get-volume)" # increase
+bindsym XF86AudioLowerVolume exec pamixer -d 5 && notify-send -h int:value:$(pamixer --get-volume)  "墳 $(pamixer --get-volume)" # increase# decrease
+
+bindsym XF86AudioMute exec pamixer -t && notify-send "ﱝ muted"
 bindsym XF86AudioMicMute exec pamixer --source 219 -t # toggle mic
 
 # brightness-keys
-bindsym XF86MonBrightnessUp exec light -A 5
-bindsym XF86MonBrightnessDown exec light -U 5
+bindsym XF86MonBrightnessUp exec light -A 5 && notify-send -h int:value:$(light)  " $(light)"
+bindsym XF86MonBrightnessDown exec light -U 5 && notify-send -h int:value:$(light)  " $(light)"
 
 # apps-shortcuts
 bindsym $mod+c exec $browser
@@ -213,7 +214,7 @@ smart_borders no_gaps
 
 # titles
 font pango:FantasqueSansMono 13
-for_window [title="."] title_format "title=%title | app_id=%app_id | class=%class"
+for_window [title="."] title_format "%title | %app_id | %class"
 title_align center
 
 # sorkspace-assignments

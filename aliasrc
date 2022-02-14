@@ -1,10 +1,11 @@
-#vim: ft=sh
-alias luamake=/home/imadou/gits/lua_ls/3rd/luamake/luamake
+#!/bin/sh
 alias v=$EDITOR
 alias e=exit
 alias c=clear
-alias la="ls -lah"
+alias ls=exa
+alias la="exa -lah"
 alias qemu=qemu-system-x86_64
 alias farge="farge --notify --no-preview"
-alias grim='grim -t jpeg -g "$(slurp)" ~/Pictures/screenshots'
+alias grim='grim -t jpeg -g "$(slurp)" ~/Pictures/screenshots/'
 alias docker='sudo docker'
+alias phpMyAdmin='sudo php -S localhost:88 --docroot=/usr/share/webapps/phpMyAdmin'

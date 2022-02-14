@@ -1,0 +1,34 @@
+{
+	"analytics-uuid": "e1d3c46a-e285-4fc2-bfde-60b789c7d2a9",
+	"motd": {
+		"cloudBuildErrorAfter": 1594252800000,
+		"cloudBuildWarnAfter": 1590019200000,
+		"defaultNode10After": 1594252800000,
+		"minVersion": "3.0.5",
+		"node8DeploysDisabledAfter": 1613390400000,
+		"node8RuntimeDisabledAfter": 1615809600000,
+		"node8WarnAfter": 1600128000000,
+		"fetched": 1644567131280
+	},
+	"usage": true,
+	"user": {
+		"iss": "accounts.google.com",
+		"azp": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"aud": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"sub": "110228057326769796931",
+		"email": "ouchaibimad000@gmail.com",
+		"email_verified": true,
+		"at_hash": "eYHtr2ugcwtwIQ_w1Ut2TQ",
+		"iat": 1644567211,
+		"exp": 1644570811
+	},
+	"tokens": {
+		"expires_at": 1644570810891,
+		"access_token": "ya29.A0ARrdaM82a08tSNZ9VY-uyD3mxfD5Z9e5YXMGpiuC5bAASFhz2L6M-Bz8L2qqZyzaGBQ2sKt1rxUIYT6qfpEWfEDBVb42q_cYGE_Cz3ujLIeAc240b2yFJRD-3huTMyhnuC_5wW0UZlWLDD67xceAWjugwKICLLYhWtMv",
+		"expires_in": 3599,
+		"refresh_token": "1//03UBDweHLvQriCgYIARAAGAMSNwF-L9IrkF5cCbU12S4p5gHmDYQooElHqAtJCCtkxf_Lbci-YPxOSF0rSFouMHtlzUg6qTKMoEA",
+		"scope": "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase https://www.googleapis.com/auth/cloud-platform openid",
+		"token_type": "Bearer",
+		"id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImY0YmIyMjBjZDA5NGIwYWU5MGRkNzNlMTBjMTBlN2RiNTRiODkyODAiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTEwMjI4MDU3MzI2NzY5Nzk2OTMxIiwiZW1haWwiOiJvdWNoYWliaW1hZDAwMEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6ImVZSHRyMnVnY3d0d0lRX3cxVXQyVFEiLCJpYXQiOjE2NDQ1NjcyMTEsImV4cCI6MTY0NDU3MDgxMX0.ExvbiEDEPUWRphCTjQEntDUIbFYN2WyTuiSNN6M8sddr6SEJXnOuEJ6NaVdW9vkyGjneQW40x4bfTNQur7hZcgCfEkBDyPLYAZCdcBS3SVtZQnC3rkDTad9004ZqIXLnMiQQbMn9wOfTtLkWrvdij5es9iLVeY1mD6ngzdFl_ZghNQX4kZlF7oJO9XG8S5lDJQ4scn0_Xep_uy9H4QF7UrUBCzEfY1WFBh-KJg9-ZahytKwTXBIs8hw4lZFoEsQJAunRBtHVO3L106KzXz01AOjnFSeekYSpfEQ501s4sb_hPQ-FCjaPl3J37HG3A4M9sVdg9iHG3zmxNHsQ0fiXww"
+	}
+}

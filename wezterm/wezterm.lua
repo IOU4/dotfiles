@@ -7,7 +7,7 @@ return {
       cursor_fg = "#29343d"
    },
    -- color_scheme = "JetBrains Darcula",
-   font = wezterm.font("JetBrainsMonoMedium Nerd Font"),
+   font = wezterm.font("VictorMono"),
    enable_Wayland = true,
    enable_tab_bar = false,
    window_padding = {

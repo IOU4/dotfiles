@@ -31,13 +31,14 @@ x-scheme-handler/nntp=userapp-Thunderbird-YIN0F1.desktop;
 x-scheme-handler/feed=userapp-Thunderbird-RKS0F1.desktop;
 application/rss+xml=userapp-Thunderbird-RKS0F1.desktop;
 application/x-extension-rss=userapp-Thunderbird-RKS0F1.desktop;
+audio/mpeg=org.gnome.Totem.desktop;
 
 [Default Applications]
 application/pdf=org.pwmt.zathura-pdf-poppler.desktop;
 inode/directory=thunar.desktop
-text/html=firefox.desktop
-x-scheme-handler/http=firefox.desktop
-x-scheme-handler/https=firefox.desktop
+text/html=firefox-developer-edition.desktop
+x-scheme-handler/http=firefox-developer-edition.desktop
+x-scheme-handler/https=firefox-developer-edition.desktop
 x-scheme-handler/mailto=userapp-Thunderbird-KOJGG1.desktop
 image/jpeg=imv-folder.desktop
 image/bmp=imv-folder.desktop

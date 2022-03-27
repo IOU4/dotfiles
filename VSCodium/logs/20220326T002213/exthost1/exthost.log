@@ -1,0 +1,85 @@
+[2022-03-26 00:22:15.071] [exthost] [info] Extension host with pid 19991 started
+[2022-03-26 00:22:15.112] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-03-26 00:22:15.114] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-03-26 00:22:15.116] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-03-26 00:22:15.119] [exthost] [info] ExtensionService#_doActivateExtension RobbOwen.synthwave-vscode, startup: true, activationEvent: '*'
+[2022-03-26 00:22:15.123] [exthost] [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: true, activationEvent: '*'
+[2022-03-26 00:22:15.233] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-03-26 00:22:15.245] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-03-26 00:22:15.266] [exthost] [info] Eager extensions activated
+[2022-03-26 00:22:15.275] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-26 00:22:15.282] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-26 00:22:15.284] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-26 00:22:15.464] [exthost] [info] ExtensionService#_doActivateExtension GitHub.copilot, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-26 00:22:15.676] [exthost] [info] ExtensionService#_doActivateExtension PKief.material-icon-theme, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-26 00:22:15.684] [exthost] [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-26 00:22:15.824] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+[2022-03-26 00:22:26.379] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-03-26 00:22:26.384] [exthost] [error] Error: ENOENT: no such file or directory, open '/home/emadou/.config/VSCodium/User/globalStorage/vscodevim.vim/.registers'
+[2022-03-26 00:22:26.385] [exthost] [info] Extension host with pid 19991 exiting with code 0
+[2022-03-26 00:22:28.212] [exthost] [info] Extension host with pid 20085 started
+[2022-03-26 00:22:28.212] [exthost] [info] Skipping acquiring lock for /home/emadou/.config/VSCodium/User/workspaceStorage/0eba0d07ec23e82fa27331e4575ac554.
+[2022-03-26 00:22:28.321] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-03-26 00:22:28.325] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-03-26 00:22:28.328] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-03-26 00:22:28.330] [exthost] [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: true, activationEvent: '*'
+[2022-03-26 00:22:28.361] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm, startup: true, activationEvent: 'workspaceContains:package.json'
+[2022-03-26 00:22:28.435] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-03-26 00:22:28.444] [exthost] [info] Eager extensions activated
+[2022-03-26 00:22:28.449] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-26 00:22:28.459] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-26 00:22:28.460] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-26 00:22:28.631] [exthost] [info] ExtensionService#_doActivateExtension PKief.material-icon-theme, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-26 00:22:30.246] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: vscode.github
+[2022-03-26 00:22:30.261] [exthost] [info] ExtensionService#_doActivateExtension GitHub.copilot, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-26 00:22:30.448] [exthost] [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-26 00:22:30.532] [exthost] [info] ExtensionService#_doActivateExtension RobbOwen.synthwave-vscode, startup: false, activationEvent: '*'
+[2022-03-26 00:22:30.620] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+[2022-03-26 00:23:07.246] [exthost] [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
+[2022-03-26 00:24:05.928] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-03-26 00:24:05.939] [exthost] [error] Error: ENOENT: no such file or directory, open '/home/emadou/.config/VSCodium/User/globalStorage/vscodevim.vim/.registers'
+[2022-03-26 00:24:05.939] [exthost] [info] Extension host with pid 20085 exiting with code 0
+[2022-03-26 00:24:07.723] [exthost] [info] Extension host with pid 20272 started
+[2022-03-26 00:24:07.723] [exthost] [info] Skipping acquiring lock for /home/emadou/.config/VSCodium/User/workspaceStorage/0eba0d07ec23e82fa27331e4575ac554.
+[2022-03-26 00:24:07.820] [exthost] [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
+[2022-03-26 00:24:07.831] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-03-26 00:24:07.833] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-03-26 00:24:07.834] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-03-26 00:24:07.836] [exthost] [info] ExtensionService#_doActivateExtension RobbOwen.synthwave-vscode, startup: true, activationEvent: '*'
+[2022-03-26 00:24:07.840] [exthost] [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: true, activationEvent: '*'
+[2022-03-26 00:24:07.873] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm, startup: true, activationEvent: 'workspaceContains:package.json'
+[2022-03-26 00:24:07.999] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-03-26 00:24:08.011] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-03-26 00:24:08.032] [exthost] [info] Eager extensions activated
+[2022-03-26 00:24:08.052] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-26 00:24:08.060] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-26 00:24:08.062] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-26 00:24:08.266] [exthost] [info] ExtensionService#_doActivateExtension GitHub.copilot, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-26 00:24:08.469] [exthost] [info] ExtensionService#_doActivateExtension PKief.material-icon-theme, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-26 00:24:08.476] [exthost] [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-26 00:24:08.646] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+[2022-03-26 00:25:36.346] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-03-26 00:25:36.357] [exthost] [error] Error: ENOENT: no such file or directory, open '/home/emadou/.config/VSCodium/User/globalStorage/vscodevim.vim/.registers'
+[2022-03-26 00:25:36.357] [exthost] [info] Extension host with pid 20272 exiting with code 0
+[2022-03-26 00:25:37.999] [exthost] [info] Extension host with pid 20421 started
+[2022-03-26 00:25:37.999] [exthost] [info] Skipping acquiring lock for /home/emadou/.config/VSCodium/User/workspaceStorage/0eba0d07ec23e82fa27331e4575ac554.
+[2022-03-26 00:25:38.104] [exthost] [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
+[2022-03-26 00:25:38.115] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-03-26 00:25:38.116] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-03-26 00:25:38.118] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-03-26 00:25:38.120] [exthost] [info] ExtensionService#_doActivateExtension RobbOwen.synthwave-vscode, startup: true, activationEvent: '*'
+[2022-03-26 00:25:38.123] [exthost] [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: true, activationEvent: '*'
+[2022-03-26 00:25:38.159] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm, startup: true, activationEvent: 'workspaceContains:package.json'
+[2022-03-26 00:25:38.306] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-03-26 00:25:38.317] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-03-26 00:25:38.340] [exthost] [info] Eager extensions activated
+[2022-03-26 00:25:38.353] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-26 00:25:38.358] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-26 00:25:38.359] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-26 00:25:38.544] [exthost] [info] ExtensionService#_doActivateExtension GitHub.copilot, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-26 00:25:38.742] [exthost] [info] ExtensionService#_doActivateExtension PKief.material-icon-theme, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-26 00:25:38.747] [exthost] [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-26 00:25:38.921] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+[2022-03-26 00:26:51.118] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-03-26 00:26:51.134] [exthost] [error] Error: ENOENT: no such file or directory, open '/home/emadou/.config/VSCodium/User/globalStorage/vscodevim.vim/.registers'
+[2022-03-26 00:26:51.134] [exthost] [info] Extension host with pid 20421 exiting with code 0

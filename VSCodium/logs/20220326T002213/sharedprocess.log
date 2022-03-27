@@ -1,0 +1,14 @@
+[2022-03-26 00:22:15.223] [sharedprocess] [info] Starting worker process with pid 20029 (type: fileWatcher, window: 1).
+[2022-03-26 00:22:26.387] [sharedprocess] [info] Worker process with pid 20029 terminated normally (type: fileWatcher, window: 1).
+[2022-03-26 00:22:27.719] [sharedprocess] [info] Starting worker process with pid 20086 (type: fileWatcher, window: 1).
+[2022-03-26 00:22:41.436] [sharedprocess] [info] Getting Manifest... johnsoncodehk.volar
+[2022-03-26 00:22:41.878] [sharedprocess] [info] Installing extension: johnsoncodehk.volar
+[2022-03-26 00:22:54.893] [sharedprocess] [info] Downloaded extension: johnsoncodehk.volar /home/emadou/.config/VSCodium/CachedExtensionVSIXs/johnsoncodehk.volar-0.30.1
+[2022-03-26 00:22:55.786] [sharedprocess] [info] Extracted extension to /home/emadou/.vscode-oss/extensions/.345384f4-847a-4d9a-b7f2-c9b8003c6418: johnsoncodehk.volar
+[2022-03-26 00:22:55.794] [sharedprocess] [info] Renamed to /home/emadou/.vscode-oss/extensions/johnsoncodehk.volar-0.30.1
+[2022-03-26 00:22:55.796] [sharedprocess] [info] Extracting completed. johnsoncodehk.volar
+[2022-03-26 00:22:55.797] [sharedprocess] [info] Extension installed successfully: johnsoncodehk.volar
+[2022-03-26 00:24:05.938] [sharedprocess] [info] Worker process with pid 20086 terminated normally (type: fileWatcher, window: 1).
+[2022-03-26 00:24:07.257] [sharedprocess] [info] Starting worker process with pid 20279 (type: fileWatcher, window: 1).
+[2022-03-26 00:25:36.357] [sharedprocess] [info] Worker process with pid 20279 terminated normally (type: fileWatcher, window: 1).
+[2022-03-26 00:25:37.814] [sharedprocess] [info] Starting worker process with pid 20434 (type: fileWatcher, window: 1).

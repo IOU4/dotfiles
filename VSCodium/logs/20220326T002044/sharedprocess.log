@@ -1,0 +1,4 @@
+[2022-03-26 00:20:46.278] [sharedprocess] [info] Deleted from disk teamhub.teamhub /home/emadou/.vscode-oss/extensions/teamhub.teamhub-15.0.5
+[2022-03-26 00:20:46.461] [sharedprocess] [info] Starting worker process with pid 19638 (type: fileWatcher, window: 1).
+[2022-03-26 00:22:05.987] [sharedprocess] [info] Starting worker process with pid 19814 (type: fileWatcher, window: 3).
+[2022-03-26 00:22:08.142] [sharedprocess] [info] Worker process with pid 19814 terminated normally (type: fileWatcher, window: 3).

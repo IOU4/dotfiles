@@ -4,7 +4,7 @@
 (dynamics "Dynamics Off")
 (gradient "FG to BG (RGB)")
 (palette "Color History")
-(brush-size 10)
+(brush-size 17)
 (brush-aspect-ratio -14)
 (brush-hardness 0.5)
 

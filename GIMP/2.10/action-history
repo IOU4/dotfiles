@@ -1,8 +1,11 @@
 # GIMP action-history
 
-(history-item "image-new" 1)
+(history-item "image-new" 3)
 (history-item "file-quit" 1)
+(history-item "tools-move" 1)
 (history-item "view-zoom-in" 0)
-(history-item "select-all" 1)
+(history-item "select-all" 0)
+(history-item "image-properties" 0)
+(history-item "layers-delete" 1)
 
 # end of action-history

@@ -1177,7 +1177,7 @@
   <resource identifier="${gimp_data_dir}/gradients/Yellow_Orange.ggr" checksum="428584726006e23e260baa2a7d79f295">
   </resource>
 
-  <resource identifier="gimp-palette-color-history" checksum="f76783ff0a059dd97e17a834ccfdcb2e">
+  <resource identifier="gimp-palette-color-history" checksum="66ae23d8fc6d78d56233616b3a590606">
   </resource>
 
   <resource identifier="${gimp_data_dir}/palettes/Bears.gpl" checksum="e82e818c20ac12bdd21049924ea2d1e7">
@@ -1303,6 +1303,108 @@
   <resource identifier="${gimp_data_dir}/palettes/Web.gpl" checksum="f02e8dfa23d01d6acfbab7f895c2dd16">
   </resource>
 
+  <resource identifier="Adobe Courier" checksum="(null)">
+  </resource>
+
+  <resource identifier="Adobe Courier Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Adobe Courier Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Adobe Courier Medium Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Adobe Helvetica" checksum="(null)">
+  </resource>
+
+  <resource identifier="Adobe Helvetica Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Adobe Helvetica Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Adobe Helvetica Medium Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Adobe New Century Schoolbook" checksum="(null)">
+  </resource>
+
+  <resource identifier="Adobe New Century Schoolbook Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Adobe New Century Schoolbook Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Adobe New Century Schoolbook Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Adobe Times" checksum="(null)">
+  </resource>
+
+  <resource identifier="Adobe Times Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Adobe Times Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Adobe Times Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Adobe Utopia" checksum="(null)">
+  </resource>
+
+  <resource identifier="Adobe Utopia Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Adobe Utopia Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Adobe Utopia Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="B&amp;H Lucida Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="B&amp;H Lucida Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="B&amp;H LucidaBright" checksum="(null)">
+  </resource>
+
+  <resource identifier="B&amp;H LucidaBright Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="B&amp;H Lucida Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="B&amp;H Lucida Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="B&amp;H LucidaTypewriter Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="B&amp;H LucidaTypewriter Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="Bitstream Charter" checksum="(null)">
+  </resource>
+
+  <resource identifier="Bitstream Charter Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Bitstream Charter Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Bitstream Charter Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Bitstream Terminal" checksum="(null)">
+  </resource>
+
+  <resource identifier="Bitstream Terminal Bold" checksum="(null)">
+  </resource>
+
   <resource identifier="C059" checksum="(null)">
   </resource>
 
@@ -1334,6 +1436,12 @@
   </resource>
 
   <resource identifier="D050000L" checksum="(null)">
+  </resource>
+
+  <resource identifier="DEC Terminal" checksum="(null)">
+  </resource>
+
+  <resource identifier="DEC Terminal Bold" checksum="(null)">
   </resource>
 
   <resource identifier="Digital-7" checksum="(null)">
@@ -1372,13 +1480,292 @@
   <resource identifier="Fira Code weight=450" checksum="(null)">
   </resource>
 
-  <resource identifier="Font Awesome 5 Brands" checksum="(null)">
+  <resource identifier="Fira Sans" checksum="(null)">
   </resource>
 
-  <resource identifier="Font Awesome 5 Free" checksum="(null)">
+  <resource identifier="Fira Sans Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="Font Awesome 5 Free Heavy" checksum="(null)">
+  <resource identifier="Fira Sans Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Compressed Bold Italic Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Compressed Bold Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Compressed Heavy Italic Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Compressed Heavy Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Compressed Italic Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Compressed Light Italic Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Compressed Light Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Compressed Medium Italic Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Compressed Medium Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Compressed Semi-Bold Italic Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Compressed Semi-Bold Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Compressed Semi-Light Italic Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Compressed Semi-Light Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Compressed Thin Italic Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Compressed Thin Italic Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Compressed Thin Italic Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Compressed Thin Italic Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Compressed Thin Italic Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Compressed Thin Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Compressed Thin Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Compressed Thin Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Compressed Thin Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Compressed Thin Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Compressed Ultra-Bold Italic Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Compressed Ultra-Bold Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Compressed Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Compressed Ultra-Light Italic Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Compressed Ultra-Light Italic Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Compressed Ultra-Light Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Compressed Ultra-Light Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Condensed, Bold Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Condensed, Bold Italic Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Condensed, Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Condensed, Heavy Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Condensed, Heavy Italic Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Condensed, Italic Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Condensed, Light Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Condensed, Light Italic Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Condensed, Medium Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Condensed, Medium Italic Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Condensed, Semi-Bold Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Condensed, Semi-Bold Italic Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Condensed, Semi-Light Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Condensed, Semi-Light Italic Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Condensed, Thin Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Condensed, Thin Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Condensed, Thin Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Condensed, Thin Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Condensed, Thin Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Condensed, Thin Italic Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Condensed, Thin Italic Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Condensed, Thin Italic Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Condensed, Thin Italic Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Condensed, Thin Italic Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Condensed, Ultra-Bold Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Condensed, Ultra-Bold Italic Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Condensed, Ultra-Light Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Condensed, Ultra-Light Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Condensed, Ultra-Light Italic Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Condensed, Ultra-Light Italic Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Heavy" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Heavy Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Semi-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Semi-Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Semi-Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Thin" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Thin" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Thin" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Thin" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Thin" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Thin Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Thin Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Thin Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Thin Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Thin Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Ultra-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Ultra-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Ultra-Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Ultra-Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Ultra-Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans Ultra-Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans weight=950" checksum="(null)">
+  </resource>
+
+  <resource identifier="Fira Sans weight=950 Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Font Awesome 6 Brands" checksum="(null)">
+  </resource>
+
+  <resource identifier="Font Awesome 6 Free" checksum="(null)">
+  </resource>
+
+  <resource identifier="Font Awesome 6 Free Heavy" checksum="(null)">
+  </resource>
+
+  <resource identifier="Font Awesome v4 Compatibility" checksum="(null)">
   </resource>
 
   <resource identifier="FreeMono" checksum="(null)">
@@ -1441,6 +1828,168 @@
   <resource identifier="Iosevka Bold Oblique" checksum="(null)">
   </resource>
 
+  <resource identifier="Iosevka Fixed SS18" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Bold Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Bold Italic Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Bold Oblique Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Heavy" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Heavy Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Heavy Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Heavy Italic Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Heavy Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Heavy Oblique Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Italic Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Light Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Light Italic Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Light Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Light Oblique Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Medium Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Medium Italic Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Medium Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Medium Oblique Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Oblique Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Semi-Bold Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Semi-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Semi-Bold Italic Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Semi-Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Semi-Bold Oblique Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Thin" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Thin Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Thin Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Thin Italic Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Thin Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Thin Oblique Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Ultra-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Ultra-Bold Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Ultra-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Ultra-Bold Italic Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Ultra-Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Ultra-Bold Oblique Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Ultra-Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Ultra-Light Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Ultra-Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Ultra-Light Italic Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Ultra-Light Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Fixed SS18 Ultra-Light Oblique Expanded" checksum="(null)">
+  </resource>
+
   <resource identifier="Iosevka Heavy" checksum="(null)">
   </resource>
 
@@ -1505,6 +2054,168 @@
   </resource>
 
   <resource identifier="Iosevka Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Bold Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Bold Italic Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Bold Oblique Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Heavy" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Heavy Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Heavy Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Heavy Italic Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Heavy Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Heavy Oblique Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Italic Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Light Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Light Italic Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Light Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Light Oblique Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Medium Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Medium Italic Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Medium Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Medium Oblique Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Oblique Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Semi-Bold Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Semi-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Semi-Bold Italic Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Semi-Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Semi-Bold Oblique Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Thin" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Thin Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Thin Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Thin Italic Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Thin Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Thin Oblique Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Ultra-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Ultra-Bold Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Ultra-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Ultra-Bold Italic Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Ultra-Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Ultra-Bold Oblique Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Ultra-Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Ultra-Light Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Ultra-Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Ultra-Light Italic Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Ultra-Light Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka SS18 Ultra-Light Oblique Expanded" checksum="(null)">
   </resource>
 
   <resource identifier="Iosevka Term" checksum="(null)">
@@ -1595,6 +2306,168 @@
   </resource>
 
   <resource identifier="Iosevka Term Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Bold Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Bold Italic Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Bold Oblique Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Heavy" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Heavy Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Heavy Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Heavy Italic Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Heavy Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Heavy Oblique Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Italic Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Light Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Light Italic Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Light Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Light Oblique Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Medium Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Medium Italic Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Medium Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Medium Oblique Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Oblique Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Semi-Bold Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Semi-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Semi-Bold Italic Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Semi-Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Semi-Bold Oblique Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Thin" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Thin Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Thin Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Thin Italic Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Thin Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Thin Oblique Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Ultra-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Ultra-Bold Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Ultra-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Ultra-Bold Italic Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Ultra-Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Ultra-Bold Oblique Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Ultra-Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Ultra-Light Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Ultra-Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Ultra-Light Italic Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Ultra-Light Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Iosevka Term SS18 Ultra-Light Oblique Expanded" checksum="(null)">
   </resource>
 
   <resource identifier="Iosevka Term Thin" checksum="(null)">
@@ -1883,6 +2756,9 @@
   </resource>
 
   <resource identifier="Monospace Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="mtx" checksum="(null)">
   </resource>
 
   <resource identifier="Nimbus Mono PS" checksum="(null)">
@@ -3932,6 +4808,72 @@
   </resource>
 
   <resource identifier="URW Gothic Semi-Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Victor Mono" checksum="(null)">
+  </resource>
+
+  <resource identifier="Victor Mono Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Victor Mono Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Victor Mono Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Victor Mono Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Victor Mono Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Victor Mono Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Victor Mono Light Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Victor Mono Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="Victor Mono Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Victor Mono Medium Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="VictorMono Nerd Font" checksum="(null)">
+  </resource>
+
+  <resource identifier="Victor Mono Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Victor Mono Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Victor Mono Semi-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Victor Mono Semi-Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Victor Mono Thin" checksum="(null)">
+  </resource>
+
+  <resource identifier="Victor Mono Thin Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Victor Mono Thin Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Victor Mono Ultra-Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Victor Mono Ultra-Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Victor Mono Ultra-Light Oblique" checksum="(null)">
   </resource>
 
   <resource identifier="Z003 Medium Italic" checksum="(null)">

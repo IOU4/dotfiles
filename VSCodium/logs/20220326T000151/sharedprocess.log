@@ -1,0 +1,24 @@
+[2022-03-26 00:01:53.021] [sharedprocess] [info] Deleted from disk github.copilot /home/emadou/.vscode-oss/extensions/github.copilot-1.9.5350
+[2022-03-26 00:01:53.031] [sharedprocess] [info] Starting worker process with pid 17387 (type: fileWatcher, window: 1).
+[2022-03-26 00:01:53.047] [sharedprocess] [info] Deleted from disk redhat.vscode-xml /home/emadou/.vscode-oss/extensions/redhat.vscode-xml-0.19.1
+[2022-03-26 00:02:24.482] [sharedprocess] [info] Uninstalling extension: teamhub.teamhub
+[2022-03-26 00:02:24.550] [sharedprocess] [info] Detected extension removed from another source teamhub.teamhub
+[2022-03-26 00:02:25.285] [sharedprocess] [info] Worker process with pid 17387 terminated normally (type: fileWatcher, window: 1).
+[2022-03-26 00:02:25.493] [sharedprocess] [info] Successfully uninstalled extension: teamhub.teamhub
+[2022-03-26 00:02:26.399] [sharedprocess] [info] Starting worker process with pid 17590 (type: fileWatcher, window: 1).
+[2022-03-26 00:02:45.180] [sharedprocess] [info] Installing extension: github.copilot
+[2022-03-26 00:02:46.754] [sharedprocess] [info] Extracted extension to /home/emadou/.vscode-oss/extensions/.94af1fd3-4bfc-494f-a3f2-8890e79c0bb0: github.copilot
+[2022-03-26 00:02:46.756] [sharedprocess] [info] Renamed to /home/emadou/.vscode-oss/extensions/github.copilot-1.9.5350
+[2022-03-26 00:02:46.757] [sharedprocess] [info] Extracting completed. github.copilot
+[2022-03-26 00:02:46.758] [sharedprocess] [info] Extension installed successfully: github.copilot
+[2022-03-26 00:10:13.366] [sharedprocess] [info] Uninstalling extension: github.copilot
+[2022-03-26 00:10:13.407] [sharedprocess] [info] Successfully uninstalled extension: github.copilot
+[2022-03-26 00:10:15.423] [sharedprocess] [info] Worker process with pid 17590 terminated normally (type: fileWatcher, window: 1).
+[2022-03-26 00:10:16.523] [sharedprocess] [info] Starting worker process with pid 18672 (type: fileWatcher, window: 1).
+[2022-03-26 00:10:22.575] [sharedprocess] [info] Installing extension: github.copilot
+[2022-03-26 00:10:23.713] [sharedprocess] [info] Removed the extension from uninstalled list: github.copilot
+[2022-03-26 00:10:23.720] [sharedprocess] [info] Deleted from disk github.copilot /home/emadou/.vscode-oss/extensions/github.copilot-1.9.5350
+[2022-03-26 00:10:23.807] [sharedprocess] [info] Extracted extension to /home/emadou/.vscode-oss/extensions/.5c0ea37d-c524-4e80-b756-0cdc4330a276: github.copilot
+[2022-03-26 00:10:23.818] [sharedprocess] [info] Renamed to /home/emadou/.vscode-oss/extensions/github.copilot-1.9.5350
+[2022-03-26 00:10:23.819] [sharedprocess] [info] Extracting completed. github.copilot
+[2022-03-26 00:10:23.819] [sharedprocess] [info] Extension installed successfully: github.copilot

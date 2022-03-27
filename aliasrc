@@ -6,6 +6,7 @@ alias ls=exa
 alias la="exa -lah"
 alias qemu=qemu-system-x86_64
 alias farge="farge --notify --no-preview"
-alias grim='grim -t jpeg -g "$(slurp)" ~/Pictures/screenshots/'
+alias grim='grim -t png -g "$(slurp)"'
 alias docker='sudo docker'
+alias dockerc='sudo docker-compose'
 alias phpMyAdmin='sudo php -S localhost:88 --docroot=/usr/share/webapps/phpMyAdmin'

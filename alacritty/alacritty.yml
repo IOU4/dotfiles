@@ -1,0 +1,28 @@
+font:
+    normal:
+        family: Iosevka SS18 
+        style: Medium
+    bold:
+        family: Iosevka SS18 
+        style: Bold
+    italic:
+        family: Iosevka SS18 
+        style: Italic
+    bold_italic:
+        family: Iosevka SS18 
+        style: Bold Italic    
+    size: 14
+
+window:
+  padding:
+    x: 10
+    y: 10
+  opacity: 0.78
+cursor:
+  style: 
+    shape: Block
+
+
+import:
+  # please don't edit below this line
+  - /home/emadou/.config/alacritty/catppuccin/catppuccin-mocha.yml

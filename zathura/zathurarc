@@ -1,0 +1,5 @@
+set default-bg "#1A1B26"
+set default-fg "#C0CAF5"
+set recolor 
+set recolor-lightcolor "#1A1B26"
+set recolor-keephue

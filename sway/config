@@ -1,0 +1,234 @@
+# vim:ft=conf
+# Read `man 5 sway` for a complete reference.
+set $mod Mod4
+
+set $left h
+set $down j
+set $up k
+set $right l
+
+set $term alacritty
+set $browser firefox
+set $files nautilus
+
+set $menu wofi
+    
+set $primary #11121d
+set $secondary #c0caf5
+set $urgent #ff2a2a
+
+# output * bg ~/Pictures/pexels-taryn-elliott-3889761.jpg fill
+set $wallpapers_path $HOME/Pictures/wallpapers/*.jpg
+output * bg `find $wallpapers_path -type f | shuf -n 1` fill
+
+set $laptop eDP-1
+
+exec swayidle -w \
+    timeout 600 'swaylock -f' \
+    timeout 1200 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+    before-sleep 'swaylock -f '
+# resumed. It will also lock your screen before your computer goes to sleep.
+
+ input "1160:4639:DELL09A0:00_0488:121F_Touchpad" {
+     dwt enabled
+     tap enabled
+     natural_scroll enabled
+     middle_emulation enabled
+ }
+ input "1:1:AT_Translated_Set_2_keyboard" {
+     xkb_options caps:swapescape
+     repeat_delay 280
+     repeat_rate 80
+     xkb_layout us,fr,ar
+ }
+# seat "*" hide_cursor when-typing enabled
+seat "*" hide_cursor 3000
+seat "*" xcursor_theme default 5
+bindsym $mod+space exec swaymsg input "1:1:AT_Translated_Set_2_keyboard" xkb_switch_layout next
+
+# Kill focused window
+bindsym $mod+q kill
+
+# mouse button for dragging.
+floating_modifier $mod normal
+
+# Reload the configuration file
+bindsym $mod+Shift+c reload
+
+# Exit sway (logs you out of your Wayland session)
+# (switch to wofi) bindsym $mod+Shift+e exec swaynag -t customn -m 'power menu' -b '   log out' 'swaymsg exit' -b '⏻   shut down' 'shutdown now' -b '     reboot' 'reboot' -b '       suspend' 'systemctl suspend' -b '     hibernate' 'systemctl hibernate' -b '      lock' 'swaylock -f'
+bindsym $mod+Shift+e exec ~/.config/sway/powerctrl.sh
+bindgesture swipe:4:down exec ~/.config/sway/powerctrl.sh 
+
+# Move your focus around
+bindsym $mod+$left focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$right focus right
+# Or use $mod+[up|down|left|right]
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# Move the focused window with the same, but add Shift
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$right move right
+# Ditto, with arrow keys
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# Workspaces:
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+
+# switch to workspace
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace  $ws2
+bindsym $mod+3 workspace  $ws3
+bindsym $mod+4 workspace  $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace  $ws1
+bindsym $mod+Shift+2 move container to workspace  $ws2
+bindsym $mod+Shift+3 move container to workspace  $ws3
+bindsym $mod+Shift+4 move container to workspace  $ws4
+bindsym $mod+Shift+5 move container to workspace  $ws5
+bindsym $mod+Shift+6 move container to workspace  $ws6
+bindsym $mod+Shift+7 move container to workspace  $ws7
+bindsym $mod+Shift+8 move container to workspace  $ws8
+bindsym $mod+Shift+9 move container to workspace  $ws9
+
+# You can "split" the current object of your focus with $mode+v
+bindsym $mod+v split toggle
+
+# Switch the current container between different layout styles
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# Make the current focus fullscreen
+bindsym $mod+Shift+f fullscreen
+
+# Toggle the current focus between tiling and floating mode
+bindsym $mod+Shift+space floating toggle
+
+# Move focus to the parent container
+bindsym $mod+a focus parent
+
+# Move the currently focused window to the scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# If there are multiple scratchpad windows, this command cycles through them.
+bindsym $mod+minus scratchpad show
+
+# Resizing containers:
+mode "resize" {
+    bindsym $left resize shrink width 10px
+    bindsym $down resize grow height 10px
+    bindsym $up resize shrink height 10px
+    bindsym $right resize grow width 10px
+
+    # Ditto, with arrow keys
+    bindsym Left resize shrink width 10px
+    bindsym Down resize grow height 10px
+    bindsym Up resize shrink height 10px
+    bindsym Right resize grow width 10px
+
+    # Return to default mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+    bindsym $mod+r mode "default"
+}
+bindsym $mod+r mode "resize"
+bar {
+    swaybar_command waybar
+    mode hide
+    hidden_state hide
+    modifier $mod+Shift
+}
+
+# borders 
+default_border pixel 1
+client.focused $secondary $secondary $primary
+client.unfocused $primary $primary $secondary 
+client.focused_inactive $primary $primary $secondary  
+# audio-keys
+bindsym XF86AudioRaiseVolume exec pamixer -i 5 
+#&& notify-send -h int:value:$(pamixer --get-volume)  "墳 $(pamixer --get-volume)" # increase
+bindsym XF86AudioLowerVolume exec pamixer -d 5 
+#&& notify-send -h int:value:$(pamixer --get-volume)  "墳 $(pamixer --get-volume)" # increase# decrease
+
+bindsym XF86AudioMute exec pamixer -t 
+# && notify-send "ﱝ muted"
+bindsym XF86AudioMicMute exec pamixer --source 219 -t # toggle mic
+
+# brightness-keys
+bindsym XF86MonBrightnessUp exec light -A 5 
+# && notify-send -h int:value:$(light)  " $(light)"
+bindsym XF86MonBrightnessDown exec light -U 5 
+# && notify-send -h int:value:$(light)  " $(light)"
+
+# apps-shortcuts
+bindsym $mod+c exec $browser
+bindsym $mod+Return exec $term
+bindsym $mod+Shift+Return exec $menu
+bindsym $mod+f exec $files
+bindsym $mod+m exec ~/.config/sway/emoji-picker.sh
+bindsym $mod+p exec grim -t png -g "$(slurp)" 
+
+# gestures
+bindgesture swipe:4:right workspace prev
+bindgesture swipe:4:left workspace next
+bindgesture swipe:3:left focus left
+bindgesture swipe:3:right focus right
+bindgesture swipe:3:up focus up
+bindgesture swipe:3:down focus down
+
+
+# gaps
+# gaps inner 5
+# gaps outer 2
+smart_borders no_gaps
+
+# titles
+font pango:FantasqueSansMono 13
+for_window [title="."] title_format "%title | %app_id | %class"
+title_align center
+
+# sorkspace-assignments
+assign [class = "(Chromium)|(Microsoft-edge-beta)"] $ws2
+assign [app_id = "firefox"] $ws2
+assign [class = "Rhytmbox"] $ws3
+for_window [class = "discord"] move to workspace number $ws3
+for_window [class = "Spotify"] move to scratchpad
+for_window [class = "scrcpy|XEyes"] floating enabled
+for_window [app_id = "qemu"] floating enabled
+for_window [title = "DevTools*|Developer Tools*|Picture-in-Picture|Sharing Indicator.*|browser Console"] floating enabled
+focus_follows_mouse yes
+
+
+# auto-exectution
+exec nm-applet --indicator
+exec mako
+# exec discord
+# pipewire
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+
+

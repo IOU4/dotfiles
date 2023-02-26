@@ -22,7 +22,7 @@ EOF
 "Lock")
 	swaylock
 	;;
-"Log Out")
+"Log off")
 	swaymsg exit
 	;;
 esac

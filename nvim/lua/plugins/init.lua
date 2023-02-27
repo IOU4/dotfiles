@@ -37,22 +37,4 @@ return {
 
 	-- Treesitter
 	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
-
-	{
-		"zbirenbaum/copilot.lua",
-		cmd = "Copilot",
-		config = function()
-			vim.defer_fn(function()
-				require("copilot").setup()
-			end, 100)
-		end,
-		dependencies = {
-			{
-				"zbirenbaum/copilot-cmp",
-				config = function()
-					require("copilot_cmp").setup()
-				end,
-			},
-		},
-	},
 }

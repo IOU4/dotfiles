@@ -13,5 +13,6 @@ null_ls.setup({
 		b.formatting.xmllint,
 		b.formatting.stylua,
 		b.formatting.ktlint,
+		b.formatting.yamlfmt,
 	},
 })

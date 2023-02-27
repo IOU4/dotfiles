@@ -11,8 +11,7 @@
     "sway/mode"
   ],
   "modules-center": [
-    "clock",
-    "mpris"
+    "clock"
   ],
   "modules-right": [
     "pulseaudio",

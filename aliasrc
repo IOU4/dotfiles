@@ -8,9 +8,7 @@ alias la="exa -lah"
 alias qemu=qemu-system-x86_64
 alias farge="farge --notify --no-preview"
 alias grim='grim -t png -g "$(slurp)"'
-# alias docker='sudo docker'
 alias dockerc='docker compose'
-alias phpMyAdmin='sudo php -S localhost:88 --docroot=/usr/share/webapps/phpMyAdmin'
 alias snake=~/Work/csnake/snake.out
 alias hx="helix"
 alias sail="./vendor/bin/sail"
@@ -19,4 +17,4 @@ alias sys="systemctl"
 alias jrn="journalctl"
 alias bt="bluetoothctl"
 alias emulator="QT_QPA_PLATFORM=xcb /opt/android-sdk/emulator/emulator"
-alias gralde="./gradlew"
+alias gradle="./gradlew"

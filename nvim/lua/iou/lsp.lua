@@ -54,7 +54,6 @@ require("mason-lspconfig").setup_handlers({
 	["lua_ls"] = require("iou.lang_servers.lua_ls"),
 	["jdtls"] = function() end,
 	["clangd"] = require("iou.lang_servers.clangd"),
-	-- ["gradle_ls"] = require("iou.lang_servers.gradle"),
 })
 
 lspconfig.dartls.setup({

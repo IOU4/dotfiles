@@ -18,6 +18,7 @@ local config = {
 		jdtls_dir .. "config_linux",
 		"-data",
 		workspace_dir .. project_name,
+		"-Xmx500m",
 	},
 	root_dir = vim.fs.dirname(vim.fs.find({ "gradlew", ".git", "mvnw" }, { upward = true })[1]),
 	on_attach = function(client, bufnr)

@@ -6,7 +6,6 @@ return {
 	"akinsho/bufferline.nvim", -- bufferline
 	"nvim-lualine/lualine.nvim", -- status line
 	"ahmedkhalf/project.nvim", -- project scope
-	"folke/trouble.nvim", -- show code problems
 	"mfussenegger/nvim-jdtls", -- java support
 	"jose-elias-alvarez/null-ls.nvim", -- formatting
 	"hrsh7th/nvim-cmp", -- The completion plugin

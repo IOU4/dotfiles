@@ -12,7 +12,6 @@ require("iou.bufferline")
 require("iou.lualine")
 require("iou.toggelterm")
 require("iou.project")
-require("iou.trouble")
 require("iou.null-ls")
 require("iou.telescope")
 
@@ -22,6 +21,3 @@ vim.api.nvim_create_user_command("OpenConfig", function()
 		cwd = "~/.config/nvim/",
 	})
 end, {})
-
--- please don't edit below this line (use 'toggle-dark' to change color)
-vim.o.background = "dark"

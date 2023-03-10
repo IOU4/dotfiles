@@ -1,7 +1,6 @@
 return {
 	"nvim-lua/popup.nvim", -- probably popups
 	"nvim-lua/plenary.nvim", -- I don't know
-	{ "catppuccin/nvim", name = "catppuccin" }, -- colorscheme
 	"windwp/nvim-autopairs", -- pairs
 	"numToStr/Comment.nvim", -- comments
 	"akinsho/bufferline.nvim", -- bufferline

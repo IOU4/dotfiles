@@ -1,7 +1,6 @@
 require("iou.options")
 require("iou.keys")
 require("iou.lazy")
-require("iou.catppuccin")
 require("iou.completion")
 require("iou.mason")
 require("iou.lsp")
@@ -23,3 +22,6 @@ vim.api.nvim_create_user_command("OpenConfig", function()
 		cwd = "~/.config/nvim/",
 	})
 end, {})
+
+-- please don't edit below this line (use 'toggle-dark' to change color)
+vim.o.background = "dark"

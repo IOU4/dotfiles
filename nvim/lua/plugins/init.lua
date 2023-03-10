@@ -14,12 +14,6 @@ return {
 	"saadparwaiz1/cmp_luasnip", -- snippet completions
 	"L3MON4D3/LuaSnip", --snippet engine
 	"akinsho/toggleterm.nvim",
-	{
-		"kyazdani42/nvim-tree.lua",
-		dependencies = {
-			"kyazdani42/nvim-web-devicons", -- optional, for file icons
-		},
-	},
 	-- LSP
 	"neovim/nvim-lspconfig",
 	"williamboman/mason.nvim",

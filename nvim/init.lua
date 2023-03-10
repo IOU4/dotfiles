@@ -11,7 +11,6 @@ require("iou.comments")
 require("iou.bufferline")
 require("iou.lualine")
 require("iou.toggelterm")
-require("iou.project")
 require("iou.null-ls")
 require("iou.telescope")
 

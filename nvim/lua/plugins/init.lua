@@ -5,7 +5,6 @@ return {
 	"numToStr/Comment.nvim", -- comments
 	"akinsho/bufferline.nvim", -- bufferline
 	"nvim-lualine/lualine.nvim", -- status line
-	"ahmedkhalf/project.nvim", -- project scope
 	"mfussenegger/nvim-jdtls", -- java support
 	"jose-elias-alvarez/null-ls.nvim", -- formatting
 	"hrsh7th/nvim-cmp", -- The completion plugin

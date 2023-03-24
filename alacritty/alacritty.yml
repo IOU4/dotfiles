@@ -1,17 +1,17 @@
 font:
   normal:
-    family: Iosevka SS18
-    style: Regular
-  bold:
-    family: Iosevka SS18
-    style: Bold
-  italic:
-    family: Iosevka SS18
-    style: Italic
-  bold_italic:
-    family: Iosevka SS18
-    style: Bold Italic
-  size: 17
+    family: Iosevka Nerd Font
+    # style: Medium
+  # bold:
+  #   family: Iosevka SS18
+  #   style: Bold
+  # italic:
+  #   family: Iosevka SS18
+  #   style: Italic
+  # bold_italic:
+  #   family: Iosevka SS18
+  #   style: Bold Italic
+  size: 15
 window:
   padding:
     x: 10

@@ -47,7 +47,7 @@ window#waybar.hidden {
     color: white;
 }
 
-#language, #mode, #clock, #pulseaudio, #temperature, #backlight, #battery, #tray  {
+#language, #mode, #clock, #pulseaudio, #temperature, #backlight, #battery, #tray, #custom-media  {
     padding: 0 16px;
     border-radius: 10px;
     margin-right: 8px;
@@ -92,3 +92,4 @@ window#waybar.hidden {
         color: #000000;
     }
 }
+

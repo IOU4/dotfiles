@@ -18,7 +18,7 @@ return {
 
 		-- Table of lsp clients to ignore by name
 		-- eg: { "efm", ... }
-		ignore_lsp = { "null-ls" },
+		ignore_lsp = { "null-ls", "jsonls" },
 
 		-- Don't calculate root dir on specific directories
 		-- Ex: { "~/.cargo/*", ... }

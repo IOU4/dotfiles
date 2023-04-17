@@ -14,5 +14,6 @@ null_ls.setup({
 		b.formatting.stylua,
 		b.formatting.ktlint,
 		b.formatting.yamlfmt,
+		b.formatting.fixjson,
 	},
 })

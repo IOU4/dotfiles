@@ -227,6 +227,5 @@ focus_follows_mouse yes
 # auto-exectution
 exec nm-applet --indicator
 exec mako
-# exec discord
 # pipewire
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway

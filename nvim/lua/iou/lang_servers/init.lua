@@ -3,15 +3,15 @@ local M = {}
 local lsp_formatting = function(bufnr)
 	for _, cl in ipairs(vim.lsp.get_active_clients({ bufnr = bufnr })) do
 		if cl.name == "null-ls" then
+			vim.notify("formatting with null ls..")
 			vim.lsp.buf.format({
-				filter = function(client)
-					return client.name == "null-ls"
-				end,
+				name = "null-ls",
 				timeout_ms = 2000,
 			})
 			return
 		end
 	end
+	vim.notify("no null ls formatting ...")
 	vim.lsp.buf.format()
 end
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})

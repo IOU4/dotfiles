@@ -54,6 +54,15 @@ require("mason-lspconfig").setup_handlers({
 	["lua_ls"] = require("iou.lang_servers.lua_ls"),
 	["jdtls"] = function() end,
 	["clangd"] = require("iou.lang_servers.clangd"),
+	["gradle_ls"] = function()
+		lspconfig.gradle_ls.setup({
+			on_attach = require("iou.lang_servers").on_attach,
+			flags = require("iou.lang_servers").lsp_flags,
+			capabilities = require("iou.lang_servers").capabilities,
+			filetypes = { "groovy", "kotlin" },
+			root_dir = require("lspconfig.util").root_pattern("gradlew"),
+		})
+	end,
 })
 
 lspconfig.dartls.setup({

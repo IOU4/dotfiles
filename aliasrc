@@ -9,6 +9,7 @@ alias qemu=qemu-system-x86_64
 alias farge="farge --notify --no-preview"
 alias grim='grim -t png -g "$(slurp)"'
 alias dockerc='docker compose'
+alias dockerb='docker buildx'
 alias snake=~/Work/csnake/snake.out
 alias hx="helix"
 alias sail="./vendor/bin/sail"

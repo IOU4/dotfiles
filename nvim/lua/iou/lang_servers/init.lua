@@ -16,24 +16,15 @@ end
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
 M.on_attach = function(client, bufnr)
-	local isTelescope, telescope = pcall(require, "telescope.builtin")
-	local opts = {
-		previewer = false,
-	}
 	vim.api.nvim_buf_set_option(bufnr, "omnifunc", "v:lua.vim.lsp.omnifunc")
 	local bufopts = { noremap = true, silent = true, buffer = bufnr }
 	vim.keymap.set("n", "gD", vim.lsp.buf.declaration, bufopts)
-	vim.keymap.set("n", "gd", isTelescope and telescope.lsp_definitions or vim.lsp.buf.definition, bufopts)
+	vim.keymap.set("n", "gd", vim.lsp.buf.definition, bufopts)
 	vim.keymap.set("n", "K", vim.lsp.buf.hover, bufopts)
-	vim.keymap.set(
-		"n",
-		"gi",
-		isTelescope and telescope.lsp_implementations(opts) or vim.lsp.buf.implementation,
-		bufopts
-	)
+	vim.keymap.set("n", "gi", vim.lsp.buf.implementation, bufopts)
 	vim.keymap.set("n", "gs", vim.lsp.buf.signature_help, bufopts)
-	vim.keymap.set("n", "gt", isTelescope and telescope.lsp_type_definitions or vim.lsp.buf.type_definition, bufopts)
-	vim.keymap.set("n", "gr", isTelescope and telescope.lsp_references or vim.lsp.buf.references, bufopts)
+	vim.keymap.set("n", "gt", vim.lsp.buf.type_definition, bufopts)
+	vim.keymap.set("n", "gr", vim.lsp.buf.references, bufopts)
 	vim.keymap.set("n", "<leader>cr", vim.lsp.buf.rename, bufopts)
 	vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, bufopts)
 	vim.keymap.set("n", "<leader>cf", vim.lsp.buf.format, bufopts)

@@ -3,7 +3,6 @@ local M = {}
 local lsp_formatting = function(bufnr)
 	for _, cl in ipairs(vim.lsp.get_active_clients({ bufnr = bufnr })) do
 		if cl.name == "null-ls" then
-			vim.notify("formatting with null ls..")
 			vim.lsp.buf.format({
 				name = "null-ls",
 				timeout_ms = 2000,

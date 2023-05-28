@@ -46,11 +46,15 @@ end
 require("mason-lspconfig").setup_handlers({
 	function(server_name) -- default handler (optional)
 		local found, _ = pcall(require, "iou.lang_servers." .. server_name)
-		lspconfig[server_name].setup(found and require("iou.lang_servers." .. server_name) or {
-			on_attach = require("iou.lang_servers").on_attach,
-			flags = require("iou.lang_servers").lsp_flags,
-			capabilities = require("iou.lang_servers").capabilities,
-		})
+		if found then
+			require("iou.lang_servers." .. server_name)
+		else
+			lspconfig[server_name].setup({
+				on_attach = require("iou.lang_servers").on_attach,
+				flags = require("iou.lang_servers").lsp_flags,
+				capabilities = require("iou.lang_servers").capabilities,
+			})
+		end
 	end,
 	["jdtls"] = function() end,
 })

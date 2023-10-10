@@ -1,0 +1,15 @@
+[submodule "nvim/plugins/plenary.nvim"]
+	path = nvim/plugins/plenary.nvim
+	url = https://github.com/nvim-lua/plenary.nvim.git
+[submodule "nvim/plugins/bufferline.nvim"]
+	path = nvim/plugins/bufferline.nvim
+	url = https://github.com/akinsho/bufferline.nvim.git
+[submodule "nvim/plugins/telescope.nvim"]
+	path = nvim/plugins/telescope.nvim
+	url = https://github.com/nvim-telescope/telescope.nvim.git
+[submodule "nvim/plugins/nvim-tree.lua"]
+	path = nvim/plugins/nvim-tree.lua
+	url = https://github.com/nvim-tree/nvim-tree.lua.git
+[submodule "nvim/plugins/kanagawa.nvim"]
+	path = nvim/plugins/kanagawa.nvim
+	url = https://github.com/rebelot/kanagawa.nvim.git

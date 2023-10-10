@@ -1,7 +1,7 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: "Iosevka Nerd Font";
+    font-family: "Iosevka Nerd Font Mono";
     min-height: 20px;
 }
 
@@ -54,38 +54,8 @@ window#waybar.hidden {
     transition: none;
     color: #ffffff;
     background: #383c4a;
+    font-size: 16px;
 }
-
-#pulseaudio.muted {
-    background-color: #90b1b1;
-    color: #2a5c45;
-}
-
-#temperature.critical {
-    background-color: #eb4d4b;
-}
-
-#battery.charging {
-    color: #ffffff;
-    background-color: #26A65B;
-}
-
-#battery.warning:not(.charging) {
-    background-color: #ffbe61;
-    color: black;
-}
-
-#battery.critical:not(.charging) {
-    background-color: #f53c3c;
-    color: #ffffff;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-
 @keyframes blink {
     to {
         background-color: #ffffff;

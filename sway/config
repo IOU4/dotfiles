@@ -7,7 +7,7 @@ set $down j
 set $up k
 set $right l
 
-set $term foot
+set $term alacritty
 set $browser firefox
 set $files nautilus
 
@@ -39,7 +39,7 @@ exec swayidle -w \
      xkb_options caps:swapescape
      repeat_delay 280
      repeat_rate 80
-     xkb_layout us,fr,ar
+     xkb_layout us,fr
  }
 # seat "*" hide_cursor when-typing enabled
 seat "*" hide_cursor 3000
@@ -180,9 +180,9 @@ bindsym XF86AudioMute exec pamixer -t
 bindsym XF86AudioMicMute exec pamixer --source 219 -t # toggle mic
 
 # brightness-keys
-bindsym XF86MonBrightnessUp exec light -A 5 
+bindsym XF86MonBrightnessUp exec sudo light -A 5 
 # && notify-send -h int:value:$(light)  " $(light)"
-bindsym XF86MonBrightnessDown exec light -U 5 
+bindsym XF86MonBrightnessDown exec sudo light -U 5 
 # && notify-send -h int:value:$(light)  " $(light)"
 
 # apps-shortcuts
@@ -208,7 +208,7 @@ bindgesture swipe:3:down focus down
 smart_borders no_gaps
 
 # titles
-font pango:FantasqueSansMono 13
+font pango:IosevkaNerdFontMono-Regular 13
 for_window [title="."] title_format "%title | %app_id | %class"
 title_align center
 

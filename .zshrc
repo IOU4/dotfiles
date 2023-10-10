@@ -16,7 +16,7 @@ setopt INC_APPEND_HISTORY
 # Config for the prompt. PS1 synonym.
 PS1="%(?.%B%{$fg[blue]%} %1~.%B%{$fg[red]%} %1~)"
 PS1+='%{$fg[cyan]%}${vcs_info_msg_0_}'
-PS1+="%(?.%B%{$fg[blue]%}  .%B%{$fg[red]%}  )%{$reset_color%}%b"
+PS1+="%(?.%B%{$fg[blue]%} 󰄾 .%B%{$fg[red]%} 󰄾 )%{$reset_color%}%b"
 
 # History in cache directory:
 HISTSIZE=10000
@@ -50,7 +50,3 @@ bindkey "^[[B" history-beginning-search-forward
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
 
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-
-
-# Load zsh-syntax-highlighting; should be last.
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null

@@ -36,18 +36,27 @@ local options = {
 	laststatus = 3, -- shared status line for all windows
 	foldmethod = "indent", -- indetation based folding
 }
-
-vim.opt.shortmess:append("c")
-vim.opt.clipboard:append("unnamedplus") -- allows neovim to access the system clipboard
-
 for k, v in pairs(options) do
 	vim.opt[k] = v
 end
 
+vim.opt.shortmess:append("c")
+vim.opt.clipboard:append("unnamedplus") -- allows neovim to access the system clipboard
 vim.cmd("set whichwrap+=<,>,[,],h,l")
+
 vim.api.nvim_create_autocmd("TermOpen",  {
   callback = function()
     vim.opt.relativenumber = false
     vim.opt.number = false
   end
 })
+
+function getBranchName() 
+  local res = io.popen("git rev-parse --abbrev-ref HEAD"):read("*a")
+  if res=="" then
+    return res
+  else 
+    return "   "..res:gsub("[\n\r]","");
+  end
+end
+vim.opt.statusline = "%f"..getBranchName().."%= %q %Y%R %{&fenc} %{&ff} %= %c:%l %p%%"

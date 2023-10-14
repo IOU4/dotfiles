@@ -13,3 +13,6 @@
 [submodule "nvim/plugins/kanagawa.nvim"]
 	path = nvim/plugins/kanagawa.nvim
 	url = https://github.com/rebelot/kanagawa.nvim.git
+[submodule "nvim/plugins/nvim-autopairs"]
+	path = nvim/plugins/nvim-autopairs
+	url = https://github.com/windwp/nvim-autopairs.git

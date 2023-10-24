@@ -3,6 +3,9 @@ vim.g.loaded_netrwPlugin = 1
 
 -- empty setup using defaults
 require("nvim-tree").setup({
+  git = {
+    enable = false
+  },
   renderer = {
     icons = {
       show = {

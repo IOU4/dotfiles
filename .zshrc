@@ -11,7 +11,7 @@ precmd() {
 
 # Enable substitution in the prompt.
 setopt prompt_subst
-setopt INC_APPEND_HISTORY
+#setopt INC_APPEND_HISTORY
 
 # Config for the prompt. PS1 synonym.
 PS1="%(?.%B%{$fg[blue]%} %1~.%B%{$fg[red]%} %1~)"

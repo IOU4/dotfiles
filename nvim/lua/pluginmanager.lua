@@ -4,7 +4,6 @@ if not vim.loop.fs_stat(lazypath) then
     "git",
     "clone",
     "--filter=blob:none",
-    "--depth=1",
     "https://github.com/folke/lazy.nvim.git",
     "--branch=stable", -- latest stable release
     lazypath,
@@ -15,8 +14,13 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
   "akinsho/bufferline.nvim",
   "rebelot/kanagawa.nvim",
+  "tpope/vim-fugitive",
   "nvim-tree/nvim-tree.lua",
-  {"nvim-telescope/telescope.nvim", tag = "0.1.4", dependencies = {"nvim-lua/plenary.nvim"}},
+  {
+    "nvim-telescope/telescope.nvim",
+    tag = "0.1.4",
+    dependencies = { "nvim-lua/plenary.nvim" }
+  },
   "neovim/nvim-lspconfig",
-  {"hrsh7th/nvim-cmp", dependencies = {"hrsh7th/cmp-nvim-lsp"}}
+  { "hrsh7th/nvim-cmp", dependencies = { "hrsh7th/cmp-nvim-lsp" } }
 })

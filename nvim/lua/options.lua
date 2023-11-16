@@ -46,6 +46,7 @@ vim.api.nvim_create_autocmd("TermOpen", {
   callback = function()
     vim.opt.relativenumber = false
     vim.opt.number = false
+    vim.opt.buflisted = false
   end
 })
 

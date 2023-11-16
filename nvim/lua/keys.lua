@@ -42,7 +42,7 @@ keymap("n", "<leader>q", ":q<CR>", opts)
 keymap("n", "<leader>w", ":w<CR>", opts)
 
 -- Better terminal navigation
-keymap("n", "<C-t>", ":60 vsplit term://$SHELL<CR> :set nobuflisted<CR> :startinsert<CR>", opts)
+keymap("n", "<C-t>", ":60 vsplit term://$SHELL<CR> :startinsert<CR>", opts)
 keymap("t", "<C-t>", "<C-\\><C-N>", opts)
 keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", opts)
 keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", opts)

@@ -20,6 +20,7 @@ window:
 cursor:
   style:
     shape: Block
+    
 # Colors (Kanagawa Dragon)
 # Source: https://github.com/rebelot/kanagawa.nvim
 colors:

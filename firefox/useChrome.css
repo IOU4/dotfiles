@@ -1,0 +1,108 @@
+:root:not([customizing]) #navigator-toolbox{
+    position: relative;
+    z-index: 1;
+  }
+  
+  #navigator-toolbox:not(:hover) > #titlebar{
+    -moz-window-dragging: no-drag !important;
+    pointer-events: none
+  }
+  
+  :root:not([customizing]) #navigator-toolbox:hover,
+  :root:not([customizing]) #titlebar{
+    margin-bottom: calc(0px - 2 * var(--tab-block-margin) - var(--tab-min-height));
+  }
+  #TabsToolbar:not([customizing]){ visibility: hidden; transition: visibility 0ms linear 200ms }
+  
+  #navigator-toolbox,
+  #titlebar{ transition: margin-bottom 48ms ease-out 200ms }
+  
+  #navigator-toolbox:hover{ transition-delay: 0s }
+  #navigator-toolbox:hover > #titlebar{
+    margin-bottom: 0px;
+    transition-delay: 0s;
+  }
+  
+  #navigator-toolbox:hover #TabsToolbar{
+    visibility: visible;
+    transition-delay: 18ms
+  }
+  /* These rules make sure that height of tabs toolbar doesn't exceed tab-min-height */
+  #tabbrowser-tabs:not([secondarytext-unsupported]) .tab-label-container{
+    max-height: var(--tab-min-height);
+  }
+  .tab-label{ line-height: 20px !important; }
+  :root[uidensity="compact"] .tab-label{ line-height: 18px !important; }
+  
+  :root{
+    --uc-autohide-toolbox-delay: 200ms; /* Wait 0.1s before hiding toolbars */
+    --uc-toolbox-rotation: 82deg;  /* This may need to be lower on mac - like 75 or so */
+  }
+  
+  :root[sizemode="maximized"]{
+    --uc-toolbox-rotation: 88.5deg;
+  }
+  
+  @media  (-moz-platform: windows){
+    #navigator-toolbox:not(:-moz-lwtheme){ background-color: -moz-dialog !important; }
+  }
+  
+  :root[sizemode="fullscreen"],
+  #navigator-toolbox[inFullscreen]{ margin-top: 0 !important; }
+  
+  #navigator-toolbox{
+    position: fixed !important;
+    display: block;
+    background-color: var(--lwt-accent-color,black) !important;
+    transition: transform 82ms linear, opacity 82ms linear !important;
+    transition-delay: var(--uc-autohide-toolbox-delay) !important;
+    transform-origin: top;
+    transform: rotateX(var(--uc-toolbox-rotation));
+    opacity: 0;
+    line-height: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  
+  /* #mainPopupSet:hover ~ toolbox, */
+  /* Uncomment the above line to make toolbar visible if some popup is hovered */
+  #navigator-toolbox:hover,
+  #navigator-toolbox:focus-within{
+    transition-delay: 33ms !important;
+    transform: rotateX(0);
+    opacity: 1;
+  }
+  
+  #navigator-toolbox > *{ line-height: normal; pointer-events: auto }
+  
+  #navigator-toolbox,
+  #navigator-toolbox > *{
+    width: 100vw;
+    -moz-appearance: none !important;
+  }
+  
+  /* These two exist for oneliner compatibility */
+  #nav-bar{ width: var(--uc-navigationbar-width,100vw) }
+  #TabsToolbar{ width: calc(100vw - var(--uc-navigationbar-width,0px)) }
+  
+  /* Don't apply transform before window has been fully created */
+  :root:not([sessionrestored]) #navigator-toolbox{ transform:none !important }
+  
+  :root[customizing] #navigator-toolbox{
+    position: relative !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+  
+  #navigator-toolbox[inFullscreen] > #PersonalToolbar,
+  #PersonalToolbar[collapsed="true"]{ display: none }
+  
+  /* Uncomment this if tabs toolbar is hidden with hide_tabs_toolbar.css */
+   /*#titlebar{ margin-bottom: -9px }*/
+  
+  /* Uncomment the following for compatibility with tabs_on_bottom.css - this isn't well tested though */
+  /*
+  #navigator-toolbox{ flex-direction: column; display: flex; }
+  #titlebar{ order: 2 }
+  */  

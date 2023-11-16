@@ -1,11 +1,9 @@
--- set runtime path for plugins
-vim.opt.runtimepath:append(",~/.config/nvim/plugins/*")
 local options = {
   backup = false,                          -- creates a backup file
   completeopt = { "menuone", "noselect" }, -- mostly just for cmp
   conceallevel = 0,                        -- so that `` is visible in markdown files
   fileencoding = "utf-8",                  -- the encoding written to a file
-  hlsearch = true,                         -- highlight all matches on previous search pattern
+  incsearch = true,                         -- highlight all matches on previous search pattern
   ignorecase = true,                       -- ignore case in search patterns
   mouse = "",                              -- disallow the mouse to be used in neovim
   pumheight = 10,                          -- pop up menu height

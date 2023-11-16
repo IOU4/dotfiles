@@ -8,12 +8,19 @@ vim.diagnostic.config({
   virtual_text = false,
   float = {
     style = "minimal",
-    border = "rounded",
-    -- source = "always",
+    border = "single",
     header = "",
     prefix = "",
   },
 })
+vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
+  vim.lsp.handlers.hover,
+  { border = "single", }
+)
+vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(
+  vim.lsp.handlers.signature_help,
+  { border = "single", }
+)
 
 vim.api.nvim_create_autocmd("BufWritePre", {
   callback = function() vim.lsp.buf.format({ buffer = bufnr }) end,
@@ -43,7 +50,7 @@ cmp.setup {
     end,
   },
   completion = {
-    autocomplete = false,
+    -- autocomplete = false,
   },
   sources = {
     { name = "nvim_lsp" }

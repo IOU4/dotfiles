@@ -50,7 +50,7 @@ vim.api.nvim_create_autocmd("TermOpen", {
   end
 })
 
-function getBranchName()
+function GetBranchName()
   local res = io.popen("git rev-parse --abbrev-ref HEAD >/dev/null 2>&1"):read("*a")
   if res == "" then
     return res
@@ -59,4 +59,4 @@ function getBranchName()
   end
 end
 
-vim.opt.statusline = "%f" .. getBranchName() .. "%= %q %Y%R %{&fenc} %{&ff} %= %c:%l %p%%"
+vim.opt.statusline = "%f" .. GetBranchName() .. "%= %q %Y%R %{&fenc} %{&ff} %= %c:%l %p%%"

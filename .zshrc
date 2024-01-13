@@ -16,7 +16,7 @@ setopt prompt_subst
 # Config for the prompt. PS1 synonym.
 PS1="%(?.%B%{$fg[blue]%} %1~.%B%{$fg[red]%} %1~)"
 PS1+='%{$fg[cyan]%}${vcs_info_msg_0_}'
-PS1+="%(?.%B%{$fg[blue]%} 󰄾 .%B%{$fg[red]%} 󰄾 )%{$reset_color%}%b"
+PS1+="%(?.%B%{$fg[blue]%} 󰶻  .%B%{$fg[red]%} 󰶻  )%{$reset_color%}%b"
 
 # History in cache directory:
 HISTSIZE=10000

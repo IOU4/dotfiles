@@ -1,3 +1,19 @@
+[font]
+size = 15
+
+[font.normal]
+family = "Iosevka NF Medium"
+
+[window]
+opacity = 0.8
+
+[window.padding]
+x = 10
+y = 10
+
+[cursor.style]
+shape = "Block"
+
 [[colors.indexed_colors]]
 color = "0xffa066"
 index = 16
@@ -33,19 +49,3 @@ foreground = "0xc5c9c5"
 [colors.selection]
 background = "0x2d4f67"
 foreground = "0xc8c093"
-
-[cursor.style]
-shape = "Block"
-
-[font]
-size = 15
-
-[font.normal]
-family = "Iosevka NF Medium"
-
-[window]
-opacity = 0.8
-
-[window.padding]
-x = 10
-y = 10

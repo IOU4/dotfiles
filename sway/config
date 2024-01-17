@@ -21,7 +21,7 @@ set $urgent #ff2a2a
 set $wallpapers_path $HOME/Pictures/wallpapers/*.jpg
 output * bg `find $wallpapers_path -type f | shuf -n 1` fill
 
-set $laptop eDP-1
+set $laptop_scr eDP-1
 
 exec swayidle -w \
     timeout 1200 'swaylock -f' \

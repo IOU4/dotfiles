@@ -3,7 +3,7 @@ local options = {
   completeopt = { "menuone", "noselect" }, -- mostly just for cmp
   conceallevel = 0,                        -- so that `` is visible in markdown files
   fileencoding = "utf-8",                  -- the encoding written to a file
-  incsearch = true,                         -- highlight all matches on previous search pattern
+  incsearch = true,                        -- highlight all matches on previous search pattern
   ignorecase = true,                       -- ignore case in search patterns
   mouse = "",                              -- disallow the mouse to be used in neovim
   pumheight = 10,                          -- pop up menu height
@@ -42,11 +42,18 @@ vim.opt.shortmess:append("c")
 vim.opt.clipboard:append("unnamedplus") -- allows neovim to access the system clipboard
 vim.cmd("set whichwrap+=<,>,[,],h,l")
 
+-- terminal window options
 vim.api.nvim_create_autocmd("TermOpen", {
   callback = function()
     vim.opt.relativenumber = false
     vim.opt.number = false
     vim.opt.buflisted = false
+  end
+})
+-- auto close terminal when process exits
+vim.api.nvim_create_autocmd("TermClose", {
+  callback = function()
+    vim.cmd("close")
   end
 })
 

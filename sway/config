@@ -24,8 +24,9 @@ output * bg `find $wallpapers_path -type f | shuf -n 1` fill
 set $laptop_scr eDP-1
 
 exec swayidle -w \
-    timeout 1200 'swaylock -f' \
-    timeout 1800 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+    timeout 600 'swaylock -f' \
+    timeout 1200 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+    timeout 2400 'systemctl hibernate' \
     before-sleep 'swaylock -f '
 # resumed. It will also lock your screen before your computer goes to sleep.
 

@@ -7,7 +7,7 @@ set $down j
 set $up k
 set $right l
 
-set $term alacritty
+set $term foot # alacritty
 set $browser firefox
 set $files nautilus
 
@@ -18,7 +18,7 @@ set $secondary #c0caf5
 set $urgent #ff2a2a
 
 # output * bg ~/Pictures/pexels-taryn-elliott-3889761.jpg fill
-set $wallpapers_path $HOME/Pictures/wallpapers/*.jpg
+set $wallpapers_path $HOME/Pictures/wallpapers/background
 output * bg `find $wallpapers_path -type f | shuf -n 1` fill
 
 set $laptop_scr eDP-1
@@ -177,8 +177,8 @@ bindsym XF86AudioLowerVolume exec pamixer -d 5
 #&& notify-send -h int:value:$(pamixer --get-volume)  "墳 $(pamixer --get-volume)" # increase# decrease
 
 bindsym XF86AudioMute exec pamixer -t 
-# && notify-send "ﱝ muted"
-bindsym XF86AudioMicMute exec pamixer --source 219 -t # toggle mic
+# && notify-send "muted"
+bindsym XF86AudioMicMute exec pamixer --source 47 -t # toggle mic
 
 # brightness-keys
 bindsym XF86MonBrightnessUp exec sudo light -A 5 
@@ -214,7 +214,7 @@ for_window [title="."] title_format "%title | %app_id | %class"
 title_align center
 
 # sorkspace-assignments
-assign [class = "(Chromium)|(Microsoft-edge-beta)"] $ws2
+assign [class = "(Chromium)|(Microsoft-edge-beta)"] $ws3
 assign [app_id = "firefox"] $ws2
 assign [class = "Rhytmbox"] $ws3
 for_window [class = "discord"] move to workspace number $ws3

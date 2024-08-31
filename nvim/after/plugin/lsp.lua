@@ -21,11 +21,11 @@ vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(
   vim.lsp.handlers.signature_help,
   { border = "single", }
 )
-
 vim.api.nvim_create_autocmd("BufWritePre", {
   callback = function(ev) vim.lsp.buf.format() end,
 })
 
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
 local on_attach = function(_, bufnr)
   local bufopts = { noremap = true, silent = true, buffer = bufnr }
   vim.keymap.set("n", "gD", vim.lsp.buf.declaration, bufopts)
@@ -40,31 +40,19 @@ local on_attach = function(_, bufnr)
   vim.keymap.set("n", "<leader>cf", vim.lsp.buf.format, bufopts)
 end
 
-local capabilities = require('cmp_nvim_lsp').default_capabilities()
 require 'lspconfig'.lua_ls.setup {
   capabilities = capabilities,
   on_attach = on_attach,
-  on_init = function(client)
-    -- local path = client.workspace_folders[1].name
-    -- if not vim.loop.fs_stat(path .. '/.luarc.json') and not vim.loop.fs_stat(path .. '/.luarc.jsonc') then
-    client.config.settings = vim.tbl_deep_extend('force', client.config.settings, {
-      Lua = {
-        runtime = {
-          version = 'LuaJIT'
-        },
-        workspace = {
-          checkThirdParty = false,
-          library = {
-            vim.env.VIMRUNTIME
-          }
-        }
+  settings = {
+    Lua = {
+      diagnostics = {
+        globals = { "vim" }
+      },
+      runtime = {
+        version = "LuaJIT"
       }
-    })
-
-    client.notify("workspace/didChangeConfiguration", { settings = client.config.settings })
-    -- end
-    return true
-  end
+    }
+  }
 }
 require 'lspconfig'.gopls.setup {
   capabilities = capabilities,

@@ -14,13 +14,24 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
   "akinsho/bufferline.nvim",
   "rebelot/kanagawa.nvim",
-  "tpope/vim-fugitive",
   "nvim-tree/nvim-tree.lua",
   {
     "nvim-telescope/telescope.nvim",
     tag = "0.1.4",
     dependencies = { "nvim-lua/plenary.nvim" }
   },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    build = ":TSUpdate"
+  },
   "neovim/nvim-lspconfig",
-  { "hrsh7th/nvim-cmp", dependencies = { "hrsh7th/cmp-nvim-lsp", "L3MON4D3/LuaSnip", "saadparwaiz1/cmp_luasnip" } }
+  {
+    "hrsh7th/nvim-cmp",
+    dependencies = { "hrsh7th/cmp-nvim-lsp", "L3MON4D3/LuaSnip", "saadparwaiz1/cmp_luasnip" }
+  },
+  {
+    'windwp/nvim-autopairs',
+    event = 'InsertEnter',
+  },
+  "akinsho/toggleterm.nvim"
 })

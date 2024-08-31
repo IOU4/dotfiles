@@ -1,7 +1,3 @@
-if [ -n "$DESKTOP_SESSION" ];then
-    eval $(gnome-keyring-daemon --start)
-    export SSH_AUTH_SOCK
-fi
 export PATH=$PATH:/home/emadou/.local/bin:/home/emadou/gits/flutter/bin:/home/emadou/.cargo/bin
 export EDITOR=nvim
 export BROWSER=/usr/bin/firefox

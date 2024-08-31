@@ -42,8 +42,8 @@ keymap("n", "<leader>q", ":q<CR>", opts)
 keymap("n", "<leader>w", ":w<CR>", opts)
 
 -- Better terminal navigation
-keymap("n", "<C-t>", ":60 vsplit term://$SHELL<CR> :startinsert<CR>", opts)
-keymap("t", "<C-t>", "<C-\\><C-N>", opts)
+-- keymap("n", "<C-t>", ":60 vsplit term://$SHELL<CR> :startinsert<CR>", opts)
+-- keymap("t", "<C-t>", "<C-\\><C-N>", opts)
 keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", opts)
 keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", opts)
 keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", opts)
@@ -51,3 +51,12 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", opts)
 
 -- No search highlight
 keymap("n", "<ESC>", ":nohlsearch<CR>", opts)
+
+-- Highlight when yanking (copying) text
+vim.api.nvim_create_autocmd('TextYankPost', {
+  desc = 'Highlight when yanking (copying) text',
+  group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
+  callback = function()
+    vim.highlight.on_yank()
+  end,
+})

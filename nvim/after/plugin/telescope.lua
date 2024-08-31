@@ -1,32 +1,32 @@
 local telescope = require("telescope")
 
 telescope.setup({
-	defaults = {
-		prompt_prefix = "",
-		selection_caret = "",
-		theme = "dropdown",
-		preview = false,
-		multi_icon = ">",
-		sorting_strategy = "ascending",
-		layout_config = {
-			prompt_position = "top",
+  defaults = {
+    prompt_prefix = "",
+    selection_caret = "",
+    theme = "dropdown",
+    preview = false,
+    multi_icon = ">",
+    sorting_strategy = "ascending",
+    layout_config = {
+      prompt_position = "top",
       height = 0.60,
       width = 0.60,
-		},
-	},
-	pickers = {
-		buffers = {
-			sort_lastused = true,
-			mappings = {
-				i = {
-					["<c-d>"] = require("telescope.actions").delete_buffer,
-				},
-				n = {
-					["<c-d>"] = require("telescope.actions").delete_buffer,
-				},
-			},
-		},
-	}
+    },
+  },
+  pickers = {
+    buffers = {
+      sort_lastused = true,
+      mappings = {
+        i = {
+          ["<c-d>"] = require("telescope.actions").delete_buffer,
+        },
+        n = {
+          ["<c-d>"] = require("telescope.actions").delete_buffer,
+        },
+      },
+    },
+  }
 })
 
 -- diable folds in telescope

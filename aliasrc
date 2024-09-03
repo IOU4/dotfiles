@@ -1,5 +1,4 @@
 #!/bin/sh
-# alias v=$EDITOR
 alias v=nvim
 alias e=exit
 alias c=clear
@@ -7,7 +6,7 @@ alias ls=exa
 alias la="exa -lah"
 alias qemu=qemu-system-x86_64
 alias farge="farge --notify --no-preview"
-alias grim='grim -t png -g "$(slurp)"'
+alias grim='grim -t png -g "$(slurp)" /home/emad/Pictures/screenshots/$(date +%s_grim).png'
 alias dockerc='docker compose'
 alias dockerb='docker buildx'
 alias snake=~/Work/csnake/snake.out
@@ -18,5 +17,5 @@ alias sys="systemctl"
 alias jrn="journalctl"
 alias bt="bluetoothctl"
 alias emulator="QT_QPA_PLATFORM=xcb /opt/android-sdk/emulator/emulator"
-alias gradle="JAVA_OPTS=\"-Xmx256m\" ./gradlew"
+alias gradle="./gradlew"
 alias update="sudo pacman -Syyu"

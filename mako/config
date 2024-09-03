@@ -1,12 +1,11 @@
 #vim: ft=conf
 # on-notify=exec mpv /usr/share/sounds/freedesktop/stereo/message.oga
 font=Iosevka Nerd Font Mono 12
-background-color=#11121D
-text-color=#c0caf5
+background-color=#181616
+text-color=#c5c9c5
+border-color=#c5c9c5
 border-size=1
-border-color=#c0caf5
 border-radius=0
 icon-path=/home/emadou/Downloads/phone-solid.svg 
 text-alignment=center
-default-timeout=3000
-
+default-timeout=5000

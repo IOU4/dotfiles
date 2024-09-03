@@ -9,7 +9,7 @@ set $right l
 
 set $term foot # alacritty
 set $browser firefox
-set $files nautilus
+set $files "foot -e yazi"
 
 set $menu wofi
     
@@ -221,9 +221,7 @@ for_window [class = "discord"] move to workspace number $ws3
 for_window [class = "Spotify"] move to scratchpad
 for_window [class = "scrcpy|XEyes"] floating enabled
 for_window [app_id = "qemu"] floating enabled
-for_window [title = "DevTools*|Developer Tools*|Picture-in-Picture|Sharing Indicator.*|browser Console"] floating enabled
-focus_follows_mouse yes
-
+for_window [title = "DevTools*|Developer Tools*|Picture-in-Picture|Sharing Indicator.*|browser Console|Yazi:*"] floating enabled, resize set width 40 ppt height 100 ppte, move position center
 
 # auto-exectution
 exec nm-applet --indicator

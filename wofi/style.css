@@ -1,40 +1,33 @@
 window {
   margin: 5px;
   padding: 10px;
-  background-color: #11121d;
-  color: #c0caf5;
-  border: 1px solid #c0caf5;
+  background-color: #181616;
+  color: #c5c9c5;
+  border: 1px solid #c5c9c5;
+  border-radius: 4px;
+  font-family: "Iosevka Nerd Font Mono";
+  font-size: 20
 }
 
-#input {
-  margin: 5px 5px 10px;
+
+#entry, #input {
   background: none;
-  border: 1px solid #c0caf5;
-  color: #c0caf5;
-  border-radius: 0px;
+  border: none;
+  margin: 5px 0 5px 0;
+  padding: 5px;
+  border-radius: 4px;
 }
 
 #entry:selected {
-  border-radius: 0px;
-  border: none;
-  background-color: #c0caf5;
-  margin: 0 5px;
+  background-color: #c5c9c5;
 }
 
 #text:selected {
-  color: #11121d;
-}
-
-#inner-box {
-  /* margin: 5px; */
+  color: #181616;
 }
 
 #outer-box {
-  margin: 5px;
-}
-
-#scroll {
-  /* margin: 5px; */
+  margin: 16px;
 }
 
 #text {

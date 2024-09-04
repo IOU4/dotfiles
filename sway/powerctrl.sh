@@ -1,28 +1,32 @@
 #!/bin/bash
+lock=""
+logout=""
+shutdown=""
+reboot=""
+sleep=""
+
 case $(
-	wofi -d -L 6 -l 9 -W 100 \
-		-D dynamic_lines=true <<EOF | sed 's/^ *//'
-    Shutdown
-    Reboot
-    Log off
-    Sleep
-    Lock
-    Cancel
+	wofi -c ~/dotfiles/wofi/power.conf -s ~/dotfiles/wofi/power.css <<EOF | sed 's/^ *//'
+    $shutdown
+    $reboot
+    $logout
+    $sleep
+    $lock 
 EOF
 ) in
-"Shutdown")
+$shutdown)
 	systemctl poweroff
 	;;
-"Reboot")
+$reboot)
 	systemctl reboot
 	;;
-"Sleep")
+$sleep)
 	systemctl suspend
 	;;
-"Lock")
+$lock)
 	swaylock
 	;;
-"Log off")
+$logout)
 	swaymsg exit
 	;;
 esac

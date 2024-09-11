@@ -33,5 +33,8 @@ require('lazy').setup({
     'windwp/nvim-autopairs',
     event = 'InsertEnter',
   },
-  "akinsho/toggleterm.nvim"
+  "akinsho/toggleterm.nvim",
+  ui = {
+    border = "rounded",
+  },
 })

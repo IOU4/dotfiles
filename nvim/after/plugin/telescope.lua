@@ -2,12 +2,14 @@ local telescope = require("telescope")
 
 telescope.setup({
   defaults = {
+    sorting_strategy = "ascending",
     prompt_prefix = "",
+    prompt_title = false,
+    results_title = false,
     selection_caret = "",
     theme = "dropdown",
     preview = false,
     multi_icon = ">",
-    sorting_strategy = "ascending",
     layout_config = {
       prompt_position = "top",
       height = 0.60,
@@ -16,7 +18,6 @@ telescope.setup({
   },
   pickers = {
     buffers = {
-      sort_lastused = true,
       mappings = {
         i = {
           ["<c-d>"] = require("telescope.actions").delete_buffer,

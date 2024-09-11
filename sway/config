@@ -214,14 +214,11 @@ for_window [title="."] title_format "%title | %app_id | %class"
 title_align center
 
 # sorkspace-assignments
-assign [class = "(Chromium)|(Microsoft-edge-beta)"] $ws3
+assign [class = "Chromium"] $ws3
 assign [app_id = "firefox"] $ws2
-assign [class = "Rhytmbox"] $ws3
-for_window [class = "discord"] move to workspace number $ws3
-for_window [class = "Spotify"] move to scratchpad
-for_window [class = "scrcpy|XEyes"] floating enabled
-for_window [app_id = "qemu"] floating enabled
-for_window [title = "DevTools*|Developer Tools*|Picture-in-Picture|Sharing Indicator.*|browser Console|Yazi:*"] floating enabled, resize set width 40 ppt height 100 ppte, move position center
+for_window [app_id = "qemu|scrcpy"] floating enabled
+for_window [title = "DevTools*|Developer Tools*|Picture-in-Picture|Sharing Indicator.*|browser Console"] floating enabled
+for_window [title = "Yazi:*"] floating enable, move position 25ppt 0
 
 # auto-exectution
 exec nm-applet --indicator

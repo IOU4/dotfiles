@@ -1,0 +1,67 @@
+{
+    "ipc": true,
+    "reload_style_on_change": true,
+    "modules-left": [
+        "sway/workspaces",
+        "sway/language",
+        "hyprland/language",
+        "sway/mode"
+    ],
+    "modules-center": [
+        "clock",
+        "custom/media"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "backlight",
+        "battery",
+        "tray"
+    ],
+    "sway/workspaces": {
+      "format": "{icon} ",
+      "format-icons": {
+        "default":"",
+        "focused":""
+      }
+    },
+    "sway/language": {
+        "format": "  {}",
+        "tooltip-format": "{long}"
+    },
+    "clock": {
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "format": "  {:%a, %d %b, %I:%M %p}"
+    },
+    "pulseaudio": {
+        "reverse-scrolling": 1,
+        "format": "󰎈 {volume}%",
+        "format-muted": " muted"
+    },
+    "backlight": {
+        "format": "  {percent}%",
+        "on-scroll-up": "sudo light -U 5",
+        "on-scroll-down": "sudo light -A 5"
+    },
+    "battery": {
+        "format": "  {capacity}%",
+        "format-charging": "  {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "  {time}"
+    },
+    "tray": {
+        "icon-size": 16,
+        "spacing": 10
+    },
+    "custom/media": {
+        "format": "{icon}  {}",
+        "format-icons": {
+            "Paused": "",
+            "Playing": ""
+        },
+        "return-type": "json",
+        "max-length": 70,
+        "exec": "playerctl -a metadata --format '{\"text\": \"{{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+        "on-click": "playerctl play-pause",
+        "on-click-right": "playerctl next"
+    }
+}

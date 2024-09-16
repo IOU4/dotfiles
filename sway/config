@@ -218,7 +218,7 @@ assign [class = "Chromium"] $ws3
 assign [app_id = "firefox"] $ws2
 for_window [app_id = "qemu|scrcpy"] floating enabled
 for_window [title = "DevTools*|Developer Tools*|Picture-in-Picture|Sharing Indicator.*|browser Console"] floating enabled
-for_window [title = "Yazi:*"] floating enable, move position 25ppt 0
+for_window [title = "Yazi:*"] floating enable, move position center
 
 # auto-exectution
 exec nm-applet --indicator

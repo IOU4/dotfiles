@@ -21,3 +21,4 @@ vim.cmd("colorscheme kanagawa")
 vim.cmd 'highlight NormalFloat guibg=none'
 vim.cmd 'highlight FloatBorder guibg=none'
 vim.cmd 'highlight FloatTitle guibg=none'
+vim.cmd 'highlight TelescopeBorder guibg=none'

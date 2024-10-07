@@ -1,6 +1,6 @@
 #vim: ft=conf
 # on-notify=exec mpv /usr/share/sounds/freedesktop/stereo/message.oga
-font=Iosevka Nerd Font 15
+font=Iosevka Nerd Font 14
 background-color=#181616
 text-color=#c5c9c5
 border-color=#c5c9c5

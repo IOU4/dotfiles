@@ -2,7 +2,6 @@ local opts = { noremap = true, silent = true }
 local keymap = vim.api.nvim_set_keymap
 
 --Remap space as leader key
-keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
@@ -34,12 +33,12 @@ keymap("i", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 -- Press jk fast to exit insert mode
 keymap("i", "jk", "<ESC>", opts)
 
--- I remeber that from luke
+-- from luke
 keymap("v", "p", '"_dP', opts)
 
 -- quit/save with mapleader
 keymap("n", "<leader>q", ":q<CR>", opts)
-keymap("n", "<leader>w", ":w<CR>", opts)
+keymap("n", "<leader>w", ":w<CR><CR>", opts)
 
 -- Better terminal navigation
 -- keymap("n", "<C-t>", ":60 vsplit term://$SHELL<CR> :startinsert<CR>", opts)

@@ -9,13 +9,16 @@ window {
   font-size: 20
 }
 
-
 #entry, #input {
   background: none;
   border: none;
   margin: 5px 0 5px 0;
   padding: 5px;
   border-radius: 4px;
+}
+
+#input:first-child * {
+  color: #c5c9c5;
 }
 
 #entry:selected {

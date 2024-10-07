@@ -42,23 +42,19 @@ vim.opt.shortmess:append("c")
 vim.opt.clipboard:append("unnamedplus") -- allows neovim to access the system clipboard
 vim.cmd("set whichwrap+=<,>,[,],h,l")
 
--- terminal window options
-vim.api.nvim_create_autocmd("TermOpen", {
+vim.api.nvim_create_autocmd("RecordingEnter", {
   callback = function()
-    vim.opt.relativenumber = false
-    vim.opt.number = false
-    vim.opt.buflisted = false
+    vim.opt.cmdheight = 1
   end
 })
--- auto close terminal when process exits
-vim.api.nvim_create_autocmd("TermClose", {
+vim.api.nvim_create_autocmd("RecordingLeave", {
   callback = function()
-    vim.cmd("close")
+    vim.opt.cmdheight = 0
   end
 })
 
 function GetBranchName()
-  local res = io.popen("git rev-parse --abbrev-ref HEAD >/dev/null 2>&1"):read("*a")
+  local res = io.popen("git rev-parse --abbrev-ref HEAD 2>/dev/null"):read("*a")
   if res == "" then
     return res
   else

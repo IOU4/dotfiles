@@ -49,4 +49,5 @@ require('lazy').setup({
     lazy = false,
     version = "*",
   },
+  { "aserowy/tmux.nvim" },
 })

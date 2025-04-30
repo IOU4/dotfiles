@@ -7,6 +7,7 @@ require("nvim-tree").setup({
     enable = false
   },
   renderer = {
+    group_empty = true,
     icons = {
       show = {
         folder = false,
@@ -19,4 +20,4 @@ require("nvim-tree").setup({
 -- NvimTree Navigation
 local opts = { noremap = true, silent = true }
 local keymap = vim.api.nvim_set_keymap
-keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+keymap("n", "<leader>e", ":NvimTreeFindFileToggle<CR>", opts)

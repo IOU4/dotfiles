@@ -5,8 +5,9 @@ cmp.setup {
       require('luasnip').lsp_expand(args.body)
     end,
   },
-  completion = {
-    -- autocomplete = false,
+  window = {
+      completion = cmp.config.window.bordered(),
+      documentation = cmp.config.window.bordered(),
   },
   sources = {
     { name = "nvim_lsp" }
@@ -26,3 +27,12 @@ cmp.setup {
     end
   }),
 }
+
+-- copilot.lua
+cmp.event:on("menu_opened", function()
+  vim.b.copilot_suggestion_hidden = true
+end)
+
+cmp.event:on("menu_closed", function()
+  vim.b.copilot_suggestion_hidden = false
+end)

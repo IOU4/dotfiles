@@ -3,7 +3,7 @@ local toggelterm = require("toggleterm")
 toggelterm.setup {
   size = 60,
   open_mapping = [[<C-t>]],
-  direction = 'vertical'
+  direction = 'float'
 }
 
 local Terminal = require('toggleterm.terminal').Terminal

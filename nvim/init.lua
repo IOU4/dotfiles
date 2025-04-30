@@ -49,5 +49,11 @@ require('lazy').setup({
     lazy = false,
     version = "*",
   },
-  { "aserowy/tmux.nvim" },
+  {"mfussenegger/nvim-jdtls"},
+  {"lewis6991/gitsigns.nvim"},
+  {
+    "zbirenbaum/copilot.lua",
+    cmd = "Copilot",
+    event = "InsertEnter",
+  },
 })

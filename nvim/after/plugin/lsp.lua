@@ -34,27 +34,13 @@ local on_attach = function(_, bufnr)
   vim.keymap.set("n", "<leader>ci", vim.lsp.buf.implementation, bufopts)
   vim.keymap.set("n", "<leader>cs", vim.lsp.buf.signature_help, bufopts)
   vim.keymap.set("n", "<leader>ct", vim.lsp.buf.type_definition, bufopts)
-  vim.keymap.set("n", "<leader>cr", vim.lsp.buf.references, bufopts)
+  vim.keymap.set("n", "<leader>cu", vim.lsp.buf.references, bufopts)
   vim.keymap.set("n", "<leader>cr", vim.lsp.buf.rename, bufopts)
   vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, bufopts)
   vim.keymap.set("n", "<leader>cf", vim.lsp.buf.format, bufopts)
 end
 
-require 'lspconfig'.lua_ls.setup {
-  capabilities = capabilities,
-  on_attach = on_attach,
-  settings = {
-    Lua = {
-      diagnostics = {
-        globals = { "vim" }
-      },
-      runtime = {
-        version = "LuaJIT"
-      }
-    }
-  }
-}
-require 'lspconfig'.gopls.setup {
-  capabilities = capabilities,
-  on_attach = on_attach,
+require'lspconfig'.ts_ls.setup{
+    on_attach = on_attach,
+    capabilities = capabilites
 }

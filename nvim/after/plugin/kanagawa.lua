@@ -1,7 +1,7 @@
 require('kanagawa').setup({
   transparent = true,
   background = {
-    dark = "dragon",
+    dark = "wave",
     light = "lotus"
   },
   colors = {

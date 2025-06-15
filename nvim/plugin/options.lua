@@ -20,7 +20,7 @@ local options = {
   updatetime = 300,                        -- faster completion (4000ms default)
   writebackup = false,                     -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
   expandtab = true,                        -- convert tabs to spaces
-  shiftwidth = 4,                          -- the number of spaces inserted for each indentation
+  shiftwidth = 2,                          -- the number of spaces inserted for each indentation
   tabstop = 2,                             -- insert 2 spaces for a tab
   cursorline = true,                       -- highlight the current line
   number = true,                           -- set numbered lines
@@ -58,8 +58,17 @@ function GetBranchName()
   if res == "" then
     return res
   else
-    return "   " .. res:gsub("[\n\r]", "");
+    return " " .. res:gsub("[\n\r]", "");
   end
 end
 
-vim.opt.statusline = "%f" .. GetBranchName() .. "%= %q %Y%R %{&fenc} %{&ff} %= %c:%l %p%%"
+function GetCWD()
+  return vim.fn.fnamemodify(vim.fn.getcwd(), ':t')
+end
+
+vim.opt.statusline = "[%{v:lua.GetCWD()}][%{v:lua.GetBranchName()}][%t]%=%q %Y%R %{&fenc} %{&ff} %= %c:%l %p%%"
+vim.api.nvim_create_autocmd("DirChanged", {
+  callback = function()
+    vim.cmd("redrawstatus")
+  end,
+})

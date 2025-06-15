@@ -40,14 +40,6 @@ keymap("v", "p", '"_dP', opts)
 keymap("n", "<leader>q", ":q<CR>", opts)
 keymap("n", "<leader>w", ":w<CR><CR>", opts)
 
--- Better terminal navigation
--- keymap("n", "<C-t>", ":60 vsplit term://$SHELL<CR> :startinsert<CR>", opts)
-keymap("t", "<S-j><S-k>", "<C-\\><C-N>", opts)
-keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", opts)
-keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", opts)
-keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", opts)
-keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", opts)
-
 -- No search highlight
 keymap("n", "<ESC>", ":nohlsearch<CR>", opts)
 

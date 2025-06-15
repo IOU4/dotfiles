@@ -1,15 +1,15 @@
-require("copilot").setup({
-    filetypes = {
-        typescript = true, -- allow specific filetype
-        java = true,
-        ["*"] = false, -- disable for all other filetypes and ignore default `filetypes`
-    },
-    suggestion = {
-        keymap = {
-            accept = "cca",
-            next = "ccn",
-            prev = "ccp",
-        }
-    },
-    copilot_node_command = "node", -- Node.js version must be > 18.x
-})
+-- require("copilot").setup({
+--     filetypes = {
+--         typescript = true, -- allow specific filetype
+--         java = true,
+--         ["*"] = false, -- disable for all other filetypes and ignore default `filetypes`
+--     },
+--     suggestion = {
+--         keymap = {
+--             accept = "cca",
+--             next = "ccn",
+--             prev = "ccp",
+--         }
+--     },
+--     copilot_node_command = "node", -- Node.js version must be > 18.x
+-- })

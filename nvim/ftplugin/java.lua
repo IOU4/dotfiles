@@ -16,23 +16,30 @@ local on_attach = function(_, bufnr)
 end
 
 require('jdtls').start_or_attach({
-    cmd = {
-        'jdtls',
-        '-data', workspace_dir,
-        "--jvm-arg=-javaagent:/home/emad/.cache/jdtls/lombok.jar",
-    },
-    root_dir = vim.fs.root(0, {".git", "mvnw", "gradlew"}),
-    capabilities = capabilities,
-    on_attach = on_attach,
-    settings = {
-        java = {
-            format = {
-                enabled = false,
-                settings = { 
-                    profile = "intellij",
-                    url = "/home/emad/.cache/jdtls/settings.xml"
-                },
-            }
-        }
+  cmd = {
+    'jdtls',
+    '-data', workspace_dir,
+    "--jvm-arg=-javaagent:/home/emad/.cache/jdtls/lombok.jar",
+  },
+  root_dir = vim.fs.root(0, {".git", "mvnw", "gradlew"}),
+  capabilities = capabilities,
+  on_attach = on_attach,
+  settings = {
+    java = {
+      format = {
+        enabled = false,
+        settings = { 
+          profile = "intellij",
+          url = "/home/emad/.cache/jdtls/settings.xml"
+        },
+      }
     }
+  },
+  init_options = {
+    bundles = {
+      vim.fn.glob("/home/emad/gits/java-debug/com.microsoft.java.debug.plugin/target/com.microsoft.java.debug.plugin-0.53.2.jar", 1)
+    },
+  }
 })
+vim.bo.shiftwidth = 4
+vim.bo.tabstop = 4

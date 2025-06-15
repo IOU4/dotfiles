@@ -3,8 +3,12 @@ vim.g.loaded_netrwPlugin = 1
 
 -- empty setup using defaults
 require("nvim-tree").setup({
+  sync_root_with_cwd = true,
   git = {
     enable = false
+  },
+  view = {
+    width = 60,
   },
   renderer = {
     group_empty = true,

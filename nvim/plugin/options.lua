@@ -8,7 +8,6 @@ local options = {
   mouse = "",                              -- disallow the mouse to be used in neovim
   pumheight = 10,                          -- pop up menu height
   showmode = false,                        -- we don't need to see things like -- INSERT -- anymore
-  showtabline = 2,                         -- always show tabs
   smartcase = true,                        -- smart case
   smartindent = true,                      -- make indenting smarter again
   splitbelow = true,                       -- force all horizontal splits to go below current window
@@ -25,8 +24,7 @@ local options = {
   cursorline = true,                       -- highlight the current line
   number = true,                           -- set numbered lines
   relativenumber = true,                   -- set relative numbered lines
-  numberwidth = 3,                         -- set number column width to 2 {default 4}
-  signcolumn = "yes:1",                   -- always show the sign column, otherwise it would shift the text each time
+  numberwidth = 2,                         -- set number column width to 2 {default 4}
   wrap = false,                            -- display lines as one long line
   scrolloff = 8,                           -- is one of my fav
   sidescrolloff = 8,
@@ -48,9 +46,7 @@ vim.api.nvim_create_autocmd("RecordingEnter", {
   end
 })
 vim.api.nvim_create_autocmd("RecordingLeave", {
-  callback = function()
-    vim.opt.cmdheight = 0
-  end
+  callback = function() vim.opt.cmdheight = 0 end
 })
 
 function GetBranchName()
@@ -62,13 +58,6 @@ function GetBranchName()
   end
 end
 
-function GetCWD()
-  return vim.fn.fnamemodify(vim.fn.getcwd(), ':t')
-end
+function GetCWD() return vim.fn.fnamemodify(vim.fn.getcwd(), ':t') end
 
-vim.opt.statusline = "[%{v:lua.GetCWD()}][%{v:lua.GetBranchName()}][%t]%=%q %Y%R %{&fenc} %{&ff} %= %c:%l %p%%"
-vim.api.nvim_create_autocmd("DirChanged", {
-  callback = function()
-    vim.cmd("redrawstatus")
-  end,
-})
+vim.opt.statusline = "[%{v:lua.GetCWD()}%{v:lua.GetBranchName()}]%= [%t] %Y%R %= %c:%l %p%%"

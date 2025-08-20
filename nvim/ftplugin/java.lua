@@ -1,45 +1,35 @@
-local project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ':p:h:t')
-local workspace_dir = '/home/emad/.cache/jdtls/workspace/' .. project_name
-local capabilities = require('cmp_nvim_lsp').default_capabilities()
-local on_attach = function(_, bufnr)
-  local bufopts = { noremap = true, silent = true, buffer = bufnr }
-  vim.keymap.set("n", "gD", vim.lsp.buf.declaration, bufopts)
-  vim.keymap.set("n", "gd", vim.lsp.buf.definition, bufopts)
-  vim.keymap.set("n", "K", vim.lsp.buf.hover, bufopts)
-  vim.keymap.set("n", "<leader>gi", vim.lsp.buf.implementation, bufopts)
-  vim.keymap.set("n", "<leader>gr", "<cmd>:Telescope lsp_references<cr>", bufopts)
-  vim.keymap.set("n", "<leader>cs", vim.lsp.buf.signature_help, bufopts)
-  vim.keymap.set("n", "<leader>ct", vim.lsp.buf.type_definition, bufopts)
-  vim.keymap.set("n", "<leader>cr", vim.lsp.buf.rename, bufopts)
-  vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, bufopts)
-  vim.keymap.set("n", "<leader>cf", vim.lsp.buf.format, bufopts)
-end
+local jdtls = require("jdtls")
+local project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ":p:h:t")
+local home = os.getenv("HOME")
+local workspace_dir = home.."/.local/share/jdtls/workspace/" .. project_name
 
-require('jdtls').start_or_attach({
+jdtls.start_or_attach({
   cmd = {
-    'jdtls',
-    '-data', workspace_dir,
-    "--jvm-arg=-javaagent:/home/emad/.cache/jdtls/lombok.jar",
+    "jdtls",
+    "-data", workspace_dir,
+    "--jvm-arg=-javaagent:"..home.."/.local/share/jdtls/lombok.jar",
   },
   root_dir = vim.fs.root(0, {".git", "mvnw", "gradlew"}),
-  capabilities = capabilities,
-  on_attach = on_attach,
+  on_attach = lsp_on_attach, 
+  capabilities = require('cmp_nvim_lsp').default_capabilities() ,
   settings = {
     java = {
-      format = {
-        enabled = false,
-        settings = { 
-          profile = "intellij",
-          url = "/home/emad/.cache/jdtls/settings.xml"
-        },
-      }
+      eclipse = { downloadSources = true },
+      maven = { downloadSources = true, updateSnapshots = true },
+      references = { includeDecompiledSources = true },
+      format = { enabled = false },
     }
   },
   init_options = {
-    bundles = {
-      vim.fn.glob("/home/emad/gits/java-debug/com.microsoft.java.debug.plugin/target/com.microsoft.java.debug.plugin-0.53.2.jar", 1)
+    workspaceFolders = {
+      "file://"..home.."/maestro/br",
+      "file://"..home.."/maestro/shared",
+      "file://"..home.."/maestro/camunda",
     },
+    bundles = { vim.fn.glob(home.."/gits/java-debug/com.microsoft.java.debug.plugin/target/com.microsoft.java.debug.plugin-*.jar", 1) },
   }
 })
-vim.bo.shiftwidth = 4
-vim.bo.tabstop = 4
+
+vim.o.shiftwidth = 4
+vim.o.tabstop = 4
+vim.wo.signcolumn = "yes:1"

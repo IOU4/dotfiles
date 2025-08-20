@@ -4,26 +4,22 @@ telescope.setup({
   defaults = {
     prompt_prefix = "",
     results_title = false,
+    layout_strategy = 'vertical',
     theme = "dropdown",
     multi_icon = ">",
     path_display = {"truncate"},
     preview = false,
-    layout_config = {
-      height = 0.60,
-      width = 0.60,
-    },
+    borderchars = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
   },
-    pickers = {
-      live_grep = {
-            preview = true
-        }
+  pickers = {
+    live_grep = {
+      preview = true
     }
+  }
 })
 
 -- diable folds in telescope
-vim.api.nvim_create_autocmd(
-  "FileType",
-  {
+vim.api.nvim_create_autocmd( "FileType", {
     pattern = "TelescopeResults",
     callback = function() vim.opt.foldenable = false end
   }

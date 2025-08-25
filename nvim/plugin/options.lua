@@ -49,15 +49,22 @@ vim.api.nvim_create_autocmd("RecordingLeave", {
   callback = function() vim.opt.cmdheight = 0 end
 })
 
+vim.api.nvim_create_autocmd("FileType", {
+  group = vim.api.nvim_create_augroup("SignColumnManager", { clear = true }),
+  pattern = "*", -- Trigger for ALL filetypes
+  callback = function()
+    if vim.bo.filetype == "java" then vim.wo.signcolumn = "yes:1"
+    else vim.wo.signcolumn = "auto"
+    end
+  end,
+})
+
 function GetBranchName()
   local res = io.popen("git rev-parse --abbrev-ref HEAD 2>/dev/null"):read("*a")
-  if res == "" then
-    return res
-  else
-    return " " .. res:gsub("[\n\r]", "");
+  if res == "" then return res
+  else return " " .. res:gsub("[\n\r]", "");
   end
 end
-
 function GetCWD() return vim.fn.fnamemodify(vim.fn.getcwd(), ':t') end
 
 vim.opt.statusline = "[%{v:lua.GetCWD()}%{v:lua.GetBranchName()}]%= [%t] %Y%R %= %c:%l %p%%"

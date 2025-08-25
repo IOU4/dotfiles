@@ -22,11 +22,8 @@ jdtls.start_or_attach({
   },
   init_options = {
     workspaceFolders = {
-      "file://"..home.."/maestro/br",
-      "file://"..home.."/maestro/shared",
-      "file://"..home.."/maestro/camunda",
     },
-    bundles = { vim.fn.glob(home.."/gits/java-debug/com.microsoft.java.debug.plugin/target/com.microsoft.java.debug.plugin-*.jar", 1) },
+    bundles = { vim.fn.glob(home.."/.local/share/jdtls/java.debug.jar", 1) },
   }
 })
 

@@ -20,4 +20,7 @@ require'lspconfig'.ts_ls.setup{
     on_attach = lsp_on_attach, 
     capabilities = require('cmp_nvim_lsp').default_capabilities() 
 }
-
+require'lspconfig'.gopls.setup{
+    on_attach = lsp_on_attach, 
+    capabilities = require('cmp_nvim_lsp').default_capabilities() 
+}

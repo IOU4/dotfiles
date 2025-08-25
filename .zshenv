@@ -9,3 +9,6 @@ export TERMINAL=alacritty
 export XDG_PICTURES_DIR="~/Pictures"
 export XDG_CONFIG_HOME="$HOME/.config"
 export _JAVA_AWT_WM_NONREPARENTING=1
+
+export ELECTRON_OZONE_PLATFORM_HINT=auto
+

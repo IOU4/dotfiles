@@ -130,8 +130,8 @@ bindsym $mod+Shift+f fullscreen
 # Toggle the current focus between tiling and floating mode
 bindsym $mod+Shift+space floating toggle
 
-# Move focus to the parent container
-bindsym $mod+a focus parent
+# Toggle workspaces
+bindsym Mod1+Tab workspace back_and_forth
 
 # Move the currently focused window to the scratchpad
 bindsym $mod+Shift+minus move scratchpad

@@ -27,7 +27,7 @@ require("lazy").setup({
     {"nvim-neorg/neorg", lazy = false, version = "*"},
     {"lewis6991/gitsigns.nvim"},
     {"kndndrj/nvim-dbee", dependencies = {"MunifTanjim/nui.nvim"}, opts = {}},
-    {"romgrk/barbar.nvim", init = function() vim.g.barbar_auto_setup = false end, opts = {icons={filetype ={enabled = false}}}}
+    {"romgrk/barbar.nvim", init = function() vim.g.barbar_auto_setup = false end, opts = {icons={button=false,filetype ={enabled = false}}, animation=false,clickable=false,}}
   },
   ui = {
     border = "single"

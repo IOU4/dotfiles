@@ -1,70 +1,74 @@
-local options = {
-  backup = false,                          -- creates a backup file
-  completeopt = { "menuone", "noselect" }, -- mostly just for cmp
-  conceallevel = 0,                        -- so that `` is visible in markdown files
-  fileencoding = "utf-8",                  -- the encoding written to a file
-  incsearch = true,                        -- highlight all matches on previous search pattern
-  ignorecase = true,                       -- ignore case in search patterns
-  mouse = "",                              -- disallow the mouse to be used in neovim
-  pumheight = 10,                          -- pop up menu height
-  showmode = false,                        -- we don't need to see things like -- INSERT -- anymore
-  smartcase = true,                        -- smart case
-  smartindent = true,                      -- make indenting smarter again
-  splitbelow = true,                       -- force all horizontal splits to go below current window
-  splitright = true,                       -- force all vertical splits to go to the right of current window
-  swapfile = false,                        -- creates a swapfile
-  termguicolors = true,                    -- set term gui colors (most terminals support this)
-  timeoutlen = 500,                        -- time to wait for a mapped sequence to complete (in milliseconds)
-  undofile = true,                         -- enable persistent undo
-  updatetime = 300,                        -- faster completion (4000ms default)
-  writebackup = false,                     -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
-  expandtab = true,                        -- convert tabs to spaces
-  shiftwidth = 2,                          -- the number of spaces inserted for each indentation
-  tabstop = 2,                             -- insert 2 spaces for a tab
-  cursorline = true,                       -- highlight the current line
-  number = true,                           -- set numbered lines
-  relativenumber = true,                   -- set relative numbered lines
-  numberwidth = 2,                         -- set number column width to 2 {default 4}
-  wrap = false,                            -- display lines as one long line
-  scrolloff = 8,                           -- is one of my fav
-  sidescrolloff = 8,
-  cmdheight = 1,                           -- lines below status line
-  laststatus = 3,                          -- shared status line for all windows
-  foldmethod = "indent",                   -- indetation based folding
-}
-for k, v in pairs(options) do
-  vim.opt[k] = v
-end
-
+vim.opt.undofile = true
+vim.opt.backup = false
+vim.opt.swapfile = false
+vim.opt.completeopt = {"menuone", "noselect"}
+vim.opt.incsearch = true
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+vim.opt.mouse = ""
+vim.opt.pumheight = 15
+vim.opt.showmode = false
+vim.opt.smartindent = true
+vim.opt.splitbelow = true
+vim.opt.splitright = true
+vim.opt.timeoutlen = 500
+vim.opt.updatetime = 300
+vim.opt.writebackup = false
+vim.opt.expandtab = true
+vim.opt.shiftwidth = 2
+vim.opt.tabstop = 2
+vim.opt.cursorline = true
+vim.opt.number = true
+vim.opt.relativenumber = true
+vim.opt.numberwidth = 2
+vim.opt.wrap = false
+vim.opt.scrolloff = 8
+vim.opt.sidescrolloff = 8
+vim.opt.cmdheight = 1
+vim.opt.laststatus = 3
+vim.opt.foldenable = false
+vim.opt.foldmethod = "indent"
+vim.opt.winborder = "single"
 vim.opt.shortmess:append("c")
-vim.opt.clipboard:append("unnamedplus") -- allows neovim to access the system clipboard
-vim.cmd("set whichwrap+=<,>,[,],h,l")
+vim.opt.clipboard:append("unnamedplus")
+vim.opt.whichwrap:append("<,>,[,],h,l")
 
-vim.api.nvim_create_autocmd("RecordingEnter", {
-  callback = function()
-    vim.opt.cmdheight = 1
-  end
-})
-vim.api.nvim_create_autocmd("RecordingLeave", {
-  callback = function() vim.opt.cmdheight = 0 end
-})
+get_branch_name = function() return io.popen("git rev-parse --abbrev-ref HEAD 2>/dev/null"):read("*a"):gsub("[\n\r]", "") end
+get_cwd = function() return vim.fn.fnamemodify(vim.fn.getcwd(), ':t') end
+vim.opt.statusline = "[%{v:lua.get_cwd()} %{v:lua.get_branch_name()}]%m%= [%t] %y%R %= %c:%l %p%%"
 
-vim.api.nvim_create_autocmd("FileType", {
-  group = vim.api.nvim_create_augroup("SignColumnManager", { clear = true }),
-  pattern = "*", -- Trigger for ALL filetypes
-  callback = function()
-    if vim.bo.filetype == "java" then vim.wo.signcolumn = "yes:1"
-    else vim.wo.signcolumn = "auto"
+
+function _G.qf_format_enhanced(info)
+  local items = vim.fn.getqflist({id = info.id, items = 0}).items
+  local lines = {}
+  for i = info.start_idx, info.end_idx do
+    local item = items[i]
+    local filename = ""
+    if item.bufnr > 0 then
+      filename = vim.api.nvim_buf_get_name(item.bufnr)
+    elseif item.filename then
+      filename = item.filename
     end
-  end,
-})
-
-function GetBranchName()
-  local res = io.popen("git rev-parse --abbrev-ref HEAD 2>/dev/null"):read("*a")
-  if res == "" then return res
-  else return " " .. res:gsub("[\n\r]", "");
+    if filename ~= "" then
+      filename = vim.fn.pathshorten(filename, 1)
+    else
+      filename = "[No file]"
+    end
+    local line_parts = {filename}
+    if item.lnum > 0 then
+      local pos = tostring(item.lnum)
+      if item.col > 0 then
+        pos = pos .. ":" .. item.col
+      end
+      table.insert(line_parts, pos)
+    end
+    if item.text and item.text ~= "" then
+      local text = vim.trim(item.text)
+      table.insert(line_parts, text)
+    end
+    local formatted_line = table.concat(line_parts, " | ")
+    table.insert(lines, formatted_line)
   end
+  return lines
 end
-function GetCWD() return vim.fn.fnamemodify(vim.fn.getcwd(), ':t') end
-
-vim.opt.statusline = "[%{v:lua.GetCWD()}%{v:lua.GetBranchName()}]%= [%t] %Y%R %= %c:%l %p%%"
+vim.o.quickfixtextfunc = 'v:lua.qf_format_enhanced'

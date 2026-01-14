@@ -1,7 +1,17 @@
 local jdtls = require("jdtls")
-local project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ":p:h:t")
+local project = vim.fn.fnamemodify(vim.fn.getcwd(), ":p:h:t")
 local home = os.getenv("HOME")
-local workspace_dir = home.."/.local/share/jdtls/workspace/" .. project_name
+local workspace_dir = home.."/.local/share/jdtls/workspace/" .. project
+local workspace_folders = {}
+
+if string.match(project, "br") or string.match(project, "shared") then
+  table.insert(workspace_folders, "file://" .. home .. "/maestro/shared")
+  table.insert(workspace_folders, "file://" .. home .. "/maestro/br")
+  -- table.insert(workspace_folders, "file://" .. home .. "/maestro/etr-api/model")
+  -- table.insert(workspace_folders, "file://" .. home .. "/maestro/etr-api/client")
+  -- table.insert(workspace_folders, "file://" .. home .. "/maestro/zbus-api/model")
+  -- table.insert(workspace_folders, "file://" .. home .. "/maestro/zbus-api/client")
+end
 
 jdtls.start_or_attach({
   cmd = {
@@ -10,23 +20,20 @@ jdtls.start_or_attach({
     "--jvm-arg=-javaagent:"..home.."/.local/share/jdtls/lombok.jar",
   },
   root_dir = vim.fs.root(0, {".git", "mvnw", "gradlew"}),
-  on_attach = lsp_on_attach, 
-  capabilities = require('cmp_nvim_lsp').default_capabilities() ,
+  on_attach = function(_, bufnr) vim.keymap.set("n", "gd", vim.lsp.buf.definition) end,
   settings = {
     java = {
-      eclipse = { downloadSources = true },
       maven = { downloadSources = true, updateSnapshots = true },
       references = { includeDecompiledSources = true },
       format = { enabled = false },
     }
   },
   init_options = {
-    workspaceFolders = {
-    },
+    workspaceFolders = workspace_folders,
     bundles = { vim.fn.glob(home.."/.local/share/jdtls/java.debug.jar", 1) },
   }
 })
 
-vim.o.shiftwidth = 4
-vim.o.tabstop = 4
+vim.bo.shiftwidth = 4
+vim.bo.tabstop = 4
 vim.wo.signcolumn = "yes:1"

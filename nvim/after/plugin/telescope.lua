@@ -12,18 +12,18 @@ telescope.setup({
     borderchars = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
   },
   pickers = {
+    buffers = {
+      mappings = {
+        n = {
+          ["dd"] = require("telescope.actions").delete_buffer,
+        },
+      },
+    },
     live_grep = {
       preview = true
     }
   }
 })
-
--- diable folds in telescope
-vim.api.nvim_create_autocmd( "FileType", {
-    pattern = "TelescopeResults",
-    callback = function() vim.opt.foldenable = false end
-  }
-)
 
 -- keymaps
 local keymap = vim.api.nvim_set_keymap

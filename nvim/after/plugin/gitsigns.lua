@@ -14,6 +14,6 @@ require('gitsigns').setup({
         map('v', '<leader>hr', function() gitsigns.reset_hunk({ vim.fn.line('.'), vim.fn.line('v') }) end)
         map('n', '<leader>hp', gitsigns.preview_hunk)
         map('n', '<leader>hi', gitsigns.preview_hunk_inline)
-        map('n', '<leader>hb', function() gitsigns.blame_line({ full = true }) end)
+        map('n', '<leader>hb', function() gitsigns.blame() end)
     end
 })

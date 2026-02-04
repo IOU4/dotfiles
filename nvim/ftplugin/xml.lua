@@ -1,2 +1,2 @@
-vim.bo.shiftwidth = 4
-vim.wo.signcolumn = "yes:1"
+-- vim.bo.shiftwidth = 4
+-- vim.wo.signcolumn = "yes:1"

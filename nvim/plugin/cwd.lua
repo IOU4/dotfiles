@@ -1,11 +1,10 @@
--- Gemini
 local DIRS = { "/home/emad/maestro/*", "/home/emad/dotfiles/nvim" }
-local telescope = require('telescope')
 local pickers = require('telescope.pickers')
 local finders = require('telescope.finders')
 local conf = require('telescope.config').values
 local actions = require('telescope.actions')
 local action_state = require('telescope.actions.state')
+
 local function read_directories()
   local expanded_directories = {}
   for _, dir_pattern in ipairs(DIRS) do
@@ -14,7 +13,7 @@ local function read_directories()
       local expanded_base_path = vim.fn.expand(base_path)
       if vim.fn.isdirectory(expanded_base_path) == 1 then
         table.insert(expanded_directories, expanded_base_path)
-        local subdirs = vim.fn.glob(expanded_base_path .. '/*/', 1, 1)
+        local subdirs = vim.fn.glob(expanded_base_path .. '/*/', true, true)
         for _, subdir in ipairs(subdirs) do
           table.insert(expanded_directories, subdir:sub(1, -2))
         end
@@ -27,10 +26,10 @@ local function read_directories()
   end
   return expanded_directories
 end
+local directories = read_directories()
 local function directory_picker()
-  local directories = read_directories()
   if #directories == 0 then
-    vim.notify('No directories found in ' .. DIRECTORIES_JSON_PATH, vim.log.levels.WARN)
+    vim.notify('No directories found', vim.log.levels.WARN)
     return
   end
   pickers.new({}, {
@@ -46,7 +45,7 @@ local function directory_picker()
       end,
     },
     sorter = conf.generic_sorter({}),
-    attach_mappings = function(prompt_bufnr, map)
+    attach_mappings = function(prompt_bufnr, _)
       actions.select_default:replace(function()
         actions.close(prompt_bufnr)
         local selection = action_state.get_selected_entry()
@@ -65,18 +64,21 @@ local function directory_picker()
   }):find()
 end
 
-vim.keymap.set('n', '<leader>p', directory_picker, { noremap = true, silent = true })
-vim.keymap.set('n', '<leader>pn', ":cd ~/.config/nvim<CR>", { noremap = true, silent = true })
-vim.keymap.set('n', '<leader>ps', ":cd ~/maestro/shared<CR>", { noremap = true, silent = true })
-vim.keymap.set('n', '<leader>pb', ":cd ~/maestro/br<CR>", { noremap = true, silent = true })
-vim.keymap.set('n', '<leader>pc', ":cd ~/maestro/camunda<CR>", { noremap = true, silent = true })
-vim.keymap.set('n', '<leader>pi', ":cd ~/maestro/integration<CR>", { noremap = true, silent = true })
-vim.keymap.set('n', '<leader>ph', ":cd ~/maestro/batch<CR>", { noremap = true, silent = true })
-vim.keymap.set('n', '<leader>pe', ":cd ~/maestro/etr<CR>", { noremap = true, silent = true })
-vim.keymap.set('n', '<leader>pz', ":cd ~/maestro/zbus/<CR>", { noremap = true, silent = true })
-vim.keymap.set('n', '<leader>pt', ":cd ~/maestro/template<CR>", { noremap = true, silent = true })
-vim.keymap.set('n', '<leader>pf', ":cd ~/maestro/front<CR>", { noremap = true, silent = true })
-vim.keymap.set('n', '<leader>pl', ":cd ~/maestro/liquibase<CR>", { noremap = true, silent = true })
-vim.keymap.set('n', '<leader>pae', ":cd ~/maestro/etr-api<CR>", { noremap = true, silent = true })
-vim.keymap.set('n', '<leader>paz', ":cd ~/maestro/zbus-api<CR>", { noremap = true, silent = true })
-vim.keymap.set('n', '<leader>pao', ":cd ~/maestro/operation-api<CR>", { noremap = true, silent = true })
+Map('n', '<leader>p', directory_picker)
+Map('n', '<leader>pm', ":cd ~/maestro<CR>")
+Map('n', '<leader>pn', ":cd ~/.config/nvim<CR>")
+Map('n', '<leader>ps', ":cd ~/maestro/shared<CR>")
+Map('n', '<leader>pb', ":cd ~/maestro/br<CR>")
+Map('n', '<leader>pc', ":cd ~/maestro/camunda<CR>")
+Map('n', '<leader>pi', ":cd ~/maestro/integration<CR>")
+Map('n', '<leader>ph', ":cd ~/maestro/batch<CR>")
+Map('n', '<leader>pe', ":cd ~/maestro/etr<CR>")
+Map('n', '<leader>pz', ":cd ~/maestro/zbus/<CR>")
+Map('n', '<leader>pt', ":cd ~/maestro/template<CR>")
+Map('n', '<leader>pf', ":cd ~/maestro/front<CR>")
+Map('n', '<leader>pl', ":cd ~/maestro/liquibase<CR>")
+Map('n', '<leader>pa', ":cd ~/maestro/auth<CR>")
+Map('n', '<leader>pco', ":cd ~/maestro/config<CR>")
+Map('n', '<leader>pea', ":cd ~/maestro/etr-api<CR>")
+Map('n', '<leader>pza', ":cd ~/maestro/zbus-api<CR>")
+Map('n', '<leader>poa', ":cd ~/maestro/operation-api<CR>")

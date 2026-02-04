@@ -22,8 +22,12 @@ vim.api.nvim_create_autocmd("DirChanged", {
 })
 
 vim.api.nvim_create_autocmd( "FileType", {
-    pattern = "TelescopeResults",
-    callback = function() vim.opt.foldenable = false end
+    pattern = {"java", "xml", "bash", "lua", "sql"},
+    callback = function()
+      vim.treesitter.start()
+      vim.wo[0][0].foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+      vim.wo[0][0].foldmethod = 'expr'
+    end
   }
 )
 

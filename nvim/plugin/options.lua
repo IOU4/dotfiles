@@ -33,10 +33,9 @@ vim.opt.shortmess:append("c")
 vim.opt.clipboard:append("unnamedplus")
 vim.opt.whichwrap:append("<,>,[,],h,l")
 
-get_branch_name = function() return io.popen("git rev-parse --abbrev-ref HEAD 2>/dev/null"):read("*a"):gsub("[\n\r]", "") end
-get_cwd = function() return vim.fn.fnamemodify(vim.fn.getcwd(), ':t') end
-vim.opt.statusline = "[%{v:lua.get_cwd()} %{v:lua.get_branch_name()}]%m%= [%t] %y%R %= %c:%l %p%%"
-
+GET_BRANCH_NAME = function() return io.popen("git rev-parse --abbrev-ref HEAD 2>/dev/null"):read("*a"):gsub("[\n\r]", "") end
+GET_CWD = function() return vim.fn.fnamemodify(vim.fn.getcwd(), ':t') end
+vim.opt.statusline = "[%{v:lua.GET_CWD()} %{v:lua.GET_BRANCH_NAME()}]%m%= [%t] %y%R %= %c:%l %p%%"
 
 function _G.qf_format_enhanced(info)
   local items = vim.fn.getqflist({id = info.id, items = 0}).items

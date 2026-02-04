@@ -15,17 +15,30 @@ end
 
 jdtls.start_or_attach({
   cmd = {
+    "env", "JAVA_HOME=/usr/lib/jvm/java-21-openjdk",
     "jdtls",
     "-data", workspace_dir,
     "--jvm-arg=-javaagent:"..home.."/.local/share/jdtls/lombok.jar",
   },
   root_dir = vim.fs.root(0, {".git", "mvnw", "gradlew"}),
-  on_attach = function(_, bufnr) vim.keymap.set("n", "gd", vim.lsp.buf.definition) end,
   settings = {
     java = {
       maven = { downloadSources = true, updateSnapshots = true },
       references = { includeDecompiledSources = true },
       format = { enabled = false },
+      configuration = {
+        runtimes = {
+          {
+            name = "JavaSE-17",
+            path = "/usr/lib/jvm/java-17-openjdk/",
+          },
+          {
+            name = "JavaSE-21",
+            path = "/usr/lib/jvm/java-21-openjdk/",
+            default = true,
+          },
+        },
+      },
     }
   },
   init_options = {
@@ -34,6 +47,6 @@ jdtls.start_or_attach({
   }
 })
 
-vim.bo.shiftwidth = 4
-vim.bo.tabstop = 4
+-- vim.bo.shiftwidth = 4
+-- vim.bo.tabstop = 4
 vim.wo.signcolumn = "yes:1"

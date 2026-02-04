@@ -12,8 +12,9 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   {"rebelot/kanagawa.nvim", config = function() vim.cmd("colorscheme kanagawa-dragon") end},
   {"nvim-tree/nvim-tree.lua"},
+  {"nvim-neorg/neorg", lazy = false, version = "*", config = true},
   {"nvim-telescope/telescope.nvim", dependencies = {"nvim-lua/plenary.nvim"}},
-  {'nvim-treesitter/nvim-treesitter', lazy = false, build = ':TSUpdate'},
+  {"nvim-treesitter/nvim-treesitter", lazy = false, build = ":TSUpdate"},
   {"windwp/nvim-autopairs", event = "InsertEnter", opts = {}},
   {"neovim/nvim-lspconfig"},
   {"saghen/blink.cmp", version = "1.*", opts = { sources = { default = { "lsp", "path"}}, cmdline = {}}},

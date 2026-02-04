@@ -49,4 +49,3 @@ zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 
 
 # Load aliases and shortcuts if existent.
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
-[ -f /usr/share/nvm/init-nvm.sh ] && source /usr/share/nvm/init-nvm.sh

@@ -1,32 +1,19 @@
 #!/bin/bash
-lock=""
-logout=""
-shutdown=""
-reboot=""
-sleep=""
+lock=" Lock"
+logout=" Logout"
+shutdown=" Shutdown"
+reboot=" Reboot"
 
 case $(
-	wofi -c ~/dotfiles/wofi/power.conf -s ~/dotfiles/wofi/power.css <<EOF | sed 's/^ *//'
-    $shutdown
-    $reboot
-    $logout
-    $sleep
-    $lock 
+	wofi -d -L 4 -j <<EOF
+$shutdown
+$reboot
+$logout
+$lock 
 EOF
 ) in
-$shutdown)
-	systemctl poweroff
-	;;
-$reboot)
-	systemctl reboot
-	;;
-$sleep)
-	systemctl suspend
-	;;
-$lock)
-	swaylock
-	;;
-$logout)
-	swaymsg exit
-	;;
+$shutdown) systemctl poweroff;;
+$reboot) systemctl reboot;;
+$lock) swaylock;;
+$logout) swaymsg exit;;
 esac

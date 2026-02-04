@@ -17,18 +17,15 @@ set $primary #11121d
 set $secondary #c0caf5
 set $urgent #ff2a2a
 
-# output * bg ~/Pictures/pexels-taryn-elliott-3889761.jpg fill
-set $wallpapers_path $HOME/Pictures/wallpapers/background
-output * bg `find $wallpapers_path -type f | shuf -n 1` fill
+output * bg $HOME/Pictures/walls/background fill
 
 set $laptop_scr eDP-1
 
 exec swayidle -w \
     timeout 600 'swaylock -f' \
     timeout 1200 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-    timeout 2400 'systemctl hibernate' \
+    timeout 4800 'systemctl hibernate' \
     before-sleep 'swaylock -f '
-# resumed. It will also lock your screen before your computer goes to sleep.
 
  input "1160:4639:DELL09A0:00_0488:121F_Touchpad" {
      dwt enabled
@@ -181,10 +178,8 @@ bindsym XF86AudioMute exec pamixer -t
 bindsym XF86AudioMicMute exec pamixer --source 47 -t # toggle mic
 
 # brightness-keys
-bindsym XF86MonBrightnessUp exec sudo light -A 5 
-# && notify-send -h int:value:$(light)  " $(light)"
-bindsym XF86MonBrightnessDown exec sudo light -U 5 
-# && notify-send -h int:value:$(light)  " $(light)"
+bindsym XF86MonBrightnessUp exec brightnessctl set +5%
+bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 
 # apps-shortcuts
 bindsym $mod+c exec $browser
@@ -192,8 +187,7 @@ bindsym $mod+Return exec $term
 bindsym $mod+Shift+Return exec $menu
 bindsym $mod+f exec $files
 bindsym $mod+m exec ~/.config/sway/emoji-picker.sh
-bindsym $mod+p exec grim -t png -g "$(slurp)" 
-
+bindsym $mod+p exec grim -g "$(slurp)" /home/emad/Pictures/screenshots/$(date +'%s_grim.png') 
 # gestures
 bindgesture swipe:4:right workspace prev
 bindgesture swipe:4:left workspace next
@@ -223,5 +217,4 @@ for_window [title = "DevTools*|Developer Tools*|Picture-in-Picture|Sharing Indic
 # auto-exectution
 exec nm-applet --indicator
 exec mako
-# pipewire
-exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+exec ~/.config/sway/battery-notify.sh

@@ -1,7 +1,8 @@
 ignore-empty-password
 show-failed-attempts
-color=11121d
-image=~/.config/swaylock/lock-screen.png
+color=181616
+image=/home/emad/.config/lock.png
+scaling=fill
 
 font=Iosevka Nerd Font Mono
 font-size=19
@@ -9,27 +10,27 @@ font-size=19
 indicator-radius=90
 indicator-thickness=6
 
-inside-color=11121d
-inside-ver-color=11121d
-inside-wrong-color=11121d
-inside-clear-color=11121d
+inside-color=181616
+inside-ver-color=181616
+inside-wrong-color=181616
+inside-clear-color=181616
 
-key-hl-color=11121d
+key-hl-color=181616
 bs-hl-color=ff2a2a
 
-line-color=c0caf5
+line-color=c5c9c5
 line-uses-inside
 
-layout-border-color=ff2a2a
+layout-border-color=181616
 
-ring-color=c0caf5
+ring-color=c5c9c5
 ring-wrong-color=ff2a2a
-ring-ver-color=c0caf5bb
-ring-clear-color=c0caf5
+ring-ver-color=c5c9c5bb
+ring-clear-color=c5c9c5
 
-text-color=c0caf5
-text-ver-color=c0caf5
+text-color=c5c9c5
+text-ver-color=c5c9c5
 text-wrong-color=ff2a2a
-text-clear-color=c0caf5
+text-clear-color=c5c9c5
 
-separator-color=c0caf5
+separator-color=181616

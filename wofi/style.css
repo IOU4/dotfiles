@@ -1,10 +1,11 @@
+* {
+  border-radius: 0px
+}
+
 window {
-  margin: 5px;
-  padding: 10px;
   background-color: #181616;
   color: #c5c9c5;
   border: 1px solid #c5c9c5;
-  border-radius: 4px;
   font-family: "Iosevka Nerd Font Mono";
   font-size: 20
 }
@@ -12,12 +13,12 @@ window {
 #entry, #input {
   background: none;
   border: none;
-  margin: 5px 0 5px 0;
+  margin: 5px 0;
   padding: 5px;
-  border-radius: 4px;
+  color: #c5c9c5;
 }
 
-#input:first-child * {
+#input * {
   color: #c5c9c5;
 }
 
@@ -30,11 +31,7 @@ window {
 }
 
 #outer-box {
-  margin: 16px;
-}
-
-#text {
-  margin: 2px;
+  margin: 1rem;
 }
 
 #img {

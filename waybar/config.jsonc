@@ -3,15 +3,14 @@
     "reload_style_on_change": true,
     "modules-left": [
         "sway/workspaces",
-        "sway/language",
         "hyprland/language",
         "sway/mode"
     ],
     "modules-center": [
-        "clock",
-        "custom/media"
+        "clock"
     ],
     "modules-right": [
+        "sway/language",
         "pulseaudio",
         "backlight",
         "battery",
@@ -25,7 +24,7 @@
       }
     },
     "sway/language": {
-        "format": "  {}",
+        "format": "{}",
         "tooltip-format": "{long}"
     },
     "clock": {
@@ -51,17 +50,5 @@
     "tray": {
         "icon-size": 16,
         "spacing": 10
-    },
-    "custom/media": {
-        "format": "{icon}  {}",
-        "format-icons": {
-            "Paused": "",
-            "Playing": ""
-        },
-        "return-type": "json",
-        "max-length": 70,
-        "exec": "playerctl -a metadata --format '{\"text\": \"{{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
-        "on-click": "playerctl play-pause",
-        "on-click-right": "playerctl next"
     }
 }

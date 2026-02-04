@@ -4,20 +4,6 @@ alias e=exit
 alias c=clear
 alias ls=exa
 alias la="exa -lah"
-alias qemu=qemu-system-x86_64
-alias farge="farge --notify --no-preview"
-alias grim='grim -t png -g "$(slurp)" /home/emad/Pictures/screenshots/$(date +%s_grim).png'
-alias dockerc='docker compose'
-alias dockerb='docker buildx'
-alias snake=~/Work/csnake/snake.out
-alias hx="helix"
-alias sail="./vendor/bin/sail"
 alias history="history 0| fzf | cut -c 8-"
-alias sys="systemctl"
-alias jrn="journalctl"
-alias bt="bluetoothctl"
-alias emulator="QT_QPA_PLATFORM=xcb /opt/android-sdk/emulator/emulator"
-alias gradle="./gradlew"
-alias update="sudo pacman -Syyu"
-alias mirror_camera="scrcpy --video-source=camera --camera-facing=front --no-audio --v4l2-sink=/dev/video2 --no-video-playback"
+alias doc='docker compose'
 alias mvnr="mvn -q spring-boot:run"

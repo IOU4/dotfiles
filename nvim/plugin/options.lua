@@ -36,6 +36,8 @@ vim.opt.whichwrap:append("<,>,[,],h,l")
 GET_BRANCH_NAME = function() return io.popen("git rev-parse --abbrev-ref HEAD 2>/dev/null"):read("*a"):gsub("[\n\r]", "") end
 GET_CWD = function() return vim.fn.fnamemodify(vim.fn.getcwd(), ':t') end
 vim.opt.statusline = "[%{v:lua.GET_CWD()} %{v:lua.GET_BRANCH_NAME()}]%m%= [%t] %y%R %= %c:%l %p%%"
+vim.api.nvim_set_hl(0, "StatusLine",  { bg = "NONE" })
+vim.api.nvim_set_hl(0, "StatusLineNC",{ bg = "NONE" })
 
 function _G.qf_format_enhanced(info)
   local items = vim.fn.getqflist({id = info.id, items = 0}).items

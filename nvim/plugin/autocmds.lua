@@ -18,15 +18,17 @@ vim.api.nvim_create_autocmd("BufEnter", {
 })
 
 vim.api.nvim_create_autocmd("DirChanged", {
-  callback = function() vim.cmd("redrawstatus") end 
+  callback = function() vim.cmd("redrawstatus") end
 })
 
 vim.api.nvim_create_autocmd( "FileType", {
     pattern = {"java", "xml", "bash", "lua", "sql"},
     callback = function()
+      vim.opt.foldenable = false
       vim.treesitter.start()
       vim.wo[0][0].foldexpr = 'v:lua.vim.treesitter.foldexpr()'
       vim.wo[0][0].foldmethod = 'expr'
+      vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
     end
   }
 )

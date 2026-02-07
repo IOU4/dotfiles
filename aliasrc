@@ -5,5 +5,5 @@ alias c=clear
 alias ls=exa
 alias la="exa -lah"
 alias history="history 0| fzf | cut -c 8-"
-alias doc='docker compose'
+alias doc='docker-compose'
 alias mvnr="mvn -q spring-boot:run"

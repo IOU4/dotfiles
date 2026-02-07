@@ -4,20 +4,20 @@ toggelterm.setup {
   size = 60,
   open_mapping = [[<C-t>]],
   direction = 'float',
-  autochdir = true
+  autochdir = true,
+  on_open = function(term)
+    vim.opt_local.mouse = "i"
+    vim.api.nvim_buf_set_keymap(term.bufnr, "t", "<C-u>", "<PageUp>", {})
+    vim.api.nvim_buf_set_keymap(term.bufnr, "t", "<C-d>", "<PageDown>", {})
+  end
 }
 
 local Terminal = require('toggleterm.terminal').Terminal
 local gitui = Terminal:new({cmd = "gitui", hidden = true, direction = 'float'})
 local ai = Terminal:new({
-  cmd = "opencode $HOME/maestro",
+  cmd = "opencode -c",
   hidden = false,
   direction = 'float',
-  on_open = function(term)
-    vim.opt_local.mouse = "i"
-    vim.api.nvim_buf_set_keymap(term.bufnr, "t", "<C-u>", "<PageUp>", {})
-    vim.api.nvim_buf_set_keymap(term.bufnr, "t", "<C-d>", "<PageDown>", {})
-  end,
 })
 
 function _GITUI_TOGGLE() gitui:toggle() end

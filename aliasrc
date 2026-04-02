@@ -7,3 +7,15 @@ alias la="exa -lah"
 alias history="history 0| fzf | cut -c 8-"
 alias doc='docker-compose'
 alias mvnr="mvn -q spring-boot:run"
+
+# maven
+# alias mvn="mvn -q"
+alias mvnc="mvn compile"
+alias mvni="mvn install -DskipTests -Djacoco.skip=true"
+alias mvnp="mvn package -DskipTests -Djacoco.skip=true"
+
+# docker
+alias dos='systemctl --user start podman.socket'
+
+alias compare='git diff --no-index ~/maestro/t1 ~/maestro/t2'
+alias cf='HTTPS_PROXY=proxyparfil.si.fr.intraorange:8080 cf'

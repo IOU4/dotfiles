@@ -43,10 +43,6 @@ jdtls.start_or_attach({
   },
   init_options = {
     workspaceFolders = workspace_folders,
-    bundles = { vim.fn.glob(home.."/.local/share/jdtls/java.debug.jar", 1) },
+    bundles = { vim.fn.glob(home.."/.local/share/jdtls/java.debug.jar", true) },
   }
 })
-
--- vim.bo.shiftwidth = 4
--- vim.bo.tabstop = 4
-vim.wo.signcolumn = "yes:1"

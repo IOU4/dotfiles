@@ -16,5 +16,3 @@ require("nvim-tree").setup({
     }
   }
 })
-
-Map("n", "<leader>e", ":NvimTreeFindFileToggle<CR>")

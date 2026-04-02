@@ -1,4 +1,4 @@
-export PATH=$PATH:$HOME/.local/bin:$HOME/gits/flutter/bin:$HOME/.cargo/bin:$HOME/go/bin
+export PATH=$PATH:$HOME/.local/bin:$HOME/.local/bin
 export EDITOR=nvim
 export BROWSER=/usr/bin/firefox
 export MOZ_ENABLE_WAYLAND=1
@@ -11,4 +11,4 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export _JAVA_AWT_WM_NONREPARENTING=1
 
 export ELECTRON_OZONE_PLATFORM_HINT=auto
-
+export DOCKER_HOST="unix:///run/user/$UID/podman/podman.sock"

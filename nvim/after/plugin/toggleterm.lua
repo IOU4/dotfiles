@@ -1,7 +1,4 @@
-local toggelterm = require("toggleterm")
-
-toggelterm.setup {
-  size = 60,
+require("toggleterm").setup {
   open_mapping = [[<C-t>]],
   direction = 'float',
   autochdir = true,
@@ -12,23 +9,9 @@ toggelterm.setup {
   end
 }
 
-local Terminal = require('toggleterm.terminal').Terminal
-local gitui = Terminal:new({cmd = "gitui", hidden = true, direction = 'float'})
-local ai = Terminal:new({
-  cmd = "opencode -c",
-  hidden = false,
-  direction = 'float',
-})
-
+local gitui = require('toggleterm.terminal').Terminal:new({cmd = "gitui", hidden = true})
 function _GITUI_TOGGLE() gitui:toggle() end
-function _AI_TOGGLE() ai:toggle() end
-
--- Map("n", "<C-t>", ":60 vsplit term://$SHELL<CR> :startinsert<CR>", opts)
-Map("t", "<S-j><S-k>", "<C-\\><C-N>")
-Map("t", "<C-h>", "<C-\\><C-N><C-w>h")
-Map("t", "<C-j>", "<C-\\><C-N><C-w>j")
-Map("t", "<C-k>", "<C-\\><C-N><C-w>k")
-Map("t", "<C-l>", "<C-\\><C-N><C-w>l")
 Map("n", "<leader>gg", "<cmd>lua _GITUI_TOGGLE()<CR>")
-Map("n", "<leader>gd", "<cmd>Dbee<CR>")
-Map("n", "<leader>ga", "<cmd>lua _AI_TOGGLE()<CR>")
+local yazi = require('toggleterm.terminal').Terminal:new({cmd = "yazi", hidden = true})
+function _YAZI_TOGGLE() yazi:toggle() end
+Map("n", "<leader>y", "<cmd>lua _YAZI_TOGGLE()<CR>")

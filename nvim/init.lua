@@ -23,7 +23,20 @@ require("lazy").setup({
     end,}
   },
   {"nvim-tree/nvim-tree.lua"},
-  {"nvim-neorg/neorg", lazy = false, version = "*", config = true},
+  {"epwalsh/obsidian.nvim", version = "*", dependencies = {"nvim-lua/plenary.nvim"},
+    ft = "markdown",
+    config = function ()
+      vim.opt.conceallevel = 2
+      require("obsidian").setup{
+        workspaces = {
+          {
+            name = "work",
+            path = "~/notes",
+          },
+        },
+      }
+    end
+  },
   {"nvim-telescope/telescope.nvim", dependencies = {"nvim-lua/plenary.nvim"}},
   {"nvim-treesitter/nvim-treesitter", lazy = false, build = ":TSUpdate"},
   {"windwp/nvim-autopairs", event = "InsertEnter", opts = {}},

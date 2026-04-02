@@ -44,13 +44,16 @@ Map("n", "<leader>w", ":w<CR>", opts)
 Map("n", "<ESC>", ":nohlsearch<CR>", opts)
 
 -- Quickfix list navigation
-local function open_diagnostics_qf()
-  vim.diagnostic.setqflist()
-  vim.cmd.copen()
-end
-Map('n', '<leader>gl', open_diagnostics_qf, opts)
 Map("n", "<leader>cn", ":cnext<CR>", opts)
 Map("n", "<leader>cp", ":cprevious<CR>", opts)
 Map("n", "<leader>cc", ":cclose<CR>", opts)
 
+Map("t", "<S-j><S-k>", "<C-\\><C-N>")
+Map("t", "<C-h>", "<C-\\><C-N><C-w>h")
+Map("t", "<C-j>", "<C-\\><C-N><C-w>j")
+Map("t", "<C-k>", "<C-\\><C-N><C-w>k")
+Map("t", "<C-l>", "<C-\\><C-N><C-w>l")
+
 Map("n", 'gd', '<C-]>', opts)
+Map("n", "<leader>gd", "<cmd>Dbee<CR>")
+Map("n", "<leader>e", ":NvimTreeFindFileToggle<CR>")

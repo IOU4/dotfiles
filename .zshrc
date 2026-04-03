@@ -19,7 +19,7 @@ PS1+="%(?.%{$fg[green]%} 󰶻  .%B%{$fg[red]%} 󰶻  )%{$reset_color%}%b"
 # History in cache directory:
 HISTSIZE=10000
 SAVEHIST=10000
-HISTFILE=~/.cache/zsh/history
+HISTFILE=~/.zsh_history
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_SAVE_NO_DUPS
 setopt HIST_REDUCE_BLANKS
@@ -47,5 +47,27 @@ bindkey -M vicmd 'j' history-beginning-search-forward
 # Case insensitive completion
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
-# Load aliases and shortcuts if existent.
-[ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
+## alias
+alias v=nvim
+alias e=exit
+alias c=clear
+alias ls=exa
+alias la="exa -lah"
+alias history="history 0| fzf | cut -c 8-"
+# maven
+alias mvnc="mvn compile"
+alias mvni="mvn install -DskipTests -Djacoco.skip=true"
+alias mvnp="mvn package -DskipTests -Djacoco.skip=true"
+alias mvnr="mvn -q spring-boot:run"
+#docker
+export DOCKER_HOST="unix:///run/user/$UID/podman/podman.sock"
+alias dos='systemctl --user start podman.socket'
+alias doc='docker-compose'
+#maestro
+alias compare='git diff --no-index ~/maestro/t1 ~/maestro/t2'
+alias cf='HTTPS_PROXY=proxyparfil.si.fr.intraorange:8080 cf'
+
+## env
+export PATH=$PATH:$HOME/.local/bin:$HOME/.npm-global
+export EDITOR=nvim
+export LC_ALL=en_US.UTF-8

@@ -7,10 +7,6 @@ local workspace_folders = {}
 if string.match(project, "br") or string.match(project, "shared") then
   table.insert(workspace_folders, "file://" .. home .. "/maestro/shared")
   table.insert(workspace_folders, "file://" .. home .. "/maestro/br")
-  -- table.insert(workspace_folders, "file://" .. home .. "/maestro/etr-api/model")
-  -- table.insert(workspace_folders, "file://" .. home .. "/maestro/etr-api/client")
-  -- table.insert(workspace_folders, "file://" .. home .. "/maestro/zbus-api/model")
-  -- table.insert(workspace_folders, "file://" .. home .. "/maestro/zbus-api/client")
 end
 
 jdtls.start_or_attach({

@@ -1,20 +1,35 @@
 local dap = require('dap')
-local widgets = require('dap.ui.widgets')
+dap.set_log_level('INFO')
 dap.defaults.fallback.terminal_win_cmd = 'enew'
 dap.defaults.fallback.switchbuf  = 'usevisible,usetab,uselast'
 dap.defaults.java.auto_continue_if_many_stopped = false
-Map('n', '<Leader>dn', function() dap.continue({new = true}) end)
-Map('n', '<Leader>dc', function() dap.continue() end)
-Map('n', '<leader>dt', function() dap.terminate() end)
-Map('n', '<leader>dr', function() dap.restart() end)
-Map('n', '<Leader>dj', function() dap.step_over() end)
-Map('n', '<Leader>dl', function() dap.step_into() end)
-Map('n', '<Leader>dH', function() dap.step_out() end)
-Map('n', '<Leader>db', function() dap.toggle_breakpoint() end)
-Map('n', '<Leader>dB', function() dap.toggle_breakpoint(vim.fn.input('Breakpoint Condition: '), nil, nil) end)
-Map('n', '<Leader>dp', function() dap.toggle_breakpoint(nil, nil, vim.fn.input('Log point message: ')) end)
-Map('n', '<Leader>dR', function() dap.repl.toggle() vim.fn.feedkeys(vim.api.nvim_replace_termcodes('<C-j>i', true, false, true)) end)
-Map('n', '<Leader>df', function() widgets.centered_float(widgets.frames) end)
-Map('n', '<Leader>ds', function() widgets.centered_float(widgets.sessions) end)
-Map({'n', 'v'}, '<Leader>dh', function() widgets.hover() end)
-Map({'n', 'v'}, '<Leader>dp', function() widgets.preview(nil, {listener={"scopes"}}) end)
+
+dap.listeners.after.event_initialized['go-start-log'] = function()
+  vim.notify('DAP session started', vim.log.levels.INFO)
+end
+
+dap.adapters.go = {
+  type = 'server',
+  port = '${port}',
+  executable = {
+    command = 'dlv',
+    args = { 'dap', '-l', '127.0.0.1:${port}' },
+  }
+}
+
+dap.configurations.go = {
+  {
+    type = 'go',
+    name = 'Debug file',
+    request = 'launch',
+    program = '${file}',
+    console = 'integratedTerminal',
+  },
+  {
+    type = 'go',
+    name = 'Debug package',
+    request = 'launch',
+    program = '${fileDirname}',
+    console = 'integratedTerminal',
+  },
+}

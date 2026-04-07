@@ -1,4 +1,4 @@
-local DIRS = { "/home/emad/maestro/*", "/home/emad/dotfiles/nvim" }
+local DIRS = { "~/maestro/*", "~/dotfiles/nvim", "~/work/*" }
 local pickers = require('telescope.pickers')
 local finders = require('telescope.finders')
 local conf = require('telescope.config').values

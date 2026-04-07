@@ -22,11 +22,10 @@ vim.api.nvim_create_autocmd("DirChanged", {
 })
 
 vim.api.nvim_create_autocmd( "FileType", {
-    pattern = {"java", "xml", "bash", "lua", "sql", "markdown"},
+    pattern = {"java", "xml", "bash", "lua", "sql", "markdown", "go"},
     callback = function()
       vim.wo.signcolumn = "yes:1"
       vim.treesitter.start()
-      vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
     end
   }
 )

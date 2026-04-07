@@ -1,3 +1,6 @@
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
 function Map(mode, l, r, opts)
   opts = opts or {noremap = true, silent = true}
   vim.keymap.set(mode, l, r, opts);
@@ -48,12 +51,14 @@ Map("n", "<leader>cn", ":cnext<CR>", opts)
 Map("n", "<leader>cp", ":cprevious<CR>", opts)
 Map("n", "<leader>cc", ":cclose<CR>", opts)
 
+-- Terminal
 Map("t", "<S-j><S-k>", "<C-\\><C-N>")
 Map("t", "<C-h>", "<C-\\><C-N><C-w>h")
 Map("t", "<C-j>", "<C-\\><C-N><C-w>j")
 Map("t", "<C-k>", "<C-\\><C-N><C-w>k")
 Map("t", "<C-l>", "<C-\\><C-N><C-w>l")
+Map("t","<C-BS>",function() local c=vim.b.terminal_job_id; if type(c)=="number" then vim.api.nvim_chan_send(c,"\027[3J\027[H\027[2J") end end,opts)
 
 Map("n", 'gd', '<C-]>', opts)
-Map("n", "<leader>gd", "<cmd>Dbee<CR>")
-Map("n", "<leader>e", ":NvimTreeFindFileToggle<CR>")
+Map('n', ']d', function() vim.diagnostic.jump({ count = 1, float = true }) end)
+Map('n', '[d', function() vim.diagnostic.jump({ count = -1, float = true }) end)

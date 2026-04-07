@@ -68,6 +68,6 @@ alias compare='git diff --no-index ~/maestro/t1 ~/maestro/t2'
 alias cf='HTTPS_PROXY=proxyparfil.si.fr.intraorange:8080 cf'
 
 ## env
-export PATH=$PATH:$HOME/.local/bin:$HOME/.npm-global
+export PATH=$HOME/.local/bin:$HOME/.npm-global/bin:$PATH:
 export EDITOR=nvim
 export LC_ALL=en_US.UTF-8

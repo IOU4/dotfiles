@@ -1,0 +1,57 @@
+-- require("java").setup({
+--   jdk = {
+--     auto_install = false,
+--   },
+--   spring_boot_tools = {
+--     enable = false,
+--   }
+-- })
+--
+-- vim.lsp.config("jdtls", vim.tbl_deep_extend("force", vim.deepcopy(vim.lsp.config.jdtls or {}), {
+--   cmd_env = { PATH = "/usr/lib/jvm/java-21-openjdk/bin:" .. (vim.env.PATH or "") },
+--   settings = {
+--     java = {
+--       maven = {
+--         downloadSources = true,
+--         updateSnapshots = true,
+--       },
+--       references = {
+--         includeDecompiledSources = true,
+--       },
+--       format = {
+--         enabled = false,
+--       },
+--       configuration = {
+--         runtimes = {
+--           {
+--             name = "JavaSE-17",
+--             path = "/usr/lib/jvm/java-17-openjdk/",
+--             default = true
+--           },
+--           {
+--             name = "JavaSE-21",
+--             path = "/usr/lib/jvm/java-21-openjdk/",
+--           },
+--         },
+--       },
+--     },
+--   },
+--
+--   init_options = {
+--     workspaceFolders = (function()
+--       local home = os.getenv("HOME")
+--       local project = vim.fn.fnamemodify(vim.fn.getcwd(), ":p:h:t")
+--       local folders = {}
+--       if project:match("br") or project:match("shared") then
+--         table.insert(folders, "file://" .. home .. "/maestro/shared")
+--         table.insert(folders, "file://" .. home .. "/maestro/br")
+--       end
+--       return folders
+--     end)(),
+--   },
+--   root_dir = vim.fs.root(0, { ".git", "mvnw", "gradlew" }),
+-- }))
+--
+-- vim.lsp.enable("jdtls")
+-- vim.lsp.enable('ts_ls')
+-- vim.lsp.enable('gopls')

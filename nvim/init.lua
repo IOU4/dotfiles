@@ -10,20 +10,20 @@ vim.pack.add({
   { src = "https://github.com/windwp/nvim-autopairs" },
   { src = "https://github.com/saghen/blink.cmp", version = vim.version.range("1.*") },
   { src = "https://github.com/mfussenegger/nvim-jdtls" },
+  -- { src = "https://github.com/nvim-java/nvim-java"},
   { src = "https://github.com/mfussenegger/nvim-dap" },
   { src = "https://github.com/akinsho/toggleterm.nvim" },
   { src = "https://github.com/lewis6991/gitsigns.nvim" },
   { src = "https://github.com/kndndrj/nvim-dbee" },
   { src = "https://github.com/tpope/vim-sleuth" },
-  { src = "https://github.com/epwalsh/obsidian.nvim" },
   { src = "https://github.com/rebelot/kanagawa.nvim" },
   { src = "https://github.com/nvim-tree/nvim-tree.lua" },
+  { src = "https://github.com/MeanderingProgrammer/render-markdown.nvim"},
+  { src = "https://github.com/j-hui/fidget.nvim"}
 })
 
-vim.lsp.enable('ts_ls')
-vim.lsp.enable('gopls')
-
 require("kanagawa").setup({
+  transparent = true,
   overrides = function(colors) return {
       Pmenu = { fg = colors.theme.ui.shade0, bg = colors.theme.ui.bg_p1 },
       PmenuSel = { fg = "", bg = colors.theme.ui.bg_p2 },
@@ -63,6 +63,9 @@ require('gitsigns').setup({
         Map('n', '<leader>hb', function() require('gitsigns').blame() end, {buffer = bufnr})
     end
 })
+
+require('dbee').setup({})
+
 require("nvim-tree").setup({
   sync_root_with_cwd = true,
   git = { enable = false },
@@ -87,4 +90,4 @@ require("toggleterm").setup {
   end
 }
 
-require("obsidian").setup({ workspaces = {{ name = "notes", path = "~/notes" }}})
+require('fidget').setup{}

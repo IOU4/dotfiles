@@ -1,5 +1,4 @@
 local dap = require('dap')
-dap.set_log_level('INFO')
 dap.defaults.fallback.terminal_win_cmd = 'enew'
 dap.defaults.fallback.switchbuf  = 'usevisible,usetab,uselast'
 dap.defaults.java.auto_continue_if_many_stopped = false

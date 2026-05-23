@@ -55,9 +55,9 @@ alias ls=exa
 alias la="exa -lah"
 alias history="history 0| fzf | cut -c 8-"
 # maven
-alias mvnc="mvn compile"
-alias mvni="mvn install -DskipTests -Djacoco.skip=true"
-alias mvnp="mvn package -DskipTests -Djacoco.skip=true"
+alias mvnc="mvn clean compile"
+alias mvni="mvn clean install -DskipTests -Djacoco.skip=true"
+alias mvnp="mvn clean package -DskipTests -Djacoco.skip=true"
 alias mvnr="mvn -q spring-boot:run"
 #docker
 export DOCKER_HOST="unix:///run/user/$UID/podman/podman.sock"
@@ -68,6 +68,6 @@ alias compare='git diff --no-index ~/maestro/t1 ~/maestro/t2'
 alias cf='HTTPS_PROXY=proxyparfil.si.fr.intraorange:8080 cf'
 
 ## env
-export PATH=$HOME/.local/bin:$HOME/.npm-global/bin:$PATH:
+export PATH=$HOME/.local/bin:$HOME/.npm-global/bin:$HOME/go/bin:$PATH
 export EDITOR=nvim
 export LC_ALL=en_US.UTF-8

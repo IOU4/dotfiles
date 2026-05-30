@@ -3,6 +3,7 @@
     background: transparent;
     font-family: "Iosevka Nerd Font";
     font-size: 16;
+    border-radius: 0;
 }
 
 .module {

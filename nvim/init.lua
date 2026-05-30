@@ -22,6 +22,13 @@ vim.pack.add({
   { src = "https://github.com/j-hui/fidget.nvim"}
 })
 
+vim.api.nvim_create_user_command("PackDel", function(opts)
+  vim.pack.del(vim.iter(vim.pack.get())
+    :filter(function(x) return not x.active end)
+    :map(function(x) return x.spec.name end)
+    :totable())
+end, {})
+
 require("kanagawa").setup({
   transparent = true,
   overrides = function(colors) return {

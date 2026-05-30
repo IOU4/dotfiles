@@ -71,3 +71,7 @@ alias cf='HTTPS_PROXY=proxyparfil.si.fr.intraorange:8080 cf'
 export PATH=$HOME/.local/bin:$HOME/.npm-global/bin:$HOME/go/bin:$PATH
 export EDITOR=nvim
 export LC_ALL=en_US.UTF-8
+
+if [ -z "$SSH_AUTH_SOCK" ]; then
+  eval "$(ssh-agent -s)" >/dev/null
+fi

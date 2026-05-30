@@ -19,13 +19,6 @@ dap.adapters.go = {
 dap.configurations.go = {
   {
     type = 'go',
-    name = 'Debug file',
-    request = 'launch',
-    program = '${file}',
-    console = 'integratedTerminal',
-  },
-  {
-    type = 'go',
     name = 'Debug package',
     request = 'launch',
     program = '${fileDirname}',

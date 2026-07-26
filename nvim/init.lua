@@ -22,7 +22,10 @@ vim.pack.add({
   { src = "https://github.com/j-hui/fidget.nvim"}
 })
 
-vim.api.nvim_create_user_command("PackDel", function(opts)
+vim.api.nvim_create_user_command("Packupdate", function(opts)
+  vim.pack.update()
+end, {})
+vim.api.nvim_create_user_command("Packdel", function(opts)
   vim.pack.del(vim.iter(vim.pack.get())
     :filter(function(x) return not x.active end)
     :map(function(x) return x.spec.name end)
@@ -81,8 +84,6 @@ require("nvim-tree").setup({
 })
 
 require("blink.cmp").setup({
-  appearance = { use_nvim_cmp_as_default = true },
-  completion = { documentation = { auto_show = true, auto_show_delay_ms = 500 }},
   sources = { default = { "lsp", "path" }},
 })
 
@@ -91,7 +92,6 @@ require("toggleterm").setup {
   direction = 'float',
   autochdir = true,
   on_open = function(term)
-    vim.opt_local.mouse = "i"
     vim.api.nvim_buf_set_keymap(term.bufnr, "t", "<C-u>", "<PageUp>", {})
     vim.api.nvim_buf_set_keymap(term.bufnr, "t", "<C-d>", "<PageDown>", {})
   end

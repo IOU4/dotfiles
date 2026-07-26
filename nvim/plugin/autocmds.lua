@@ -22,7 +22,7 @@ vim.api.nvim_create_autocmd("DirChanged", {
 })
 
 vim.api.nvim_create_autocmd( "FileType", {
-    pattern = {"java", "xml", "bash", "lua", "sql", "markdown", "go"},
+    pattern = {"java", "xml", "bash", "lua", "sql", "markdown", "go", "python"},
     callback = function()
       vim.wo.signcolumn = "yes:1"
       vim.treesitter.start()

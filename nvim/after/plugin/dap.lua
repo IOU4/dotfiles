@@ -15,7 +15,6 @@ dap.adapters.go = {
     args = { 'dap', '-l', '127.0.0.1:${port}' },
   }
 }
-
 dap.configurations.go = {
   {
     type = 'go',

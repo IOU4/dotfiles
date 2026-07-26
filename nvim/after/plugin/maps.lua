@@ -3,7 +3,6 @@ Map("n", "<leader>ff", "<cmd>lua require('telescope.builtin').find_files()<cr>")
 Map("n", "<leader>fg", "<cmd>lua require('telescope.builtin').live_grep()<cr>")
 Map("n", "<leader>fb", "<cmd>lua require('telescope.builtin').buffers()<cr>")
 Map("n", "<leader>fh", "<cmd>lua require('telescope.builtin').help_tags()<cr>")
-Map("n", "<leader>fm", "<cmd>lua require('telescope.builtin').man_pages()<cr>")
 
 -- dap
 Map('n', '<Leader>dn', function() require('dap').continue({new = true}) end)

@@ -147,7 +147,7 @@ bindsym $mod+Return exec $term
 bindsym $mod+Shift+Return exec $menu
 bindsym $mod+f exec $files
 bindsym $mod+m exec ~/.config/sway/emoji-picker.sh
-bindsym $mod+Shift+s exec grim -g "$(slurp)" /home/emad/Pictures/screenshots/$(date +'%s_grim.png') 
+bindsym $mod+Shift+s exec grim -g "$(slurp)" /home/emad/Pictures/screenshots/"$(date +%Y-%m-%d_%H:%M:%S)_grim.png" 
 bindsym $mod+v exec cliphist list | wofi -d | cliphist decode | wl-copy
 
 # gestures
@@ -171,6 +171,7 @@ assign [app_id = "firefox"] $ws2
 for_window [app_id = "qemu|scrcpy"] floating enabled
 for_window [title = "DevTools*|Developer Tools*|Picture-in-Picture|Sharing Indicator.*|browser Console"] floating enabled
 #for_window [title = "Yazi:*"] floating enable, move position center
+for_window [app_id="spotify-player"] move scratchpad
 
 # auto-exectution
 exec nm-applet --indicator

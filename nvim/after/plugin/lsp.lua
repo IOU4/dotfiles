@@ -1,6 +1,9 @@
 vim.lsp.enable('ts_ls')
 vim.lsp.enable('gopls')
 
+vim.lsp.config('pylsp', {cmd = {'uv', 'run', 'pylsp'}})
+vim.lsp.enable('pylsp')
+
 local home = os.getenv("HOME")
 vim.lsp.config("jdtls", {
   cmd = {
@@ -35,7 +38,6 @@ vim.lsp.config("jdtls", {
       },
     },
   },
-
   init_options = {
     workspaceFolders = (function()
       local project = vim.fn.fnamemodify(vim.fn.getcwd(), ":p:h:t")

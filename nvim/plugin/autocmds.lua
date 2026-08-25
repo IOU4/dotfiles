@@ -22,7 +22,7 @@ vim.api.nvim_create_autocmd("DirChanged", {
 })
 
 vim.api.nvim_create_autocmd( "FileType", {
-    pattern = {"java", "xml", "bash", "lua", "sql", "markdown", "go", "python"},
+    pattern = {"java", "xml", "bash", "lua", "sql", "markdown", "go", "python", "typescript"},
     callback = function()
       vim.wo.signcolumn = "yes:1"
       vim.treesitter.start()
@@ -36,3 +36,14 @@ vim.api.nvim_create_autocmd( "FileType", {
     callback = function() vim.cmd("wincmd L") end
   }
 )
+
+vim.api.nvim_create_user_command("Packupdate", function(opts)
+  vim.pack.update()
+end, {})
+
+vim.api.nvim_create_user_command("Packdel", function(opts)
+  vim.pack.del(vim.iter(vim.pack.get())
+    :filter(function(x) return not x.active end)
+    :map(function(x) return x.spec.name end)
+    :totable())
+end, {})

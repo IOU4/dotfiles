@@ -13,7 +13,6 @@ vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.timeoutlen = 500
 vim.opt.updatetime = 300
-vim.opt.writebackup = false
 vim.opt.expandtab = true
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
@@ -24,7 +23,6 @@ vim.opt.numberwidth = 2
 vim.opt.wrap = false
 vim.opt.scrolloff = 8
 vim.opt.sidescrolloff = 8
-vim.opt.cmdheight = 1
 vim.opt.laststatus = 3
 vim.opt.foldenable = false
 vim.opt.foldmethod = "indent"
@@ -34,43 +32,9 @@ vim.opt.shortmess:append("c")
 vim.opt.clipboard:append("unnamedplus")
 vim.opt.whichwrap:append("<,>,[,],h,l")
 
+-- statusline
 GET_BRANCH_NAME = function() local b=(io.popen("git rev-parse --abbrev-ref HEAD 2>/dev/null"):read("*a") or ""):gsub("%s+$",""); return b~="" and (" "..b) or "" end
 GET_CWD = function() return vim.fn.fnamemodify(vim.fn.getcwd(), ':t') end
-vim.opt.statusline = "%{v:lua.GET_CWD()}%{v:lua.GET_BRANCH_NAME()}%m%= %f %= %y%R %c:%l %p%%"
+vim.opt.statusline = " %{v:lua.GET_CWD()}%{v:lua.GET_BRANCH_NAME()}%m%= %f %= %y%R %c:%l %p%% "
 vim.api.nvim_set_hl(0, "StatusLine",  { bg = "NONE" })
 vim.api.nvim_set_hl(0, "StatusLineNC",{ bg = "NONE" })
-
-function _G.qf_format_enhanced(info)
-  local items = vim.fn.getqflist({id = info.id, items = 0}).items
-  local lines = {}
-  for i = info.start_idx, info.end_idx do
-    local item = items[i]
-    local filename = ""
-    if item.bufnr > 0 then
-      filename = vim.api.nvim_buf_get_name(item.bufnr)
-    elseif item.filename then
-      filename = item.filename
-    end
-    if filename ~= "" then
-      filename = vim.fn.pathshorten(filename, 1)
-    else
-      filename = "[No file]"
-    end
-    local line_parts = {filename}
-    if item.lnum > 0 then
-      local pos = tostring(item.lnum)
-      if item.col > 0 then
-        pos = pos .. ":" .. item.col
-      end
-      table.insert(line_parts, pos)
-    end
-    if item.text and item.text ~= "" then
-      local text = vim.trim(item.text)
-      table.insert(line_parts, text)
-    end
-    local formatted_line = table.concat(line_parts, " | ")
-    table.insert(lines, formatted_line)
-  end
-  return lines
-end
-vim.o.quickfixtextfunc = 'v:lua.qf_format_enhanced'

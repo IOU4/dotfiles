@@ -64,3 +64,4 @@ Map('n', ']d', function() vim.diagnostic.jump({ count = 1, float = true }) end)
 Map('n', '[d', function() vim.diagnostic.jump({ count = -1, float = true }) end)
 
 Map('n', '<leader>gn', ':e ~/notes/index.md<CR>')
+Map('n', '<leader>gpn', ':e ~/notes/personal.md<CR>')

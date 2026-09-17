@@ -18,7 +18,6 @@ vim.pack.add({
   { src = "https://github.com/nvim-tree/nvim-tree.lua" },
   { src = "https://github.com/MeanderingProgrammer/render-markdown.nvim"},
   { src = "https://github.com/j-hui/fidget.nvim"},
-  { src = "https://github.com/ThorstenRhau/token" },
   { src = "https://github.com/stevearc/quicker.nvim"}
 })
 
@@ -26,7 +25,6 @@ require("mini.pairs").setup()
 require("dbee").setup({})
 require("fidget").setup{}
 require("quicker").setup()
-vim.cmd.colorscheme("token")
 
 require("blink.cmp").setup({ 
   sources = { default = { "lsp", "path" }},

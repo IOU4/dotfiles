@@ -16,9 +16,9 @@ vim.pack.add({
   { src = "https://github.com/kndndrj/nvim-dbee" },
   { src = "https://github.com/tpope/vim-sleuth" },
   { src = "https://github.com/nvim-tree/nvim-tree.lua" },
-  { src = "https://github.com/MeanderingProgrammer/render-markdown.nvim"},
-  { src = "https://github.com/j-hui/fidget.nvim"},
-  { src = "https://github.com/stevearc/quicker.nvim"}
+  { src = "https://github.com/MeanderingProgrammer/render-markdown.nvim" },
+  { src = "https://github.com/j-hui/fidget.nvim" },
+  { src = "https://github.com/stevearc/quicker.nvim" }
 })
 
 require("mini.pairs").setup() 
@@ -69,6 +69,7 @@ require("toggleterm").setup {
   open_mapping = [[<C-t>]],
   direction = 'float',
   autochdir = true,
+  auto_scroll = false,
   on_open = function(term)
     vim.api.nvim_buf_set_keymap(term.bufnr, "t", "<C-u>", "<PageUp>", {})
     vim.api.nvim_buf_set_keymap(term.bufnr, "t", "<C-d>", "<PageDown>", {})

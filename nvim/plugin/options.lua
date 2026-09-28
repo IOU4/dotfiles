@@ -38,6 +38,6 @@ GET_CWD = function() return vim.fn.fnamemodify(vim.fn.getcwd(), ':t') end
 vim.opt.statusline = " %{v:lua.GET_CWD()}%{v:lua.GET_BRANCH_NAME()}%m%= %f %= %y%R %c:%l %p%% "
 
 vim.cmd.colorscheme("catppuccin")
-for _, group in ipairs({ "Normal", "NormalNC", "SignColumn", "EndOfBuffer", "NormalFloat", "FloatBorder", "StatusLine", "StatusLine" }) do
+for _, group in ipairs({ "Normal", "NormalNC", "SignColumn", "NormalFloat", "FloatBorder", "StatusLine" }) do
   vim.api.nvim_set_hl(0, group, { bg = "NONE" }) -- transparent background
 end

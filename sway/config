@@ -12,7 +12,7 @@ set $right l
 
 set $term foot # alacritty
 set $browser firefox
-set $files "foot -e yazi"
+set $explorer "foot -e yazi"
 
 set $menu wofi
     
@@ -27,7 +27,7 @@ set $laptop_scr eDP-1
 exec swayidle -w \
     timeout 600 'swaylock -f' \
     timeout 1200 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-    timeout 4800 'systemctl hibernate' \
+    timeout 4800 'systemctl suspend-then-hibernate' \
     before-sleep 'swaylock -f '
 
  input "1160:4639:DELL09A0:00_0488:121F_Touchpad" {
@@ -100,9 +100,8 @@ bindsym $mod+Shift+8 move container to workspace  $ws8
 bindsym $mod+Shift+9 move container to workspace  $ws9
 
 bindsym $mod+Shift+v split toggle
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+t layout tabbed
+bindsym $mod+s layout toggle split
 bindsym $mod+Shift+f fullscreen
 bindsym $mod+Shift+space floating toggle
 bindsym Mod1+Tab workspace back_and_forth
@@ -145,7 +144,7 @@ bindsym $mod+Shift+l exec swaylock
 bindsym $mod+c exec $browser
 bindsym $mod+Return exec $term
 bindsym $mod+Shift+Return exec $menu
-bindsym $mod+f exec $files
+bindsym $mod+e exec $explorer
 bindsym $mod+m exec ~/.config/sway/emoji-picker.sh
 bindsym $mod+Shift+s exec grim -g "$(slurp)" /home/emad/Pictures/screenshots/"$(date +%Y-%m-%d_%H:%M:%S)_grim.png" 
 bindsym $mod+v exec cliphist list | wofi -d | cliphist decode | wl-copy
@@ -166,12 +165,8 @@ for_window [title="."] title_format "%title | %app_id"
 title_align center
 
 # sorkspace-assignments
-assign [class = "Chromium"] $ws3
 assign [app_id = "firefox"] $ws2
-for_window [app_id = "qemu|scrcpy"] floating enabled
-for_window [title = "DevTools*|Developer Tools*|Picture-in-Picture|Sharing Indicator.*|browser Console"] floating enabled
-#for_window [title = "Yazi:*"] floating enable, move position center
-for_window [app_id="spotify-player"] move scratchpad
+for_window [app_id = "qemu|scrcpy|spotify"] floating enabled
 
 # auto-exectution
 exec nm-applet --indicator

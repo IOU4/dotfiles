@@ -47,6 +47,9 @@ bindkey -M vicmd 'j' history-beginning-search-forward
 # Case insensitive completion
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
+## plugins 
+source "${ZSH_CUSTOM:-~/.zsh}/plugins/zsh-system-clipboard/zsh-system-clipboard.zsh"
+
 ## alias
 alias v=nvim
 alias e=exit
@@ -59,13 +62,9 @@ alias mvnc="mvn clean compile"
 alias mvni="mvn clean install -DskipTests -Djacoco.skip=true"
 alias mvnp="mvn clean package -DskipTests -Djacoco.skip=true"
 alias mvnr="mvn -q spring-boot:run"
-#docker
+# docker
 export DOCKER_HOST="unix:///run/user/$UID/podman/podman.sock"
-alias dos='systemctl --user start podman.socket'
 alias doc='docker-compose'
-#maestro
-alias compare='git diff --no-index ~/maestro/t1 ~/maestro/t2'
-alias cf='HTTPS_PROXY=proxyparfil.si.fr.intraorange:8080 cf'
 
 ## env
 export PATH=$HOME/.local/bin:$HOME/.npm-global/bin:$HOME/go/bin:$PATH

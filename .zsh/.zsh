@@ -1,1 +1,0 @@
-/home/emad/dotfiles/.zsh

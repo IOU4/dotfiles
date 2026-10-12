@@ -47,9 +47,6 @@ bindkey -M vicmd 'j' history-beginning-search-forward
 # Case insensitive completion
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
-## plugins 
-source "${ZSH_CUSTOM:-$HOME/.zsh}/plugins/zsh-system-clipboard/zsh-system-clipboard.zsh"
-
 ## alias
 alias v=nvim
 alias e=exit
@@ -65,6 +62,7 @@ alias mvnr="mvn -q spring-boot:run"
 # docker
 export DOCKER_HOST="unix:///run/user/$UID/podman/podman.sock"
 alias doc='docker-compose'
+alias k=kubectl
 
 ## env
 export PATH=$HOME/.local/bin:$HOME/.npm-global/bin:$HOME/go/bin:$PATH

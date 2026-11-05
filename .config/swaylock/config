@@ -1,7 +1,7 @@
 ignore-empty-password
 show-failed-attempts
 color=181616
-image=/home/emad/.config/lock.png
+image=~/.config/swaylock/lock.png
 scaling=fill
 
 font=Iosevka Nerd Font Mono

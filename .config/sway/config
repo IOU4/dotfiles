@@ -17,7 +17,7 @@ set $secondary #c0caf5
 set $urgent #ff2a2a
 
 output * bg $HOME/Pictures/walls/background fill
-output * mode 2256x1504@60Hz scale 1.5
+output * mode 2256x1504@60Hz scale 1.4
 
 exec swayidle -w \
     timeout 600 'swaylock -f' \
@@ -127,12 +127,11 @@ client.focused $secondary $secondary $primary
 client.unfocused $primary $primary $secondary 
 client.focused_inactive $primary $primary $secondary  
 # audio-keys
-bindsym XF86AudioRaiseVolume exec pamixer -i 5 
-bindsym XF86AudioLowerVolume exec pamixer -d 5 
+bindsym XF86AudioRaiseVolume exec pamixer -i 2 
+bindsym XF86AudioLowerVolume exec pamixer -d 2 
 bindsym XF86AudioMute exec pamixer -t 
-bindsym XF86AudioMicMute exec pamixer --source 47 -t # toggle mic
-bindsym XF86MonBrightnessUp exec brightnessctl set +5%
-bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+bindsym XF86MonBrightnessUp exec brightnessctl set +2%
+bindsym XF86MonBrightnessDown exec brightnessctl set 2%-
 
 # apps-shortcuts
 bindsym $mod+Shift+l exec swaylock

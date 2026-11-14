@@ -1,8 +1,10 @@
 # vim:ft=conf
 # Read `man 5 sway` for a complete reference.
 
+# sway defaults
 include /etc/sway/config.d/*
 
+# variables
 set $mod Mod4
 set $left h
 set $down j
@@ -15,6 +17,16 @@ set $menu wofi
 set $primary #11121d
 set $secondary #c0caf5
 set $urgent #ff2a2a
+set $powerctrl ~/.config/sway/powerctrl.sh 
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
 
 output * bg $HOME/Pictures/walls/background fill
 output * mode 2256x1504@60Hz scale 1.4
@@ -54,10 +66,7 @@ floating_modifier $mod normal
 # Reload the configuration file
 bindsym $mod+Shift+c reload
 
-# Exit sway (logs you out of your Wayland session)
-# (switch to wofi) bindsym $mod+Shift+e exec swaynag -t customn -m 'power menu' -b '   log out' 'swaymsg exit' -b '⏻   shut down' 'shutdown now' -b '     reboot' 'reboot' -b '       suspend' 'systemctl suspend' -b '     hibernate' 'systemctl hibernate' -b '      lock' 'swaylock -f'
-bindsym $mod+Shift+e exec ~/.config/sway/powerctrl.sh
-bindgesture swipe:4:down exec ~/.config/sway/powerctrl.sh 
+bindsym $mod+Shift+e exec $powerctrl
 
 # Move your focus around
 bindsym $mod+$left focus left
@@ -66,15 +75,6 @@ bindsym $mod+$up focus up
 bindsym $mod+$right focus right
 
 # Workspaces:
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
-set $ws5 "5"
-set $ws6 "6"
-set $ws7 "7"
-set $ws8 "8"
-set $ws9 "9"
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace  $ws2
 bindsym $mod+3 workspace  $ws3
@@ -130,8 +130,8 @@ client.focused_inactive $primary $primary $secondary
 bindsym XF86AudioRaiseVolume exec pamixer -i 2 
 bindsym XF86AudioLowerVolume exec pamixer -d 2 
 bindsym XF86AudioMute exec pamixer -t 
-bindsym XF86MonBrightnessUp exec brightnessctl set +2%
-bindsym XF86MonBrightnessDown exec brightnessctl set 2%-
+bindsym XF86MonBrightnessUp exec brightnessctl set +3%
+bindsym XF86MonBrightnessDown exec brightnessctl set 3%-
 
 # apps-shortcuts
 bindsym $mod+Shift+l exec swaylock
@@ -140,7 +140,7 @@ bindsym $mod+Return exec $term
 bindsym $mod+Shift+Return exec $menu
 bindsym $mod+e exec $explorer
 bindsym $mod+m exec ~/.config/sway/emoji-picker.sh
-bindsym $mod+Shift+s exec grim -g "$(slurp)" /home/emad/Pictures/screenshots/"$(date +%Y-%m-%d_%H:%M:%S)_grim.png" 
+bindsym $mod+Shift+s exec grim -g "$(slurp)" - | tee ~/Pictures/"screenshot_$(date +%Y-%m-%d_%H:%M:%S).png" | wl-copy --type image/png
 bindsym $mod+v exec cliphist list | wofi -d | cliphist decode | wl-copy
 
 # gestures
@@ -150,17 +150,16 @@ bindgesture swipe:3:left focus left
 bindgesture swipe:3:right focus right
 bindgesture swipe:3:up focus up
 bindgesture swipe:3:down focus down
+bindgesture swipe:4:down exec $powerctrl
 
 smart_borders no_gaps
 
 # titles
 font pango:IosevkaNerdFont-Regular 13
-for_window [title="."] title_format "%title | %app_id"
 title_align center
 
-# sorkspace-assignments
-assign [app_id = "firefox"] $ws2
-for_window [app_id = "qemu|scrcpy|spotify"] floating enabled
+# assignments
+for_window [app_id = "qemu|scrcpy|spotify|Alpaca"] floating enabled
 
 # auto-exectution
 exec nm-applet --indicator

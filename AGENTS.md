@@ -1,5 +1,6 @@
 - never ask for next steps
-- be brief in your answers and focus only the given task
+- be brief in your answers, use as few words as possible
+- focus only the given task
 - only warn the user if there a serious missed side effect
 - always ask for clarifications, try to avoid assuming
 - never do git add/commit/push/pull

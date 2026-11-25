@@ -7,7 +7,7 @@ vim.pack.add({
   { src = "https://github.com/neovim/nvim-lspconfig" },
   { src = "https://github.com/nvim-telescope/telescope.nvim" },
   { src = "https://github.com/nvim-treesitter/nvim-treesitter" },
-  { src = "https://github.com/nvim-mini/mini.pairs" },
+  { src = "https://github.com/windwp/nvim-autopairs" },
   { src = "https://github.com/saghen/blink.cmp", version = vim.version.range("1.*") },
   { src = "https://github.com/mfussenegger/nvim-jdtls" },
   { src = "https://github.com/mfussenegger/nvim-dap" },
@@ -21,10 +21,17 @@ vim.pack.add({
   { src = "https://github.com/stevearc/quicker.nvim" }
 })
 
-require("mini.pairs").setup() 
+require("nvim-autopairs").setup({}) 
 require("dbee").setup({})
-require("fidget").setup{}
-require("quicker").setup()
+require("quicker").setup({})
+require("fidget").setup({ progresss = { display = { render_limit = 1 }}})
+require('render-markdown').setup({
+  sign = { enabled = false },
+  heading = { 
+    position = 'inline',
+    icons = {},
+  },
+})
 
 require("blink.cmp").setup({ 
   sources = { default = { "lsp", "path" }},

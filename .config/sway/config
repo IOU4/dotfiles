@@ -141,6 +141,7 @@ bindsym $mod+Shift+Return exec $menu
 bindsym $mod+e exec $explorer
 bindsym $mod+m exec ~/.config/sway/emoji-picker.sh
 bindsym $mod+Shift+s exec grim -g "$(slurp)" - | tee ~/Pictures/"screenshot_$(date +%Y-%m-%d_%H:%M:%S).png" | wl-copy --type image/png
+bindsym $mod+Shift+t exec text=$(grim -g "$(slurp)" - | tesseract stdin stdout) && wl-copy -- "$text" && notify-send "Copied text" "$text"
 bindsym $mod+v exec cliphist list | wofi -d | cliphist decode | wl-copy
 
 # gestures
